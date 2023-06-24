@@ -1,0 +1,27 @@
+<script setup>
+
+  const { data } = await useFetch('http://127.0.0.1:5000/projects')
+
+</script>
+
+<template>
+
+  <div class="row bg-light rounded">
+    <div class="col-lg-4 p-5">
+      <h3 class="pb-4 mb-1">CARBON Copy 16</h3>
+      <p>Some text here that describes the CARBON Copy 16 and what it means and all that nonsense.</p>
+      <a href="#" target="_blank">More</a>
+    </div>
+    <div class="col-lg-8 py-5 pe-3">
+      <div class="row">
+        <div v-for="project in data" class="col-lg-6 pb-2 mb-2">
+          <div class="">
+            <p class="p-0 m-0"><span class="fw-bold">{{ project.name }}</span> <span class="badge text-bg-secondary rounded-pill me-2" v-for="category in project.categories">{{ category.value }}</span></p>
+            <small class="mt-3">{{ project.description }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</template>
