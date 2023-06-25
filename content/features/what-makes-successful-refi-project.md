@@ -2,7 +2,7 @@
 title: What makes a successful ReFi project?
 description: An evaluation of the successes and failures in the space.
 category: ReFi
-image: "https://www.coindesk.com/resizer/-YRZxa90g-le4MBisqRK43J_KSY=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/AJPSHR6YVREVRCU4JJQNWOVRII.jpg"
+image: "https://cdn.pixabay.com/photo/2015/01/28/23/34/mountains-615428_1280.jpg"
 date: "June 1st, 2023"
 author: "Sarong Johnny"
 ---

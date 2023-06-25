@@ -1,11 +1,13 @@
 ---
-title: Learn test 2
+title: What is green finance?
 description: Learn test 2 description
-category: ReFi
-image: "https://www.coindesk.com/resizer/-YRZxa90g-le4MBisqRK43J_KSY=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/AJPSHR6YVREVRCU4JJQNWOVRII.jpg"
+category: Finance
+image: "https://cdn.pixabay.com/photo/2022/09/15/05/21/tree-stump-7455677_1280.jpg"
 date: "May 29th, 2023"
 author: "Sarong Johnny"
 ---
+
+# {{ title }}
 
 According to Tether, they “do not condone this behavior,” adding that their priorities lie with their customers. The stablecoin issuer also noted that the materials obtained by the media outlets do not represent the company as it is now. Tether said that the data sent to the media platforms is limited and more than two years old.
 

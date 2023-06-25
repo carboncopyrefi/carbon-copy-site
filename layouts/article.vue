@@ -16,7 +16,7 @@ const { data } = await useAsyncData(`content-${path}`, () => queryContent().wher
           <h1>{{ data.title }}</h1>
           <p class="fs-5 text-secondary">{{ data.description }}</p>
           <p><span class="fw-bold">By {{ data.author }}</span> | {{ data.date }}</p>
-          <nuxt-img v-bind:src="data.image" />
+          <nuxt-img v-bind:src="data.image" style="width: 100%;" />
           <br /><br />
           <slot />
         </div>

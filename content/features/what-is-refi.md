@@ -2,7 +2,7 @@
 title: What is ReFi?
 description: A closer look at the growing phenomenon of regenerative finance.
 category: Climate
-image: "https://www.coindesk.com/resizer/-YRZxa90g-le4MBisqRK43J_KSY=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/AJPSHR6YVREVRCU4JJQNWOVRII.jpg"
+image: "https://cdn.pixabay.com/photo/2017/05/09/03/46/alberta-2297204_1280.jpg"
 date: "May 29th, 2023"
 author: "Sarong Johnny"
 ---

@@ -1,6 +1,6 @@
 <script setup>
 
-  const { data } = await useFetch('http://127.0.0.1:5000/articles')
+  const { data } = await useFetch('https://carboncopy.pythonanywhere.com/articles')
 
 </script>
 
