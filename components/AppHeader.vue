@@ -6,8 +6,8 @@
       <div class="col-4 pt-1">
 
       </div>
-      <div class="col-4 text-center">
-        <a class="text-dark text-decoration-none display-5" href="/">CARBON Copy</a>
+      <div class="col-lg-2 col-4 text-center">
+        <a href="/"><nuxt-img src="/logo.png" style="width:100%" alt="CARBON Copy Logo" /></a>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
         <!--<a class="btn btn-outline-secondary" href="#">Subscribe</a>-->

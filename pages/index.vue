@@ -8,7 +8,7 @@
 <template>
 
   <Features />
-  <div class="row g-5 mb-5">
+  <div class="row mb-5">
     <div class="col-md-8">
       <Learn />
       <Feed />
