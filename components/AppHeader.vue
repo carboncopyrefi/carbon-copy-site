@@ -14,13 +14,31 @@
       </div>
     </div>
   </header>
-  <div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-      <NuxtLink class="p-2 link-secondary text-decoration-none" to="/">Front Page</NuxtLink>
-      <NuxtLink class="p-2 link-secondary text-decoration-none" to="/features">Features</NuxtLink>
-      <NuxtLink class="p-2 link-secondary text-decoration-none" to="/learn">Learn</NuxtLink>
-      <NuxtLink class="p-2 link-secondary text-decoration-none" to="/about">About CARBON Copy</NuxtLink>
-      <NuxtLink class="p-2 link-secondary text-decoration-none" to="https://baserow.io/form/Bvg1VhbZvYjYDyylflMoYvqPA7Gogg1GDeTjzO8ku-o" target="_blank">Submit News</NuxtLink>
+
+  <div class="mb-2 py-1">
+    <nav class="navbar navbar-expand-lg justify-content-end">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between d-flex w-100">
+          <li class="nav-item py-3 py-lg-0">
+            <NuxtLink class="link-secondary text-decoration-none" to="/">Front Page</NuxtLink>
+          </li>
+          <li class="nav-item py-3 py-lg-0">
+            <NuxtLink class="link-secondary text-decoration-none" to="/features">Features</NuxtLink>
+          </li>
+          <li class="nav-item py-3 py-lg-0">
+            <NuxtLink class="link-secondary text-decoration-none" to="/learn">Learn</NuxtLink>
+          </li>
+          <li class="nav-item py-3 py-lg-0">
+            <NuxtLink class="link-secondary text-decoration-none" to="/about">About CARBON Copy</NuxtLink>
+          </li>
+          <li class="nav-item py-3 py-lg-0">
+            <NuxtLink class="link-secondary text-decoration-none" to="https://baserow.io/form/Bvg1VhbZvYjYDyylflMoYvqPA7Gogg1GDeTjzO8ku-o" target="_blank">Submit News</NuxtLink>
+          </li>
+        </ul>
+      </div>
     </nav>
   </div>
 </div>

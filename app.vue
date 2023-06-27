@@ -1,6 +1,18 @@
 <script setup lang="ts">
   useHead({
     titleTemplate: '%s | CARBON Copy',
+    link: [
+      {
+        rel: 'icon',
+        href: 'favicon.png'
+      }
+    ],
+    script: [
+      {
+        src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js',
+        tagPosition: 'bodyClose'
+      }
+    ],
   }),
 
 useSeoMeta({
