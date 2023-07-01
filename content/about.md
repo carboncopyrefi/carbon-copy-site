@@ -5,6 +5,8 @@ description: About the leading ReFi information platform.
 
 ---
 
+# {{ title }}
+
 Some text about us.
 
 <h3>The Team</h3>
