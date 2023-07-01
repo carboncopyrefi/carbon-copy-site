@@ -4,14 +4,19 @@
     link: [
       {
         rel: 'icon',
-        href: 'favicon.png'
+        href: '/favicon.png'
       }
     ],
     script: [
       {
         src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js',
         tagPosition: 'bodyClose'
-      }
+      },
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-CJBPKLXNE9",
+        async: true,
+      },
+      { src: "/js/analytics.js" },
     ],
   }),
 
