@@ -1,12 +1,6 @@
 <script setup lang="ts">
   useHead({
     titleTemplate: '%s | CARBON Copy',
-    link: [
-      {
-        rel: 'icon',
-        href: '/favicon.png'
-      }
-    ],
     script: [
       {
         src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js',
@@ -32,9 +26,13 @@
         href: "https://fonts.gstatic.com",
       },
       {
-        rel: "stylesheet",  
+        rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       },
+      {
+        rel: 'icon',
+        href: '/favicon.png'
+      }
     ]
   }),
 

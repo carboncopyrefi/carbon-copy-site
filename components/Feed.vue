@@ -5,12 +5,13 @@
 
 </script>
 
-<template v-if="data">
-
+<template>
+  <div v-if="data">
     <h2 class="pb-4 mb-1 mt-5">
     Climate News
     </h2>
 
     <ArticleCard :data=data :col=4 :margin=3></ArticleCard>
 
+  </div>
 </template>
