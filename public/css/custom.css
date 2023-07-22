@@ -28,3 +28,11 @@ body {
 .article-body a {
   text-decoration: none;
 }
+
+.about-body {
+  font-size: 1rem;
+}
+
+.about-body a {
+  text-decoration: none;
+}

@@ -10,6 +10,8 @@
 
 <template>
 
+<h1 class="mt-5 mb-3">Learn</h1>
+
 <ArticleCard :data=data :col=4 :margin=3></ArticleCard>
 
 

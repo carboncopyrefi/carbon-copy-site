@@ -5,9 +5,9 @@ const { data } = await useAsyncData('learn', () => queryContent('/learn').limit(
 
 <template>
 
-<h3 class="pb-4 mb-1">
+<h2 class="pb-4 mb-1">
   Learn
-</h3>
+</h2>
 
 <ArticleCard :data=data :col=6 :margin=0></ArticleCard>
 

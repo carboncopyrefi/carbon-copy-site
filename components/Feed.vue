@@ -7,9 +7,9 @@
 
 <template v-if="data">
 
-    <h3 class="pb-4 mb-1 mt-5">
+    <h2 class="pb-4 mb-1 mt-5">
     Climate News
-    </h3>
+    </h2>
 
     <ArticleCard :data=data :col=4 :margin=3></ArticleCard>
 

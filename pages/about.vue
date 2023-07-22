@@ -9,6 +9,8 @@
 
 <template>
 
-  <ContentDoc />
+  <div class="about-body">
+    <ContentDoc />
+  </div>
 
 </template>
