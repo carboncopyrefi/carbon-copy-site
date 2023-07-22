@@ -1,0 +1,30 @@
+body {
+
+}
+
+.article-title, .article-description {
+  font-family: Lora !important;
+}
+
+.article-body {
+  font-size: 1.2rem;
+  font-family: Lora !important;
+}
+
+.article-body p:first-child:first-letter {
+  float: left;
+  font-size: 60px;
+  line-height: 45px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.article-body li {
+  margin-bottom: 0.8rem;
+
+}
+
+.article-body a {
+  text-decoration: none;
+}

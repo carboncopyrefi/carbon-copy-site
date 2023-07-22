@@ -1,6 +1,7 @@
 <script setup>
 
   const { data } = await useFetch('https://carboncopy.pythonanywhere.com/projects')
+  // const { data } = await useFetch('http://127.0.0.1:5000/projects')
 
 </script>
 
@@ -8,8 +9,8 @@
 
   <div class="row bg-light rounded m-auto">
     <div class="col-lg-4 p-lg-5 p-4 mb-3 mb-lg-0">
-      <h3 class="pb-4 mb-1">CARBON Copy 16</h3>
-      <p>Some text here that describes the CARBON Copy 16 and what it means and all that nonsense.</p>
+      <h3 class="pb-4 mb-1 article-title">CARBON Copy 16</h3>
+      <p class="article-description">Some text here that describes the CARBON Copy 16 and what it means and all that nonsense.</p>
       <a href="#" target="_blank">More</a>
     </div>
     <div class="col-lg-8 py-lg-5 px-4 ps-lg-0 pe-lg-3">

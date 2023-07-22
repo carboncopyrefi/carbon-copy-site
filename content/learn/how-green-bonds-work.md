@@ -8,6 +8,4 @@ author: "Sarong Johnny"
 
 ---
 
-# {{ title }}
-
-{{ description }}
+sfds

@@ -1,10 +1,10 @@
 ---
-title: What is ReFi?
-description: A closer look at the growing phenomenon of regenerative finance.
-category: Climate
+title: Interview with Sebastian Persch
+description: The forest scientist talks carbon credits, reforestation, and Web3
+category: Climate, Interview
 image: "https://cdn.pixabay.com/photo/2017/05/09/03/46/alberta-2297204_1280.jpg"
-date: "May 29th, 2023"
-author: "Sarong Johnny"
+date: "July 29th, 2023"
+author: "CARBON Copy Team"
 ---
 
 

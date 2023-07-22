@@ -10,8 +10,8 @@
       <h3 class="pb-4 mb-1">Project News</h3>
       <div v-for="item in data" class="border-bottom pb-4 mb-3">
         <p><small class="text-body-secondary">{{ item.date }}</small></p>
-        <p class="fw-bold">{{ item.title }}</p>
-        <p>{{ item.snippet }}</p>
+        <p class="fw-bold article-title">{{ item.title }}</p>
+        <p class="article-description">{{ item.snippet }}</p>
         <NuxtLink :to="item.link" target="_blank">Read more</NuxtLink>
       </div>
     </div>
