@@ -7,11 +7,11 @@ const { data } = await useAsyncData('features', () => queryContent('/features').
 
 <div id="feature-background" class="mb-4 text-white rounded" v-bind:style="{ 'background-image': 'url(' + data[0].image + ')', 'background-size': 'cover' }" >
   <div class="p-4 p-md-5" style="background-color: rgba(0, 0, 0, 0.6);">
-  <div class="col-md-6 px-0">
-    <h1 class="article-title">{{ data[0].title }}</h1>
-    <p class="lead my-3 article-description">{{ data[0].description }}</p>
-    <p class="lead mb-0"><NuxtLink :to="data[0]._path" class="btn btn-outline-light">Read</NuxtLink></p>
-  </div>
+    <div class="col-md-6 px-0">
+      <h1 class="article-title">{{ data[0].title }}</h1>
+      <p class="lead my-3 article-description">{{ data[0].description }}</p>
+      <p class="lead mb-0"><NuxtLink :to="data[0]._path" class="btn btn-outline-light">Read</NuxtLink></p>
+    </div>
   </div>
 </div>
 
