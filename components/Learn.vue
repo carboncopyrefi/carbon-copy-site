@@ -1,5 +1,8 @@
-<script setup>
-const { data } = await useAsyncData('learn', () => queryContent('/learn').limit(2).find())
+<script setup lang="ts">
+
+defineProps<{
+  data?: array
+}>()
 
 </script>
 

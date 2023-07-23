@@ -1,6 +1,6 @@
 <script setup>
 
-  const { data } = await useAsyncData('features', () => queryContent('/features').find())
+  const { data } = await useAsyncData('features-list', () => queryContent('/features').find())
 
   useHead({
     title: 'Features',

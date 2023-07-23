@@ -1,5 +1,8 @@
-<script setup>
-const { data } = await useAsyncData('features', () => queryContent('/features').limit(3).find())
+<script setup lang="ts">
+
+defineProps<{
+  data?: array
+}>()
 
 </script>
 
