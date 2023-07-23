@@ -10,7 +10,7 @@
 </script>
 
 <template>
-
-  <Article :data=data></Article>
-
+  <div>
+    <Article :data=data></Article>
+  </div>
 </template>
