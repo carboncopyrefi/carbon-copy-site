@@ -7,8 +7,6 @@ date: "May 29th, 2023"
 author: "Sarong Johnny"
 ---
 
-# {{ title }}
-
 According to Tether, they “do not condone this behavior,” adding that their priorities lie with their customers. The stablecoin issuer also noted that the materials obtained by the media outlets do not represent the company as it is now. Tether said that the data sent to the media platforms is limited and more than two years old.
 
 In addition, Tether also clarified that its exposure to Chinese commercial papers was liquid and all of the issuers were stable. The company also said that the papers were being used by some of the world’s biggest investment managers. “The Chinese banking-related commercial paper at issue was rated A1 or better,” they added.
