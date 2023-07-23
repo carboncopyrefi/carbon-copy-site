@@ -38,10 +38,10 @@
 
 useSeoMeta({
   ogTitle: '%s | CARBON Copy',
-  description: 'This is my amazing site, let me tell you all about it.',
-  ogDescription: 'This is my amazing site, let me tell you all about it.',
-  ogImage: 'https://example.com/image.png',
-  twitterCard: 'summary_large_image',
+  description: 'The preeminent source of ReFi news, information, and analysis.',
+  ogDescription: 'The preeminent source of ReFi news, information, and analysis.',
+  ogImage: 'https://flat-term-5905.on.fleek.co/_ipx/_/meta.jpg',
+  twitterCard: 'https://flat-term-5905.on.fleek.co/_ipx/_/meta.jpg',
 })
 </script>
 

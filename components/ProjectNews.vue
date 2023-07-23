@@ -1,6 +1,9 @@
 <script setup>
 
-  const { data } = await useFetch('https://carboncopy.pythonanywhere.com/news')
+  const { pending, data } = await useFetch('https://carboncopy.pythonanywhere.com/news', {
+    lazy: true,
+    server: false
+  })
 
 </script>
 
