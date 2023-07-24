@@ -17,8 +17,8 @@
       <div class="row">
         <div v-for="project in data" class="col-lg-6 pb-2 mb-2">
           <div class="mb-3 m-lg-0">
-            <p class="p-0 m-0"><span class="fw-bold">{{ project.name }}</span> <span class="badge text-bg-secondary rounded-pill me-2" v-for="category in project.categories">{{ category.value }}</span></p>
-            <small class="mt-3">{{ project.description }}</small>
+            <p class="p-0 m-0"><span class="fw-bold article-title">{{ project.name }}</span> <span class="badge text-bg-secondary rounded-pill me-2" v-for="category in project.categories">{{ category.value }}</span></p>
+            <small class="mt-3 article- description">{{ project.description }}</small>
           </div>
         </div>
       </div>

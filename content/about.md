@@ -13,7 +13,7 @@ We fill the information void in the regenerative finance (ReFi) space. We provid
 
 At the same time, we're also building the most comprehensive library of ReFi projects that acts as the foundation of our proprietary analytical framework for understanding impact.
 
-<h2 class="mb-3 mt-4">A Quantitative Framework for Climate Projects</h2>
+<h2 class="mb-3 mt-4">An Evaluation  Framework for Climate Projects</h2>
 
 Working with sustainability experts and climate researchers, we built a framework for analysing and scoring ReFi projects. We evaluate impact, feasibility, timeline, cost and potential return using an array of criteria, including:
 
