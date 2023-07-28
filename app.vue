@@ -26,6 +26,11 @@ useSeoMeta({
   ogImage: 'https://flat-term-5905.on.fleek.co/_ipx/_/meta.jpg',
   twitterCard: 'https://flat-term-5905.on.fleek.co/_ipx/_/meta.jpg',
 })
+
+function acceptTracking() {
+  useGtagConsent(true)
+}
+
 </script>
 
 

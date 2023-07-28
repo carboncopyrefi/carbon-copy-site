@@ -11,7 +11,7 @@
   <div class="position-sticky" style="top: 2rem;">
     <div class="p-4 mb-3 bg-light rounded">
       <h2 class="pb-4 mb-1">Project News</h2>
-      <div v-if="pending" class="d-flex justify-content-center mt-5">
+      <div v-if="pending" class="d-flex justify-content-center my-5">
         <div class="spinner-border text-primary" role="status">
           <span class="visually-hidden">Loading project news...</span>
         </div>

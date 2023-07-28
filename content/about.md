@@ -11,9 +11,9 @@ description: About the leading ReFi information platform.
 
 We fill the information void in the regenerative finance (ReFi) space. We provide a combination of news, education, expert analysis, industry reports, and project evaluation to help our readers better understand the space and get projects more exposure.
 
-At the same time, we're also building the most comprehensive library of ReFi projects that acts as the foundation of our proprietary analytical framework for understanding impact.
+At the same time, we're also building the most comprehensive library of ReFi projects to act as the foundation of our proprietary analytical framework for understanding impact.
 
-<h2 class="mb-3 mt-4">An Evaluation  Framework for Climate Projects</h2>
+<h2 class="mb-3 mt-4">An Evaluation Framework for Climate Projects</h2>
 
 Working with sustainability experts and climate researchers, we built a framework for analysing and scoring ReFi projects. We evaluate impact, feasibility, timeline, cost and potential return using an array of criteria, including:
 

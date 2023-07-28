@@ -16,7 +16,7 @@
   <h2 class="pb-4 mb-1 mt-5">
   Climate News
   </h2>
-  <div v-if="pending" class="d-flex justify-content-center mt-5">
+  <div v-if="pending" class="d-flex justify-content-center my-5">
     <div class="spinner-border text-primary" role="status">
       <span class="visually-hidden">Loading news feed...</span>
     </div>

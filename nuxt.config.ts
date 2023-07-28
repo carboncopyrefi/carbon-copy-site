@@ -27,7 +27,10 @@ export default defineNuxtConfig({
         wght: [400,700],
         ital: [400,700]
       },
-      Quicksand: true
+      Quicksand: {
+        wght: [400,600],
+        ital: [400,600]
+      }
     }
   }
 })
