@@ -7,7 +7,7 @@
 
       </div>
       <div class="col-lg-2 col-4 text-center">
-        <a href="/"><nuxt-img src="/logo.png" style="width:100%" alt="CARBON Copy Logo" /></a>
+        <NuxtLink to="/"><nuxt-img src="/logo.png" style="width:100%" alt="CARBON Copy Logo" /></NuxtLink>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
         <!--<a class="btn btn-outline-secondary" href="#">Subscribe</a>-->

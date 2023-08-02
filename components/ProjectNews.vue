@@ -17,11 +17,10 @@
         </div>
       </div>
       <div v-if="data">
-        <div v-for="item in data" class="border-bottom pb-4 mb-3">
+        <div v-for="item in data" class="border-bottom mb-3">
           <p><small class="text-body-secondary">{{ item.date }}</small></p>
-          <p class="fw-bold article-title">{{ item.title }}</p>
+          <NuxtLink :to="item.link" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold article-title">{{ item.title }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
           <p class="article-description">{{ item.snippet }}</p>
-          <NuxtLink :to="item.link" target="_blank">Read more</NuxtLink>
         </div>
       </div>
     </div>

@@ -32,5 +32,5 @@ export default defineNuxtConfig({
         ital: [400,600]
       }
     }
-  }
+  },
 })
