@@ -40,6 +40,7 @@ function acceptTracking() {
 
 <template>
 <NuxtLayout>
+  <NuxtLoadingIndicator />
   <NuxtPage />
 </NuxtLayout>
 </template>

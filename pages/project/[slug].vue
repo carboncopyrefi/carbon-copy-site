@@ -2,7 +2,7 @@
 
 const route = useRoute()
 
-const { data } = await useFetch('https://carboncopy.pythonanywhere.com/projects/${route.params.slug}')
+const { data } = await useFetch(`https://carboncopy.pythonanywhere.com/projects/${route.params.slug}`)
 // const { data } = await useFetch(`http://127.0.0.1:5000/projects/${route.params.slug}`)
 
 </script>
