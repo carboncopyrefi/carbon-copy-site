@@ -17,7 +17,7 @@
       <div class="row">
         <div v-for="project in data" class="col-lg-6 pb-2 mb-3">
           <div class="mb-3 m-lg-0">
-            <p class="p-0 m-0"><NuxtLink :to="/project/ + project.id" class="fw-bold article-title text-decoration-none text-dark">{{ project.name }}</NuxtLink> <span class="badge text-bg-secondary rounded-pill me-2" v-for="sector in project.sectors">{{ sector.value }}</span></p>
+            <p class="p-0 m-0"><NuxtLink :to="/project/ + project.slug" class="fw-bold article-title text-decoration-none text-dark">{{ project.name }}</NuxtLink> <span class="badge text-bg-secondary rounded-pill me-2" v-for="sector in project.sectors">{{ sector.value }}</span></p>
             <small class="mt-3 article- description">{{ project.description }}</small>
           </div>
         </div>

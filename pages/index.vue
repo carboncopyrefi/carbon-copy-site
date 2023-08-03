@@ -1,6 +1,6 @@
 <script setup lang="ts">
   useHead({
-    title: 'Leading ReFi Information Source',
+    title: 'Leading ReFi Information Platform',
   })
 
   const { data: learn } = await useAsyncData('learn', () => queryContent('/learn').limit(4).find())
