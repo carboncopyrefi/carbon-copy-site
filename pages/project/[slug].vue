@@ -5,6 +5,15 @@ const route = useRoute()
 const { data } = await useFetch(`https://carboncopy.pythonanywhere.com/projects/${route.params.slug}`)
 // const { data } = await useFetch(`http://127.0.0.1:5000/projects/${route.params.slug}`)
 
+useHead({
+  title: () => data.value?.name,
+  meta: [
+    { name: 'description', content: () => data.value?.description_short },
+    { name: 'og:description', content: () => data.value?.description_short, },
+    { property: 'og:description', content: () => data.value?.description_short, },
+  ]
+})
+
 </script>
 
 
