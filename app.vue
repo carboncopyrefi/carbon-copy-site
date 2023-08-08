@@ -29,6 +29,9 @@ useSeoMeta({
   ogDescription: 'The preeminent source of ReFi news, information, and analysis.',
   ogImage: 'https://flat-term-5905.on.fleek.co/meta.jpg',
   twitterCard: 'https://flat-term-5905.on.fleek.co/meta.jpg',
+  ogType: 'website',
+  ogUrl: 'https://carboncopy.news'
+
 })
 
 function acceptTracking() {
