@@ -47,10 +47,11 @@ useHead({
           <div class="row">
             <div class="col mt-4">
               <h2>Evaluation</h2>
+              <PolarChart />
             </div>
           </div>
           <div class="row">
-            <div class="col mt-4">
+            <div class="col">
               <h2>Coverage</h2>
               <div v-if="!data.coverage.length">
                 <p>No coverage available</p>
