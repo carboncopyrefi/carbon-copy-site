@@ -20,6 +20,7 @@
   "dependencies": {
     "apexcharts": "^3.41.1",
     "bootstrap": "^5.3.0",
+    "nuxt-link-preview": "^0.1.5",
     "vue3-apexcharts": "^1.4.4"
   }
 }

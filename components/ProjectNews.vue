@@ -19,7 +19,7 @@
       <div v-if="data">
         <div v-for="item in data" class="border-bottom mb-3">
           <small class="text-body-secondary">{{ item.date }}</small>
-          <NuxtLink :to="item.link" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold article-title">{{ item.title }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
+          <NuxtLink :to="item.link" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold article-title mb-1">{{ item.title }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
           <p class="article-description">{{ item.snippet }}</p>
         </div>
       </div>
