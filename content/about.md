@@ -9,27 +9,27 @@ description: About the leading ReFi information platform.
 
 **CARBON Copy is the preeminent source of ReFi news, information, and analysis.**
 
-We fill the information void in the regenerative finance (ReFi) space. We provide a combination of news, education, expert analysis, industry reports, and project evaluation to help our readers better understand the space and get projects more exposure.
+We fill the information void in the regenerative finance (ReFi) space by providing a combination of news, education, expert analysis, industry reports, and project evaluation to help industry stakeholders better understand the space and to get projects more exposure.
 
-At the same time, we're also building the most comprehensive library of ReFi projects to act as the foundation of our proprietary analytical framework for understanding impact.
+At the same time, we're also building a comprehensive library of ReFi projects to act as the foundation of our proprietary evaluation framework for understanding impact.
 
-<h2 class="mb-3 mt-4">An Evaluation Framework for Climate Projects</h2>
+<h2 class="mb-3 mt-4">An Evaluation Framework for ReFi Projects</h2>
 
-Working with sustainability experts and climate researchers, we built a framework for analysing and scoring ReFi projects. We evaluate impact, feasibility, timeline, cost and potential return using an array of criteria, including:
+Working with experts from across disciplines, we are a building a framework for analysing and scoring ReFi projects. We aim to evaluate projects using an array of criteria, including:
 
-- Soil health
-- Biodiversity
-- Carbon sequestration
-- Community development
+- Impact
+- Technology
+- Liquidity
 - Revenue potential
-- Flora and fauna
+- Volume
+- Community
 - Alignment with UN development goals
 
 **We want to *prove* demonstrable impact, not just talk about it.**
 
 <h2 class="mb-3 mt-4">Contact Us</h2>
 
-Feel free to reach out
+Feel free to reach out anytime. Best place is through our [Discord](https://discord.carboncopy.news), but here are some other ways you can reach us:
 
 **Project news** - If you have a ReFi project and want to get your news on our site, head [here](https://baserow.io/form/Bvg1VhbZvYjYDyylflMoYvqPA7Gogg1GDeTjzO8ku-o). If you don't see your project in the list, let us know at projects@carboncopy.news
 

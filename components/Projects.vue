@@ -1,6 +1,6 @@
 <script setup>
 
-  const { data } = await useFetch('https://carboncopy.pythonanywhere.com/projects/top')
+  const { data } = await useFetch('https://api.carboncopy.news/projects/top')
   // const { data } = await useFetch('http://127.0.0.1:5000/projects/top')
 
 </script>

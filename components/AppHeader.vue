@@ -37,6 +37,9 @@
           <li class="nav-item py-3 py-lg-0">
             <NuxtLink class="link-secondary text-decoration-none" to="https://baserow.io/form/Bvg1VhbZvYjYDyylflMoYvqPA7Gogg1GDeTjzO8ku-o" target="_blank">Submit News</NuxtLink>
           </li>
+          <li class="nav-item py-3 py-lg-0">
+            <NuxtLink class="link-secondary text-decoration-none" to="https://discord.carboncopy.news" target="_blank"><i class="bi bi-discord fs-5"></i></NuxtLink>
+          </li>
         </ul>
       </div>
     </nav>

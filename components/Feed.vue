@@ -1,13 +1,13 @@
 <script setup>
 
-  // const { pending, data } = await useFetch('https://carboncopy.pythonanywhere.com/articles', {
-  //  lazy: true,
-  //  server: false
-  // })
-  const { pending, data } = await useFetch('http://127.0.0.1:5000/articles', {
-  lazy: true,
-  server: false
+  const { pending, data } = await useFetch('https://api.carboncopy.news/articles', {
+    lazy: true,
+    server: false
   })
+  // const { pending, data } = await useFetch('http://127.0.0.1:5000/articles', {
+  // lazy: true,
+  // server: false
+  // })
 
 </script>
 

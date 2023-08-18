@@ -2,7 +2,7 @@
 
 const route = useRoute()
 
-const { data } = await useFetch(`https://carboncopy.pythonanywhere.com/projects/${route.params.slug}`)
+const { data } = await useFetch(`https://api.carboncopy.news/projects/${route.params.slug}`)
 // const { data } = await useFetch(`http://127.0.0.1:5000/projects/${route.params.slug}`)
 
 useHead({
@@ -22,8 +22,8 @@ useHead({
     <div class="row">
       <div class="col-lg-8">
         <div class="row">
-          <div class="col-lg-3 align-self-center text-center">
-            <nuxt-img :src="data.logo" :alt="data.name" class="img-fluid" width="100%" />
+          <div class="col-lg-3 align-self-center text-center p-3">
+            <nuxt-img :src="data.logo" :alt="data.name" class="img-fluid" width="100%" height="100%" />
           </div>
           <div class="col-lg-9">
             <div class="row">
@@ -39,27 +39,27 @@ useHead({
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col mt-5">
-              <p style="white-space: pre-line" v-html=data.description_long></p>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col my-5">
+            <p style="white-space: pre-line" v-html=data.description_long></p>
           </div>
-          <div class="row">
-            <div class="col mt-4">
-              <h2>Evaluation</h2>
-              <PolarChart />
-            </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col mt-4">
+            <h2>Evaluation</h2>
+            <PolarChart />
           </div>
-          <div class="row">
-            <div class="col">
-              <h2>Coverage</h2>
-              <div v-if="!data.coverage.length">
-                <p>No coverage available</p>
-              </div>
-              <div v-for="article in data.coverage">
-                <span>{{ article.publication }} | <small class="text-body-secondary">{{ article.date }}</small></span>
-                <NuxtLink :to="article.url" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold">{{ article.headline }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
-              </div>
+        </div> -->
+        <div class="row">
+          <div class="col">
+            <h2>Coverage</h2>
+            <div v-if="!data.coverage.length">
+              <p>No coverage added</p>
+            </div>
+            <div v-for="article in data.coverage">
+              <span>{{ article.publication }} | <small class="text-body-secondary">{{ article.date }}</small></span>
+              <NuxtLink :to="article.url" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold">{{ article.headline }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
             </div>
           </div>
         </div>
@@ -72,9 +72,9 @@ useHead({
           </div>
         </div>
         <div class="mb-5">
-          <h2>Team</h2>
+          <h2>Founders</h2>
           <div v-if="!data.team.length">
-            <p>No team members available</p>
+            <p>No founders added</p>
           </div>
           <div v-for="person in data.team">
             {{ person.value }}
@@ -83,7 +83,7 @@ useHead({
         <div class="">
           <h2>Project News</h2>
           <div v-if="!data.news.length">
-            <p>No news available</p>
+            <p>No news added</p>
           </div>
           <div v-for="article in data.news">
             <small class="text-body-secondary">{{ article.date }}</small>
