@@ -9,8 +9,8 @@
 
   <div class="row bg-light rounded m-auto">
     <div class="col-lg-4 p-lg-5 p-4 mb-3 mb-lg-0">
-      <h3 class="pb-4 mb-1 article-title">CARBON Copy 10</h3>
-      <p class="article-description">Our ranking of the 10 most impactful ReFi projects according to the analysis of our community of climate, economic, finance, and tech experts.</p>
+      <h3 class="pb-4 mb-1 article-title">ReFi Project Spotlight</h3>
+      <p class="article-description">A selection of 10 of the most impactful ReFi projects according to the analysis of our climate, economic, finance, and tech experts.</p>
       <p class="article-description">We update this list once per quarter.</p>
     </div>
     <div class="col-lg-8 py-lg-5 px-4 ps-lg-0 pe-lg-3">
