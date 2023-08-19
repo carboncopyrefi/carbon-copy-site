@@ -22,7 +22,7 @@ useHead({
     <div class="row">
       <div class="col-lg-8">
         <div class="row">
-          <div class="col-lg-3 align-self-center text-center p-3">
+          <div class="col-lg-3 col-6 align-self-center text-center p-lg-3 mb-5">
             <nuxt-img :src="data.logo" :alt="data.name" class="img-fluid" width="100%" height="100%" />
           </div>
           <div class="col-lg-9">
@@ -41,7 +41,7 @@ useHead({
           </div>
         </div>
         <div class="row">
-          <div class="col my-5">
+          <div class="col my-4">
             <p style="white-space: pre-line" v-html=data.description_long></p>
           </div>
         </div>
@@ -64,7 +64,7 @@ useHead({
           </div>
         </div>
       </div>
-      <div class="col-lg-3 offset-lg-1">
+      <div class="col-lg-3 offset-lg-1 mt-4 mt-lg-0">
         <div class="mb-5">
           <h2>Contacts</h2>
           <div v-for="link in data.links">
