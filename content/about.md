@@ -39,4 +39,4 @@ Feel free to reach out anytime. Best place is through our [Discord](https://disc
 
 **General inquiries** - If you have questions or just want to say hi, send us an email at hello@carboncopy.news.
 
-**Socials** - You can get at us on Twitter, Threads, or join our Discord community
+**Socials** - Follow us on [Twitter](https://twitter.com/carboncopy_refi) to get the latest project updates.
