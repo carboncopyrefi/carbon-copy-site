@@ -29,6 +29,10 @@ body {
   text-decoration: none;
 }
 
+.article-body img {
+  width: 100%;
+}
+
 .about-body {
   font-size: 1rem;
 }
