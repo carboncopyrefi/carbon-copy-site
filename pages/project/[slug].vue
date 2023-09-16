@@ -23,7 +23,7 @@ useHead({
       <div class="col-lg-8">
         <div class="row">
           <div class="col-lg-3 col-6 align-self-center text-center p-lg-3 mb-5">
-            <nuxt-img :src="data.logo" :alt="data.name" class="img-fluid" width="100%" height="100%" />
+            <NuxtImg :src="data.logo" :alt="data.name" sizes="400px" class="img-fluid" width="100%" height="100%" />
           </div>
           <div class="col-lg-9">
             <div class="row">

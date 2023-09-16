@@ -15,6 +15,9 @@ export default defineNuxtConfig({
             }
           }
       },
+  image: {
+    domains: ['cdn.pixabay.com']
+  },
   gtag: {
     id: 'G-CJBPKLXNE9',
   },

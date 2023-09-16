@@ -20,7 +20,7 @@ defineProps<{
           <SocialShare :data=data />
         </div>
       </div>
-      <nuxt-img :src="data.image" style="width: 100%;" />
+      <NuxtImg :src="data.image" style="width: 100%;" sizes="800px" loading="lazy" quality="80" alt="" />
 
       <div class="article-body mt-4">
         <ContentDoc />

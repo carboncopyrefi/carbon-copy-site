@@ -24,7 +24,7 @@ defineProps<{
     <div class="card shadow-sm h-100">
       <div class="row g-0 h-100">
         <div class="col-md-4">
-          <nuxt-img v-bind:src="article.image" class="rounded-start" style="object-fit: cover;height:100%; width:100%;"  alt="" />
+          <NuxtImg :src="article.image" class="rounded-start" sizes="sm:500px lg:300px" style="object-fit: cover;height:100%; width:100%;" loading="lazy" quality="75" alt="" />
         </div>
         <div class="col-md-8">
           <div class="card-body">
