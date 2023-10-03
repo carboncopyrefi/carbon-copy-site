@@ -7,7 +7,7 @@
 
       </div>
       <div class="col-lg-2 col-4 text-center">
-        <NuxtLink to="/"><nuxt-img src="/logo.png" style="width:100%" alt="CARBON Copy Logo" /></NuxtLink>
+        <NuxtLink to="/"><NuxtImg src="/logo.png" style="width:100%" alt="CARBON Copy Logo" /></NuxtLink>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
         <!--<a class="btn btn-outline-secondary" href="#">Subscribe</a>-->
@@ -32,7 +32,10 @@
             <NuxtLink class="link-secondary text-decoration-none" to="/learn">Learn</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
-            <NuxtLink class="link-secondary text-decoration-none" to="/about">About CARBON Copy</NuxtLink>
+            <NuxtLink class="link-secondary text-decoration-none" to="/events">Events</NuxtLink>
+          </li>
+          <li class="nav-item py-3 py-lg-0">
+            <NuxtLink class="link-secondary text-decoration-none" to="/about">About</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
             <NuxtLink class="link-secondary text-decoration-none" to="https://baserow.io/form/Bvg1VhbZvYjYDyylflMoYvqPA7Gogg1GDeTjzO8ku-o" target="_blank">Submit News</NuxtLink>

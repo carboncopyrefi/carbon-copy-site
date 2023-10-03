@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-4 col-10">
-          <a href="/"><nuxt-img src="/logo.png" style="width:30%" alt="CARBON Copy Logo" /></a>
+          <a href="/"><NuxtImg src="/logo.png" style="width:30%" alt="CARBON Copy Logo" /></a>
           <p class="mt-2  "><small>Copyright &copy; {{ currentYear }} CARBON Copy</small></p>
         </div>
         <div class="col-lg-8 align-self-center">
@@ -24,7 +24,10 @@
               <NuxtLink class="link-secondary text-decoration-none" to="/learn">Learn</NuxtLink>
             </li>
             <li class="nav-item py-3 py-lg-0">
-              <NuxtLink class="link-secondary text-decoration-none" to="/about">About CARBON Copy</NuxtLink>
+              <NuxtLink class="link-secondary text-decoration-none" to="/events">Events</NuxtLink>
+            </li>
+            <li class="nav-item py-3 py-lg-0">
+              <NuxtLink class="link-secondary text-decoration-none" to="/about">About</NuxtLink>
             </li>
             <li class="nav-item py-3 py-lg-0">
               <NuxtLink class="link-secondary text-decoration-none" to="https://baserow.io/form/Bvg1VhbZvYjYDyylflMoYvqPA7Gogg1GDeTjzO8ku-o" target="_blank">Submit News</NuxtLink>
