@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+    <title>CARBON Copy News Feed</title>
+    <link>https://carboncopy.news</link>
+    <description>Leading ReFi information platform</description>
+    <category>Regenerative Finance</category>
+    <category>Climate</category>
+    <category>Environment</category>
+    <category>Web3</category>
+    <category>Blockchain</category>
+    <category>Digital Assets</category>
+    <language>English</language>
+    <copyright>Copyright (c) 2023 CARBON Copy. All rights reserved</copyright>
+    <item>
+        <title>Kennedy Ng'ang'a of Shamba Network - Part One</title>
+        <link>https://carboncopy.news/features/interview-kennedy-nganga-shamba-network-part-one</link>
+        <description>The CARBON Copy team recently spoke with Kennedy Ng'ang'a, founder of ecological data platform Shamba Network. In this two-part interview, Kennedy sheds light on anticipatory cash transfers, dMRV, and his thoughts on the state of ReFi in Kenya and beyond.</description>
+        <guid>https://carboncopy.news/features/interview-kennedy-nganga-shamba-network-part-one</guid>
+        <enclosure url="https://carboncopy.news/_ipx/w_1600&amp;q_80/images/kennedy-nganga.jpg" type="image/jpeg" length="" />
+        <pubDate>Thu, 12 Oct 2023 8:21:36 GMT</pubDate>
+        <category>Regenerative Finance</category>
+        <category>Climate Action</category>
+        <category>Web3</category>
+        <category>Carbon Credits</category>
+        <author>hello@carboncopy.news</author>
+    </item>
+    <item>
+        <title>Can ReFi Help Prevent Future Writer Strikes?</title>
+        <link>https://carboncopy.news/features/review-prevent-writers-strike</link>
+        <description>As the Writers Guild of America (WGA) continues its labour dispute with the Alliance of Motion Picture and Television Producers (AMPTP), Regenerative finance (ReFi) and its underlying philosophy provides clues as to how we might prevent future disputes from interrupting our beloved pastime.</description>
+        <guid>https://carboncopy.news/features/review-prevent-writers-strike</guid>
+        <enclosure url="https://cdn.pixabay.com/photo/2018/10/18/18/59/movie-scenes-3757174_1280.jpg" type="image/jpeg" length="" />
+        <pubDate>Fri, 18 Aug 2023 8:00:00 GMT</pubDate>
+        <category>Regenerative Finance</category>
+        <category>Web3</category>
+        <author>hello@carboncopy.news</author>
+    </item>
+    <item>
+        <title>Sebastian Persch of Forest Carbon</title>
+        <link>https://carboncopy.news/features/interview-sebastian-persch-forest-carbon</link>
+        <description>The CARBON Copy team had a chance to sit down with Sebastian Persch, a forest scientist for reforestation project developer Forest Carbon, to discuss Web3's potential in the carbon credit space, the phenomenon of carbon tunnel vision, and what his future outlook is for regenerative finance.</description>
+        <guid>https://carboncopy.news/features/interview-sebastian-persch-forest-carbon</guid>
+        <enclosure url="https://carboncopy.news/_ipx/w_600&amp;q_75/images/sebastian-persch.jpg" type="image/jpeg" length="" />
+        <pubDate>Fri, 18 Aug 2023 8:30:00 GMT</pubDate>
+        <category>Regenerative Finance</category>
+        <category>Climate Action</category>
+        <category>Web3</category>
+        <category>Carbon Credits</category>
+        <author>hello@carboncopy.news</author>
+    </item>
+</channel>
+
+</rss> 

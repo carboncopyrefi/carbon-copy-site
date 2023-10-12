@@ -15,8 +15,7 @@
     "@nuxtjs/google-fonts": "^3.0.2",
     "@types/node": "^18.17.0",
     "nuxt": "^3.6.5",
-    "nuxt-gtag": "^0.5.7",
-    "nuxt-module-feed": "^1.0.3"
+    "nuxt-gtag": "^0.5.7"
   },
   "dependencies": {
     "apexcharts": "^3.41.1",

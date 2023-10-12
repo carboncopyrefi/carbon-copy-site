@@ -1,12 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
       '@nuxt/content',
       '@nuxt/image',
       'nuxt-gtag',
       '@nuxtjs/google-fonts',
-      'nuxt-link-preview'
+      'nuxt-link-preview',
     ],
   app: {
         head: {
@@ -14,7 +14,7 @@ export default defineNuxtConfig({
                 lang: 'en',
             }
           }
-      },
+  },
   image: {
     domains: ['cdn.pixabay.com']
   },
