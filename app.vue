@@ -29,7 +29,8 @@ useSeoMeta({
   ogDescription: 'The preeminent source of ReFi news, information, and analysis.',
   twitterCard: 'summary_large_image',
   ogType: 'website',
-  ogUrl: 'https://carboncopy.news'
+  ogUrl: 'https://carboncopy.news',
+  ogSiteName: 'CARBON Copy'
 
 })
 
