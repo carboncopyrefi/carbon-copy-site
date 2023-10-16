@@ -1,6 +1,10 @@
 <script setup lang="ts">
   useHead({
     title: 'Leading ReFi Information Platform',
+    meta: [
+      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+    ]
   })
 
   const { data: learn } = await useAsyncData('learn', () => queryContent('/learn').limit(4).find())

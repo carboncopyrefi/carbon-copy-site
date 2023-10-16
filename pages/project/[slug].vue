@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
 const route = useRoute()
+const img = useImage()
 
 const { data } = await useFetch(`https://api.carboncopy.news/projects/${route.params.slug}`)
 // const { data } = await useFetch(`http://127.0.0.1:5000/projects/${route.params.slug}`)
@@ -8,9 +9,10 @@ const { data } = await useFetch(`https://api.carboncopy.news/projects/${route.pa
 useHead({
   title: () => data.value?.name,
   meta: [
-    { name: 'description', content: () => data.value?.description_short },
-    { name: 'og:description', content: () => data.value?.description_short },
-    { property: 'og:description', content: () => data.value?.description_short },
+    { hid: 'description', name: 'description', content: () => data.value?.description_short },
+    { hid: 'twitter:description', name: 'twitter:description', content: () => data.value?.description_short },
+    { hid: 'og:description', property: 'og:description', content: () => data.value?.description_short },
+    { hid: 'og:image', property:'og:image', content: data.value?.logo },
   ]
 })
 

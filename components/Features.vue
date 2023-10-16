@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
 
-<div id="feature-background" class="mb-4 text-white rounded" v-bind:style="{ 'background-image': 'url(' + data[0].image + ')', 'background-size': 'cover' }" >
+<div id="feature-background" class="mb-4 text-white rounded" v-bind:style="{ 'background-image': 'url(' + data[0].mainImage + ')', 'background-size': 'cover' }" >
   <div class="p-4 p-md-5" style="background-color: rgba(0, 0, 0, 0.6);">
     <div class="col-md-6 px-0">
       <p class="d-inline-block mb-2 text-uppercase fw-bold">{{ data [0].category }}</p>
@@ -24,7 +24,7 @@ defineProps<{
     <div class="card shadow-sm h-100">
       <div class="row g-0 h-100">
         <div class="col-md-4">
-          <NuxtImg :src="article.image" class="rounded-start" sizes="sm:500px lg:300px" style="object-fit: cover;height:100%; width:100%;" quality="75" alt="" />
+          <NuxtImg :src="article.mainImage" class="rounded-start" sizes="sm:500px lg:300px" style="object-fit: cover;height:100%; width:100%;" quality="75" alt="" />
         </div>
         <div class="col-md-8">
           <div class="card-body">
