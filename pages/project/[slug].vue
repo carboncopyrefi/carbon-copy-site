@@ -53,9 +53,33 @@ useHead({
             <PolarChart />
           </div>
         </div> -->
+        <div class="row mb-5">
+          <div class="col-lg-4 col-8">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Location</h4>
+                <p v-if="!data.location" class="m-0 p-0">
+                  No location added
+                </p>
+                <p class="card-text">{{ data.location }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Protocol(s)</h4>
+                <p v-if="!data.protocol.length" class="m-0 p-0">
+                  No protocol added
+                </p>
+                <span class="card-text" v-for="protocol in data.protocol">{{ protocol.value }}&nbsp;&nbsp;</span>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col">
-            <h2>Coverage</h2>
+            <h2>Media Coverage</h2>
             <div v-if="!data.coverage.length">
               <p>No coverage added</p>
             </div>
