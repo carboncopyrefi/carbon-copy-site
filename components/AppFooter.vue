@@ -18,16 +18,16 @@
               <NuxtLink class="link-secondary text-decoration-none" to="/">Front Page</NuxtLink>
             </li>
             <li class="nav-item py-3 py-lg-0">
-              <NuxtLink class="link-secondary text-decoration-none" to="/features">Features</NuxtLink>
+              <NuxtLink class="link-secondary text-decoration-none" to="/features/">Features</NuxtLink>
             </li>
             <li class="nav-item py-3 py-lg-0">
-              <NuxtLink class="link-secondary text-decoration-none" to="/learn">Learn</NuxtLink>
+              <NuxtLink class="link-secondary text-decoration-none" to="/learn/">Learn</NuxtLink>
             </li>
             <li class="nav-item py-3 py-lg-0">
-              <NuxtLink class="link-secondary text-decoration-none" to="/events">Events</NuxtLink>
+              <NuxtLink class="link-secondary text-decoration-none" to="/events/">Events</NuxtLink>
             </li>
             <li class="nav-item py-3 py-lg-0">
-              <NuxtLink class="link-secondary text-decoration-none" to="/about">About</NuxtLink>
+              <NuxtLink class="link-secondary text-decoration-none" to="/about/">About</NuxtLink>
             </li>
             <li class="nav-item py-3 py-lg-0">
               <NuxtLink class="link-secondary text-decoration-none" to="https://baserow.io/form/Bvg1VhbZvYjYDyylflMoYvqPA7Gogg1GDeTjzO8ku-o" target="_blank">Submit News</NuxtLink>

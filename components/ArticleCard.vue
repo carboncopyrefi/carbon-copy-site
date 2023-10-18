@@ -18,7 +18,7 @@ defineProps<{
       <NuxtImg :src="article.mainImage" sizes="sm:500px lg:300px" class="card-img-top img-fluid" loading="lazy" quality="75" alt="" />
       </div>
       <div class="card-body">
-        <NuxtLink :to="article._path" :target="target" class="text-decoration-none text-dark"><h5 class="card-title article-title">{{ article.title }}</h5></NuxtLink>
+        <NuxtLink :to="article._path + '/'" :target="target" class="text-decoration-none text-dark"><h5 class="card-title article-title">{{ article.title }}</h5></NuxtLink>
       </div>
       <div v-if="article.publication" class="card-footer">
         <span class="text-muted text-small">{{ article.publication }}</span>

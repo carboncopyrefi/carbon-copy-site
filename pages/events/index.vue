@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 
 const { pending, data } = await useFetch('https://api.carboncopy.news/events', {
   server: false,

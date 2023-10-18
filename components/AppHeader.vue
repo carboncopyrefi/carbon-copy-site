@@ -17,25 +17,25 @@
 
   <div class="mb-2 py-1">
     <nav class="navbar navbar-expand-lg justify-content-end">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between d-flex w-100">
           <li class="nav-item py-3 py-lg-0">
             <NuxtLink class="link-secondary text-decoration-none" to="/">Front Page</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
-            <NuxtLink class="link-secondary text-decoration-none" to="/features">Features</NuxtLink>
+            <NuxtLink class="link-secondary text-decoration-none" to="/features/">Features</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
-            <NuxtLink class="link-secondary text-decoration-none" to="/learn">Learn</NuxtLink>
+            <NuxtLink class="link-secondary text-decoration-none" to="/learn/">Learn</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
-            <NuxtLink class="link-secondary text-decoration-none" to="/events">Events</NuxtLink>
+            <NuxtLink class="link-secondary text-decoration-none" to="/events/">Events</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
-            <NuxtLink class="link-secondary text-decoration-none" to="/about">About</NuxtLink>
+            <NuxtLink class="link-secondary text-decoration-none" to="/about/">About</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
             <NuxtLink class="link-secondary text-decoration-none" to="https://baserow.io/form/Bvg1VhbZvYjYDyylflMoYvqPA7Gogg1GDeTjzO8ku-o" target="_blank">Submit News</NuxtLink>

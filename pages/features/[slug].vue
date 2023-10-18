@@ -6,7 +6,7 @@
   const { path } = useRoute()
   const img = useImage()
 
-  const { data } = await useAsyncData(`content-${path}`, () => queryContent().where({_path:path}).findOne())
+  const { data } = await useAsyncData(`content-${path}`, () => queryContent().where({_path:path.slice(-1) == '/' ? path.slice(0,-1) : path}).findOne())
 
   useHead({
     meta: [

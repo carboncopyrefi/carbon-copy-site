@@ -40,3 +40,11 @@ body {
 .about-body a {
   text-decoration: none;
 }
+
+.about-body ul {
+  list-style-type: disc !important;
+}
+
+.collapse {
+  visibility: visible !important;
+}

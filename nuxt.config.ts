@@ -7,6 +7,7 @@ export default defineNuxtConfig({
       'nuxt-gtag',
       '@nuxtjs/google-fonts',
       'nuxt-link-preview',
+      '@nuxt/ui',
     ],
   app: {
         head: {

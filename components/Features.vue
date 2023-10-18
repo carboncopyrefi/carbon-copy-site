@@ -14,7 +14,7 @@ defineProps<{
       <p class="d-inline-block mb-2 text-uppercase fw-bold">{{ data [0].category }}</p>
       <h1 class="article-title">{{ data[0].title }}</h1>
       <p class="lead my-3 article-description">{{ data[0].description }}</p>
-      <p class="lead mb-0"><NuxtLink :to="data[0]._path" class="btn btn-outline-light">Read</NuxtLink></p>
+      <p class="lead mb-0"><NuxtLink :to="data[0]._path + '/'" class="btn btn-outline-light">Read</NuxtLink></p>
     </div>
   </div>
 </div>
@@ -29,7 +29,7 @@ defineProps<{
         <div class="col-md-8">
           <div class="card-body">
             <p class="d-inline-block mb-2 text-primary text-uppercase fw-bold">{{ article.category }}</p>
-            <NuxtLink :to="article._path" class="text-decoration-none text-dark"><h4 class="card-title article-title">{{ article.title }}</h4></NuxtLink>
+            <NuxtLink :to="article._path + '/'" class="text-decoration-none text-dark"><h4 class="card-title article-title">{{ article.title }}</h4></NuxtLink>
             <p class="card-text article-description">{{ article.description }}</p>
             <p class="card-text"><small class="text-body-secondary">{{ article.date }}</small></p>
           </div>
