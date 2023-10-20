@@ -14,7 +14,7 @@ const { pending, data } = await useFetch('https://api.carboncopy.news/events', {
 
 <template>
 
-  <h1 class="mt-5 mb-3">Upcoming ReFi Events</h1>
+  <h1 class="mt-lg-5 mb-3">Upcoming ReFi Events</h1>
   <div v-if="pending" class="d-flex justify-content-center my-5">
     <div class="spinner-border text-primary" role="status">
       <span class="visually-hidden">Loading project news...</span>

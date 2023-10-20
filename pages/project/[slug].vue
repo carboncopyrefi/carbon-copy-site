@@ -54,8 +54,8 @@ useHead({
           </div>
         </div> -->
         <div class="row mb-5">
-          <div class="col-lg-4 col-8">
-            <div class="card">
+          <div class="col-lg-4 col-10 mb-3 mb-lg-0">
+            <div class="card shadow-sm">
               <div class="card-body">
                 <h4 class="card-title">Location</h4>
                 <p v-if="!data.location" class="m-0 p-0">
@@ -65,8 +65,8 @@ useHead({
               </div>
             </div>
           </div>
-          <div class="col-lg-8 col-12">
-            <div class="card">
+          <div class="col-lg-8 col-10">
+            <div class="card shadow-sm">
               <div class="card-body">
                 <h4 class="card-title">Protocol(s)</h4>
                 <p v-if="!data.protocol.length" class="m-0 p-0">
