@@ -1,5 +1,12 @@
 <script setup lang="ts">
 
+useHead({
+    meta: [
+      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+    ]
+  })
+
   definePageMeta({
     layout: "article",
   });

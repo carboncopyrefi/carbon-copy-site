@@ -8,6 +8,10 @@ const { pending, data } = await useFetch('https://api.carboncopy.news/events', {
 
   useHead({
     title: 'ReFi Events',
+    meta: [
+      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+    ]
   })
 
 </script>
