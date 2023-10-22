@@ -17,8 +17,8 @@ const columns = [{
     key: 'sectors',
     label: 'Sector(s)'
 }, {
-    key: 'location',
-    label: 'Location'
+    key: 'protocol',
+    label: 'Protocol(s)'
 }]
 
 const q = ref('');
@@ -50,6 +50,15 @@ const filteredRows = computed(() => {
 
         <template #sectors-data="{ row }">
             <UBadge size="md" class="me-2" v-for="sector in row.sectors" :color="'blue'" :label="sector" />
+        </template>
+
+        <template #protocol-data="{ row }">
+            <span v-if="row.protocol.length > 0">
+                <UBadge size="md" class="me-2" v-for="p in row.protocol" :color="'purple'">{{ p }}</UBadge>
+            </span>
+            <span v-else>
+                &nbsp;
+            </span>
         </template>
 
         <template #name-data="{ row }">
