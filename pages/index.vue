@@ -9,12 +9,15 @@
 
   const { data: learn } = await useAsyncData('learn', () => queryContent('/learn').limit(4).find())
   const { data: features } = await useAsyncData('features', () => queryContent('/features').limit(3).find())
+  const { data: week } = await useAsyncData('week', () => queryContent('/this-week-in-refi').limit(3).find())
 
 </script>
 
 <template>
 
   <Features :data=features />
+  <Week :data=week />
+
   <div class="row mb-5">
     <div class="col-md-8">
       <Learn :data=learn />

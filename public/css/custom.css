@@ -37,6 +37,10 @@ body {
   width: 100%;
 }
 
+.article-body .preview-link {
+  font-family: Quicksand !important;
+}
+
 .about-body {
   font-size: 1rem;
 }

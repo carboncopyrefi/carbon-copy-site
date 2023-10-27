@@ -18,7 +18,7 @@
       },
       {
         rel: "stylesheet preload",
-        href: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        href: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
       },
     ]
   }),

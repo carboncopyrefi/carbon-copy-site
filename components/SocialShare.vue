@@ -26,7 +26,7 @@ function copyLink() {
 <template>
 
   <NuxtLink :to=linkedIn target="_blank"><i class="bi bi-linkedin fs-4 me-3"></i></NuxtLink>
-  <NuxtLink :to=twitter target="_blank"><i class="bi bi-twitter fs-4 me-3"></i></NuxtLink>
+  <NuxtLink :to=twitter target="_blank"><i class="bi bi-twitter-x fs-4 me-3"></i></NuxtLink>
   <NuxtLink :to=facebook target="_blank"><i class="bi bi-facebook fs-4 me-3"></i></NuxtLink>
   <NuxtLink :to=telegram target="_blank"><i class="bi bi-telegram fs-4 me-3"></i></NuxtLink>
   <NuxtLink @click.native="copyLink"><i id="copyIcon" class="bi bi-link-45deg fs-4 text-primary" role="button"></i></NuxtLink>

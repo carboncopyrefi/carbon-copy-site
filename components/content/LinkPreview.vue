@@ -36,7 +36,7 @@ title.value = data._value.preview.title
           <div class="card-body">
             <NuxtLink :to="meta['url']" class="text-decoration-none text-dark"><h5 class="card-title fw-bold article-title" v-html=title></h5></NuxtLink>
             <p class="article-description card-text" v-html=description></p>
-            <p class="card-text"><small class="text-body-secondary">{{ meta['url'] }}</small></p>
+            <p class="card-text"><small class="text-body-secondary preview-link">{{ meta['url'] }}</small></p>
           </div>
         </div>
       </div>
