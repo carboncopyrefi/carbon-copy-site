@@ -13,7 +13,7 @@
     meta: [
       { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800, quality:80 }) },
       { hid: 'twitter:description', name: 'twitter:description', content: data.value?.description },
-      { hid: 'twitter:title', name: 'twitter:title', content: 'This Week in ReFi:' + data.value?.title },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'This Week in ReFi: ' + data.value?.title },
       { hid: 'twitter:image', name: 'twitter:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800, quality:80})},
     ],
     script: [
