@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: [
@@ -18,6 +19,18 @@ export default defineNuxtConfig({
   },
   image: {
     domains: ['cdn.pixabay.com']
+  },
+  hooks: {
+    async 'nitro:config'(nitroConfig) {
+      if (nitroConfig.dev) return
+
+      const data = await fetch('https://api.carboncopy.news/projects')
+      const projects = await data.json()     
+
+      let slugs = projects.map(project => `/project/${project.slug}/`)
+      nitroConfig.prerender.routes?.push(...slugs);
+      return
+    }
   },
   gtag: {
     id: 'G-CJBPKLXNE9',
