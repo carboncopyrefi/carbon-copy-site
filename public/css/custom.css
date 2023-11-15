@@ -24,6 +24,10 @@ body {
   list-style-type: square !important;
 }
 
+.article-body ol {
+  list-style-type: decimal !important;
+}
+
 .article-body li {
   margin-bottom: 0.8rem;
 
