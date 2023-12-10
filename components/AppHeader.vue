@@ -32,6 +32,9 @@
             <NuxtLink class="link-secondary text-decoration-none" to="/learn/">Learn</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
+            <NuxtLink class="link-secondary text-decoration-none" to="/this-week-in-refi/">This Week in ReFi</NuxtLink>
+          </li>
+          <li class="nav-item py-3 py-lg-0">
             <NuxtLink class="link-secondary text-decoration-none" to="/events/">Events</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
