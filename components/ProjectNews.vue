@@ -17,7 +17,7 @@
         </div>
       </div>
       <div v-if="data">
-        <div v-for="item in data.slice(1,7)" class="border-bottom mb-3">
+        <div v-for="item in data.slice(0,6)" class="border-bottom mb-3">
           <small class="text-body-secondary">{{ item.date }}</small>
           <NuxtLink :to="item.link" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold article-title mb-1">{{ item.title }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
           <p class="article-description">{{ item.snippet }}</p>

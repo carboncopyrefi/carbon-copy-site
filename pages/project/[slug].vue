@@ -111,7 +111,7 @@ useHead({
           <div v-if="!data.news.length">
             <p>No news added</p>
           </div>
-          <div v-for="article in data.news">
+          <div v-for="article in data.news.slice(0,5)">
             <small class="text-body-secondary">{{ article.date }}</small>
             <NuxtLink :to="article.url" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold">{{ article.headline }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
           </div>
