@@ -16,9 +16,9 @@ const { data } = await useFetch("/api/preview", {
   },
 });
 
-meta.value = data._value.preview;
-description.value = data._value.preview.description
-title.value = data._value.preview.title
+meta.value = data._value?.preview;
+description.value = data._value.preview?.description
+title.value = data._value.preview?.title
 
 
 </script>
@@ -30,7 +30,7 @@ title.value = data._value.preview.title
     <div class="card shadow-sm mb-3">
       <div class="row g-0">
         <div class="col-md-4">
-          <nuxt-img v-bind:src="meta['image']" class="card-img-top img-fluid" style="object-fit: cover;height:100%; width:100%;" alt="" />
+          <nuxt-img v-if="meta['image']" v-bind:src="meta['image']" class="card-img-top img-fluid" style="object-fit: cover;height:100%; width:100%;" alt="" />
         </div>
         <div class="col-md-8">
           <div class="card-body">
