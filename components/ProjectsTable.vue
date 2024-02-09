@@ -43,7 +43,7 @@ const filteredRows = computed(() => {
 
 <template>
     <div class="py-3">
-        <UInput color="gray" variant="outline" size="xl" v-model="q" icon="i-heroicons-magnifying-glass-20-solid" placeholder="Search name, sector, location" name="input" />
+        <UInput color="gray" variant="outline" size="xl" v-model="q" icon="i-heroicons-magnifying-glass-20-solid" placeholder="Search name, sector, protocol" name="input" />
     </div>
 
     <UTable :rows="filteredRows" :columns="columns">
