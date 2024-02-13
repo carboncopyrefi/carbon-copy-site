@@ -34,7 +34,7 @@
             </li>
             <li class="nav-item py-3 py-lg-0">
               <NuxtLink class="link-secondary text-decoration-none" to="https://twitter.com/carboncopy_refi" target="_blank"><i class="bi bi-twitter-x fs-5"></i></NuxtLink>&nbsp;&nbsp;&nbsp;
-              <NuxtLink class="link-secondary text-decoration-none" to="https://discord.carboncopy.news" target="_blank"><i class="bi bi-discord fs-5"></i></NuxtLink>&nbsp;&nbsp;&nbsp;
+              <NuxtLink class="link-secondary text-decoration-none" to="https://discord.gg/53TpqNgPC5" target="_blank"><i class="bi bi-discord fs-5"></i></NuxtLink>&nbsp;&nbsp;&nbsp;
               <NuxtLink class="link-secondary text-decoration-none" to="/feed.xml" target="_blank"><i class="bi bi-rss-fill fs-5"></i></NuxtLink>
             </li>
           </ul>
