@@ -20,7 +20,7 @@ body {
   padding-left: 3px;
 }
 
-.article-body ul {
+.article-body ul, .list {
   list-style-type: square !important;
 }
 

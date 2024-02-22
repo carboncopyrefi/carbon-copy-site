@@ -16,6 +16,13 @@
 <template>
 
   <Features :data=features />
+  <div class="p-4 mb-5 bg-light rounded">
+    <h2 class="mb-1">
+      The State of ReFi Report
+    </h2>
+    <h5 class="text-body-secondary mb-4">An Overview of Web3 Regenerative Finance</h5>
+    <StateOfReFi />
+  </div>
   <Week :data=week />
 
   <div class="row mb-5">
