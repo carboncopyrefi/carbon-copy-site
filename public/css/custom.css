@@ -45,6 +45,37 @@ body {
   font-family: Quicksand !important;
 }
 
+.article-body blockquote {
+  font-family: Quicksand;
+  font-size:20px;
+}
+
+.article-body hr.lede {
+  border: 0;
+  height: 1px;
+  width: 10%;
+  position: relative;
+  color:black;
+  margin: 30px auto;
+
+  &.center-square{
+    background: black;
+    
+    &:before{
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: black;
+      display: inline-block;
+      border: 2px solid black;
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      margin: 0 0 0 -3px;
+    }
+  }
+}
+
 .about-body {
   font-size: 1rem;
 }
