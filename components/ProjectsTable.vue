@@ -23,7 +23,7 @@ const columns = [{
 
 const q = ref('');
 const page = ref(1)
-const pageCount = 10
+const pageCount = 20
 
 const filteredRows = computed(() => {  
     if (!q.value) {    
