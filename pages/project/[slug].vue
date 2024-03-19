@@ -77,6 +77,19 @@ useHead({
             </div>
           </div>
         </div>
+        <div class="row mb-5">
+          <div class="col">
+            <h2>Achievements</h2>
+            <div v-if="!data.response?.length">
+              <p>No achievements completed</p>
+            </div>
+            <div class="row">
+              <div v-for="response in data.response" class="col-lg-3 col-6">
+                <NuxtImg :src="'/images/' + response.survey + '.png'" class="img-fluid" width="100%" height="100%" alt="Regenerative Self-Assessment Badge" ></NuxtImg>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col">
             <h2>Media Coverage</h2>
