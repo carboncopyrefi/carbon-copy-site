@@ -85,7 +85,7 @@ useHead({
             </div>
             <div class="row">
               <div v-for="response in data.response" class="col-lg-3 col-6">
-                <NuxtImg :src="'/images/' + response.survey + '.png'" class="img-fluid" width="100%" height="100%" alt="Regenerative Self-Assessment Badge" ></NuxtImg>
+                <NuxtImg :src="'/images/' + response.survey + '.jpg'" class="img-fluid shadow-sm rounded" width="100%" height="100%" alt="Regenerative Self-Assessment Badge" ></NuxtImg>
               </div>
             </div>
           </div>
