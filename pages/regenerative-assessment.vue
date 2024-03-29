@@ -39,8 +39,10 @@
     useHead({
         title: 'Regenerative Self-Assessment',
         meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
-      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+        { name: 'description', content: 'Understand how regenerative your impact and organisation are with our educational tool based on a regenerative assessment framework by Kate Bennett.' },
+        { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+        { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+        { hid: 'og:description', property:'og:description', content: 'Understand how regenerative your impact and organisation are with our educational tool based on a regenerative assessment framework by Kate Bennett.' }
     ]
     })
 
@@ -50,7 +52,9 @@
     <h1 class="mt-lg-5"">Regenerative Self-Assessment</h1>
 
     <div v-if="formStatus == 'open'">
-        <p>This regenerative self-assessment methodology was developed by <a class="text-decoration-none" href="" target="_blank">Kate Bennett.</a></p>
+        <p>The Regenerative Self-Assessment is designed as an educational tool to help ReFi companies better align their impact and organisation with the principles of <a class="text-decoration-none" href="https://natcapsolutions.org/regenerative-economics-101/" target="_blank">regenerative economics</a>.</p>
+        <p>Upon completion, you will be provided with a score. As our goal is primarily educational in scope, these scores will not be made public. Whether or not you share your results is your prerogative. You will also be given a badge that will display on your CARBON Copy company profile page.</p>
+        <p>The methodology behind the assessment was developed by <a class="text-decoration-none" href="https://au.linkedin.com/in/ktlbennett" target="_blank">Kate Bennett.</a></p>
         
         <form @submit.prevent="submitForm" class="mt-4">
             
