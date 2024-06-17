@@ -25,17 +25,26 @@
           <li class="nav-item py-3 py-lg-0">
             <NuxtLink class="link-secondary text-decoration-none" to="/">Front Page</NuxtLink>
           </li>
-          <li class="nav-item py-3 py-lg-0">
-            <NuxtLink class="link-secondary text-decoration-none" to="/features/">Features</NuxtLink>
+          <li class="nav-item dropdown py-3 py-lg-0 m-0">
+            <a class="nav-item text-decoration-none dropdown-toggle link-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Articles
+            </a>
+            <ul class="dropdown-menu">
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-0" to="/features/">Features</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-0" to="/learn/">Learn</NuxtLink></li>
+            </ul>
           </li>
-          <li class="nav-item py-3 py-lg-0">
-            <NuxtLink class="link-secondary text-decoration-none" to="/learn/">Learn</NuxtLink>
+          <li class="nav-item dropdown py-3 py-lg-0 m-0">
+            <a class="nav-item text-decoration-none dropdown-toggle link-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Data
+            </a>
+            <ul class="dropdown-menu">
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-0" to="/projects/">Company Database</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-0" to="/events/">ReFi Events</NuxtLink></li>
+            </ul>
           </li>
           <li class="nav-item py-3 py-lg-0">
             <NuxtLink class="link-secondary text-decoration-none" to="/this-week-in-refi/">This Week in ReFi</NuxtLink>
-          </li>
-          <li class="nav-item py-3 py-lg-0">
-            <NuxtLink class="link-secondary text-decoration-none" to="/events/">Events</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
             <NuxtLink class="link-secondary text-decoration-none" to="/about/">About</NuxtLink>

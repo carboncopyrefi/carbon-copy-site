@@ -49,11 +49,11 @@
 </script>
 
 <template>
-    <h1 class="mt-lg-5"">Regenerative Self-Assessment</h1>
+    <h1 class="mt-lg-5">Regenerative Self-Assessment</h1>
 
     <div v-if="formStatus == 'open'">
         <p>The Regenerative Self-Assessment is designed as an educational tool to help ReFi companies better align their impact and organisation with the principles of <a class="text-decoration-none" href="https://natcapsolutions.org/regenerative-economics-101/" target="_blank">regenerative economics</a>.</p>
-        <p>Upon completion, you will be provided with a score. As our goal is primarily educational in scope, these scores will not be made public. Whether or not you share your results is your prerogative. You will also be given a badge that will display on your CARBON Copy company profile page.</p>
+        <p>Upon completion, you will be provided with a score. As our goal is primarily educational, we will not make these scores public. Whether or not you share your results is your prerogative. You will also be given a badge that will display on your CARBON Copy company profile page.</p>
         <p>The methodology behind the assessment was developed by <a class="text-decoration-none" href="https://au.linkedin.com/in/ktlbennett" target="_blank">Kate Bennett.</a></p>
         
         <form @submit.prevent="submitForm" class="mt-4">

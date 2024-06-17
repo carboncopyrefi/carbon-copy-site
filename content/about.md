@@ -9,11 +9,11 @@ description: About the leading ReFi information platform.
 
 **CARBON Copy is the preeminent source of ReFi news, information, and analysis.**
 
-We fill the information void in the regenerative finance (ReFi) space by providing a combination of news, education, expert analysis, industry reports, and project evaluation to help industry stakeholders better understand the space and to get projects more exposure.
+We fill the information void in Web3 regenerative finance (ReFi) by providing a combination of news, education, expert analysis, industry reports, and project evaluation to help industry stakeholders better understand the space and to get projects more exposure.
 
-At the same time, we're also building a comprehensive library of ReFi projects to act as the foundation of our proprietary evaluation framework for understanding impact.
+We also maintain a comprehensive, curated ReFi company database complete with individual profile pages and are developing a suite of educational tools to help projects expand and promote their regenerative impact.
 
-<h2 class="mb-3 mt-4">An Evaluation Framework for ReFi Projects</h2>
+<!-- <h2 class="mb-3 mt-4">An Evaluation Framework for ReFi Projects</h2>
 
 Working with experts from across disciplines, we are a building a framework for analysing and scoring ReFi projects. We aim to evaluate projects using an array of criteria, including:
 
@@ -25,9 +25,9 @@ Working with experts from across disciplines, we are a building a framework for 
 - Community
 - Alignment with UN development goals
 
-**We want to *prove* demonstrable impact, not just talk about it.**
+**We want to *prove* demonstrable impact, not just talk about it.** -->
 
-<h2 class="mb-3 mt-4">Contact Us</h2>
+## Contacts
 
 Feel free to reach out anytime. Best place is through our [Discord](https://discord.carboncopy.news), but here are some other ways you can reach us:
 
@@ -39,4 +39,6 @@ Feel free to reach out anytime. Best place is through our [Discord](https://disc
 
 **General inquiries** - If you have questions or just want to say hi, send us an email at hello@carboncopy.news.
 
-**Socials** - Follow us on [Twitter](https://twitter.com/carboncopy_refi) to get the latest project updates.
+**Socials** - [Follow us on X](https://twitter.com/carboncopy_refi) to ready our weekly #ReFiRecap.
+
+**ReFi News Feed** - Get the latest updates from ReFi by plugging into our [RSS feed](https://api.carboncopy.news/feed).

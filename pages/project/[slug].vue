@@ -1,10 +1,47 @@
 <script setup lang="ts">
 
+// import { GAP } from '@show-karma/karma-gap-sdk'
+
+// const gap = new GAP({
+//         network: 'optimism'
+//     });
+
+// const grants = gap.fetch
+//   .projectBySlug('kokonut-network-perpetual-value-ecosystem-1')
+//   .then((project) => {
+//     project.grants.forEach((grant) => {
+//       console.log(grant.milestones)
+//     })
+//   })
+//   .catch((er) => {
+//     console.error(er.message);
+//   });
+
+  
+
 const route = useRoute()
 const img = useImage()
 
 const { data } = await useFetch(`https://api.carboncopy.news/projects/${route.params.slug}`)
+const { pending, data: content } = await useFetch(`https://api.carboncopy.news/projects/${route.params.slug}/content`, {
+  lazy: true,
+  server: false
+})
+const { data: token } = await useFetch(`http://api.carboncopy.news/projects/${route.params.slug}/token`, {
+  lazy: true,
+  server: false
+})
+
 // const { data } = await useFetch(`http://127.0.0.1:5000/projects/${route.params.slug}`)
+// const { pending, data: content } = await useFetch(`http://127.0.0.1:5000/projects/${route.params.slug}/content`, {
+//   lazy: true,
+//   server: false
+// })
+
+// const { data: token } = await useFetch(`http://127.0.0.1:5000/projects/${route.params.slug}/token`, {
+//   lazy: true,
+//   server: false
+// })
 
 useHead({
   title: () => data.value?.name,
@@ -30,14 +67,14 @@ useHead({
           <div class="col-lg-9">
             <div class="row">
               <div class="col-12">
-                <h1>{{ data.name }}</h1>
+                <h1 class="fw-bold">{{ data.name }}</h1>
               </div>
               <div class="col-12">
                 <p class="lead">{{ data.description_short }}</p>
               </div>
               <div class="col-12">
-              <span class="badge text-bg-secondary rounded-pill me-2" v-for="sector in data.sectors">{{ sector.value }}</span>
-              <span class="badge text-bg-secondary rounded-pill me-2" v-for="category in data.categories">{{ category.value }}</span>
+              <!--<span class="badge text-bg-secondary rounded-pill me-2" v-for="sector in data.sectors">{{ sector.value }}</span>-->
+              <span class="badge text-bg-primary py-2 px-3 rounded-pill me-2" v-for="category in data.categories">{{ category.value }}</span>
               </div>
             </div>
           </div>
@@ -65,7 +102,7 @@ useHead({
               </div>
             </div>
           </div>
-          <div class="col-lg-8 col-10">
+          <div class="col-lg-4 col-10">
             <div class="card shadow-sm">
               <div class="card-body">
                 <h4 class="card-title">Protocol(s)</h4>
@@ -76,12 +113,54 @@ useHead({
               </div>
             </div>
           </div>
+          <div class="col-lg-4 col-10">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h4 class="card-title">Token</h4>
+                <span v-if="token" class="card-text">{{ token.symbol }}&nbsp;&nbsp;${{ token.price_usd }}&nbsp;&nbsp;<span v-if="token.percent_change < 0" class="text-danger"><i class="bi bi-arrow-down-square-fill"></i> {{ token.percent_change }}%</span><span v-else-if="token.percent_change > 0" class="text-success"><i class="bi bi-arrow-up-square-fill"></i> {{ token.percent_change }}%</span><span v-else>{{ token.percent_change }}%</span></span>
+                <span v-else class="card-text">No token data available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col">
+            <h2>Fundraising</h2>
+            <div v-if="!data.fundraising?.length">
+              <p>No fundraising data available</p>
+            </div>
+            <div v-if="data.fundraising?.length" class="row">
+              <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Year</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Round</th>
+                  <!-- <th scope="col">Donors</th> -->
+                  <th scope="col">Amount</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="f in data.fundraising">
+                  <td>{{ f.year }}</td>
+                  <td>{{ f?.type }}</td>
+                  <td>{{ f?.round }}</td>
+                  <!-- <td>124</td> -->
+                  <td>${{ f.amount }}</td>
+                  <td><NuxtLink v-if="f.url" :to="f?.url" target="_blank" class="text-decoration-none">Details</NuxtLink></td>
+                </tr>
+              </tbody>
+            </table>
+
+            </div>
+          </div>
         </div>
         <div class="row mb-5">
           <div class="col">
             <h2>Achievements</h2>
             <div v-if="!data.response?.length">
-              <p>No achievements completed</p>
+              <p>Represent this company? Complete our <a href="/regenerative-assessment/" target="_blank" class="text-decoration-none">regenerative self-assessment</a> to unlock your first achievement!</p>
             </div>
             <div class="row">
               <div v-for="response in data.response" class="col-lg-3 col-6">
@@ -92,13 +171,19 @@ useHead({
         </div>
         <div class="row">
           <div class="col">
-            <h2>Media Coverage</h2>
-            <div v-if="!data.coverage.length">
-              <p>No coverage added</p>
+            <h2>Content</h2>
+            <div v-if="pending" class="d-flex justify-content-center my-5">
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading content feed...</span>
+              </div>
             </div>
-            <div v-for="article in data.coverage">
-              <span>{{ article.publication }} | <small class="text-body-secondary">{{ article.date }}</small></span>
-              <NuxtLink :to="article.url" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold">{{ article.headline }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
+            <div v-if="content" class="row">
+              <div class="col">
+                <ArticleCard :data=content :col=4 :margin=3></ArticleCard>
+              </div>
+            </div>
+            <div v-else class="row">
+              <p>No content feed added</p>
             </div>
           </div>
         </div>
@@ -119,13 +204,23 @@ useHead({
             {{ person.value }}
           </div>
         </div>
-        <div class="">
+        <div class="mb-5">
           <h2>Project News</h2>
           <div v-if="!data.news.length">
             <p>No news added</p>
           </div>
           <div v-for="article in data.news.slice(0,5)">
             <small class="text-body-secondary">{{ article.date }}</small>
+            <NuxtLink :to="article.url" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold">{{ article.headline }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
+          </div>
+        </div>
+        <div class="">
+          <h2>Media Coverage</h2>
+          <div v-if="!data.coverage.length">
+            <p>No coverage added</p>
+          </div>
+          <div v-for="article in data.coverage">
+            <span>{{ article.publication }} | <small class="text-body-secondary">{{ article.date }}</small></span>
             <NuxtLink :to="article.url" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold">{{ article.headline }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
           </div>
         </div>

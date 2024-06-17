@@ -2,6 +2,9 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  colorMode: {
+    preference: 'light'
+  },
   modules: [
       '@nuxt/content',
       '@nuxt/image',
