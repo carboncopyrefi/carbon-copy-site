@@ -30,6 +30,7 @@ useHead({
             <p class="lead">{{ data.description }}</p>
             <span v-if="data.twitter"><NuxtLink :to=data.twitter target="_blank"><i class="bi bi-twitter-x fs-4 me-3"></i></NuxtLink></span>
             <span v-if="data.discord"><NuxtLink :to=data.discord target="_blank"><i class="bi bi-discord fs-4 me-3"></i></NuxtLink></span>
+            <span v-if="data.linkedin"><NuxtLink :to=data.linkedin target="_blank"><i class="bi bi-linkedin fs-4 me-3"></i></NuxtLink></span>
             <span v-if="data.email"><NuxtLink :to="'mailto:'+ data.email" target="_blank"><i class="bi bi-envelope fs-4 me-3"></i></NuxtLink></span>
             <p class="pt-4"><ContentDoc /></p>
         </div>

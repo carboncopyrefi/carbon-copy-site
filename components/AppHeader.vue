@@ -30,8 +30,8 @@
               Articles
             </a>
             <ul class="dropdown-menu">
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-0" to="/features/">Features</NuxtLink></li>
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-0" to="/learn/">Learn</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/features/">Features</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/learn/">Learn</NuxtLink></li>
             </ul>
           </li>
           <li class="nav-item dropdown py-3 py-lg-0 m-0">
@@ -39,8 +39,8 @@
               Data
             </a>
             <ul class="dropdown-menu">
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-0" to="/projects/">Company Database</NuxtLink></li>
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-0" to="/events/">ReFi Events</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/">Company Database</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/events/">ReFi Events</NuxtLink></li>
             </ul>
           </li>
           <li class="nav-item py-3 py-lg-0">

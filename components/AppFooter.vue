@@ -10,7 +10,8 @@
       <div class="row justify-content-between">
         <div class="col-lg-4 col-10">
           <a href="/"><NuxtImg src="/logo.png" style="width:30%" alt="CARBON Copy Logo" /></a>
-          <p class="mt-2  "><small>Copyright &copy; {{ currentYear }} CARBON Copy</small></p>
+          <p class="mt-2"><small>Copyright &copy; {{ currentYear }} CARBON Copy</small></p>
+          <p class="mt-2"><small>Token data provided by CoinGecko</small></p>
         </div>
         <div class="col-lg-8 align-self-center">
           <ul class="nav justify-content-lg-between flex-lg-row flex-column">

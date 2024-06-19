@@ -102,7 +102,7 @@ useHead({
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-10">
+          <div class="col-lg-4 col-10 mb-3 mb-lg-0">
             <div class="card shadow-sm">
               <div class="card-body">
                 <h4 class="card-title">Protocol(s)</h4>
@@ -188,7 +188,7 @@ useHead({
           </div>
         </div>
       </div>
-      <div class="col-lg-3 offset-lg-1 mt-4 mt-lg-0">
+      <div class="col-lg-3 offset-lg-1 mt-5 mt-lg-0">
         <div class="mb-5">
           <h2>Contacts</h2>
           <div v-for="link in data.links">
