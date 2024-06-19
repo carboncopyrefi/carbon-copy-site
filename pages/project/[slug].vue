@@ -1,24 +1,5 @@
 <script setup lang="ts">
 
-// import { GAP } from '@show-karma/karma-gap-sdk'
-
-// const gap = new GAP({
-//         network: 'optimism'
-//     });
-
-// const grants = gap.fetch
-//   .projectBySlug('kokonut-network-perpetual-value-ecosystem-1')
-//   .then((project) => {
-//     project.grants.forEach((grant) => {
-//       console.log(grant.milestones)
-//     })
-//   })
-//   .catch((er) => {
-//     console.error(er.message);
-//   });
-
-  
-
 const route = useRoute()
 const img = useImage()
 
