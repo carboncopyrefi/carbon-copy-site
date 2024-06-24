@@ -39,6 +39,6 @@ Feel free to reach out anytime. Best place is through our [Discord](https://disc
 
 **General inquiries** - If you have questions or just want to say hi, send us an email at hello@carboncopy.news.
 
-**Socials** - [Follow us on X](https://twitter.com/carboncopy_refi) to ready our weekly #ReFiRecap.
+**Socials** - [Follow us on X](https://twitter.com/carboncopy_refi) to read our weekly #ReFiRecap.
 
 **ReFi News Feed** - Get the latest updates from ReFi by plugging into our [RSS feed](https://api.carboncopy.news/feed).

@@ -9,7 +9,7 @@ defineProps<{
 <template>
 
 <div class="row">
-  <div v-for="item in data" class="col-lg-4 col-12 mb-3 mb-lg-4">
+  <div v-for="item in data" class="col-lg-3 col-12 mb-3 mb-lg-4">
     <div class="card shadow-sm h-100">
       <div class="ratio ratio-4x3">
       <NuxtImg :src="item.image" sizes="sm:500px lg:300px" class="card-img-top img-fluid" loading="lazy" quality="75" alt="" />
