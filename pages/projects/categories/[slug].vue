@@ -3,7 +3,7 @@
 const route = useRoute()
 const img = useImage()
 
-const { data } = await useFetch(`https://api.carboncopy.news/projects/${route.params.slug}`)
+const { data } = await useFetch(`https://api.carboncopy.news/projects/categories/${route.params.slug}`)
 //const { data } = await useFetch(`http://127.0.0.1:5000/projects/categories/${route.params.slug}`)
 
 const { pending, data: tokens } = await useFetch(`https://api.carboncopy.news/projects/categories/tokens?ids=${data.value.tokens}`, {
