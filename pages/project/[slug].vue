@@ -42,8 +42,8 @@ useHead({
     <div class="row">
       <div class="col-lg-8">
         <div class="row">
-          <div class="col-lg-3 col-6 align-self-center text-center p-lg-3 mb-5 mb-lg-0">
-            <NuxtImg :src="data.logo" :alt="data.name" sizes="400px" class="img-fluid" width="100%" height="100%" />
+          <div class="col-lg-3 col-6 align-self-center text-center p-lg-3 mb-5 mb-lg-0 d-flex">
+            <NuxtImg :src="data.logo" :alt="data.name" sizes="400px" class="img-fluid mx-auto" width="100%" height="100%" />
           </div>
           <div class="col-lg-9">
             <div class="row">
@@ -55,8 +55,10 @@ useHead({
               </div>
               <div class="col-12">
               <!--<span class="badge text-bg-secondary rounded-pill me-2" v-for="sector in data.sectors">{{ sector.value }}</span>-->
-              <span class="badge text-bg-primary py-2 px-3 rounded-pill me-2" v-for="category in data.categories">{{ category.value }}</span>
-              </div>
+              <span v-for="category in data.categories">
+                <NuxtLink :to="'/projects/categories/' + category.slug + '/'" class="badge text-bg-primary py-2 px-3 rounded-pill me-2 text-decoration-none">{{ category.name }}</NuxtLink>
+              </span>
+            </div>
             </div>
           </div>
         </div>

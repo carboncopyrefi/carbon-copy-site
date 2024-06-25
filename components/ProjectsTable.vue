@@ -49,7 +49,7 @@ const filteredRows = computed(() => {
     <UTable :rows="filteredRows" :columns="columns">
 
         <template #categories-data="{ row }">
-            <UBadge size="md" class="me-2 fs-6" v-for="category in row.categories" :color="'blue'" :label="category" />
+            <NuxtLink v-for="category in row.categories" :to="'/projects/categories/' + category.replace(/ /g,'-').toLowerCase() + '/'"><UBadge size="md" class="me-2 fs-6" :color="'blue'" :label="category" /></NuxtLink>
         </template>
 
         <!-- <template #protocol-data="{ row }">
