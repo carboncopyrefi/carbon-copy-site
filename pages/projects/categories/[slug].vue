@@ -17,18 +17,29 @@ const { pending, data: tokens } = await useFetch(`https://api.carboncopy.news/pr
 
 useHead({
   title: () => data.value?.metadata.name,
+  meta: [
+            { hid: 'description', name: 'description', content: () => data.value?.metadata.description },
+            { hid: 'og:description', property: 'og:description', content: () => data.value?.metadata.description },
+            { hid: 'twitter:description', name: 'twitter:description', content: () => data.value?.metadata.description }
+        ]
 })
 
 </script>
 
 <template>
-    <div class="row">
+    <div class="row mt-lg-5 mb-3">
+        <div class="col lead text-secondary">
+            <button @click="$router.back()"><i class="bi bi-arrow-left"></i> Back</button>
+        </div>
+    </div>
+    
+    <div class="row mb-3">
         <div class="col-xl-8">
-            <h1 class="mt-lg-5 mb-3 fw-bold">{{ data.metadata.name }}</h1>
+            <h1 class="fw-bold">{{ data.metadata.name }}</h1>
             <p class="lead">{{ data?.metadata.description }}</p>
         </div>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-lg-5 mt-3">
         <div class="col-xl-8 mb-lg-5">
             <h2>Projects ({{ data.metadata.count }})</h2>
             <div v-for="p in data.projects">

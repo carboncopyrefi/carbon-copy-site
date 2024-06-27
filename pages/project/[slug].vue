@@ -39,6 +39,11 @@ useHead({
 
 <template>
   <div class="mt-5">
+    <div class="row mb-3">
+        <div class="col lead text-secondary">
+            <button @click="$router.back()"><i class="bi bi-arrow-left"></i> Back</button>
+        </div>
+    </div>
     <div class="row">
       <div class="col-lg-8">
         <div class="row">
