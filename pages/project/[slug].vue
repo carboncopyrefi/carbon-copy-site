@@ -4,24 +4,15 @@ const route = useRoute()
 const img = useImage()
 
 const { data } = await useFetch(`https://api.carboncopy.news/projects/${route.params.slug}`)
-const { pending, data: content } = await useFetch(`https://api.carboncopy.news/projects/${route.params.slug}/content`, {
-  lazy: true,
-  server: false
-})
-const { data: token } = await useFetch(`http://api.carboncopy.news/projects/${route.params.slug}/token`, {
+const { status, data: content } = await useFetch(`https://api.carboncopy.news/projects/${route.params.slug}/content`, {
   lazy: true,
   server: false
 })
 
 // const { data } = await useFetch(`http://127.0.0.1:5000/projects/${route.params.slug}`)
-// const { pending, data: content } = await useFetch(`http://127.0.0.1:5000/projects/${route.params.slug}/content`, {
+// const { status, data: content } = await useFetch(`http://127.0.0.1:5000/projects/${route.params.slug}/content`, {
 //   lazy: true,
-//   server: false
-// })
-
-// const { data: token } = await useFetch(`http://127.0.0.1:5000/projects/${route.params.slug}/token`, {
-//   lazy: true,
-//   server: false
+//   server: false,
 // })
 
 useHead({
@@ -102,11 +93,20 @@ useHead({
             </div>
           </div>
           <div class="col-lg-4 col-10">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm h-100">
               <div class="card-body">
                 <h4 class="card-title">Token</h4>
-                <span v-if="token" class="card-text">{{ token.symbol }}&nbsp;&nbsp;${{ token.price_usd }}&nbsp;&nbsp;<span v-if="token.percent_change < 0" class="text-danger"><i class="bi bi-arrow-down-square-fill"></i> {{ token.percent_change }}%</span><span v-else-if="token.percent_change > 0" class="text-success"><i class="bi bi-arrow-up-square-fill"></i> {{ token.percent_change }}%</span><span v-else>{{ token.percent_change }}%</span></span>
-                <span v-else class="card-text">No token data available</span>
+                <span v-if="status === 'pending'" class="d-flex justify-content-center">
+                  <div class="spinner-border spinner-border-sm text-primary" role="status">
+                    <span class="visually-hidden">Loading content feed...</span>
+                  </div>
+                </span>
+                <div v-else>
+                  <div v-if="content && content.token">
+                    <span class="card-text">{{ content.token?.symbol }}&nbsp;&nbsp;${{ content.token?.price_usd }}&nbsp;&nbsp;<span v-if="content.token?.percent_change < 0" class="text-danger"><i class="bi bi-arrow-down-square-fill"></i> {{ content.token?.percent_change }}%</span><span v-else-if="content.token?.percent_change > 0" class="text-success"><i class="bi bi-arrow-up-square-fill"></i> {{ content.token?.percent_change }}%</span><span v-else>&nbsp;</span></span>
+                  </div>
+                  <span v-else class="card-text">No token data available</span>
+                </div>  
               </div>
             </div>
           </div>
@@ -160,18 +160,20 @@ useHead({
         <div class="row">
           <div class="col">
             <h2>Content</h2>
-            <div v-if="pending" class="d-flex justify-content-center my-5">
+            <div v-if="status === 'pending'" class="d-flex justify-content-center my-5">
               <div class="spinner-border text-primary" role="status">
                 <span class="visually-hidden">Loading content feed...</span>
               </div>
             </div>
-            <div v-if="content" class="row">
-              <div class="col">
-                <ArticleCard :data=content :col=4 :margin=3></ArticleCard>
+            <div v-else>
+              <div v-if="content && content.feed" class="row">
+                <div class="col">
+                  <ArticleCard :data=content.feed :col=4 :margin=3></ArticleCard>
+                </div>
               </div>
-            </div>
-            <div v-else class="row">
-              <p>No content feed added</p>
+              <div v-else>
+                <p>No content feed added</p>
+              </div>
             </div>
           </div>
         </div>
