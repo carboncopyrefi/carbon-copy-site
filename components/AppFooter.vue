@@ -25,7 +25,7 @@
               <NuxtLink class="link-secondary text-decoration-none" to="/learn/">Learn</NuxtLink>
             </li>
             <li class="nav-item py-3 py-lg-0">
-              <NuxtLink class="link-secondary text-decoration-none" to="/projects/">Company Database</NuxtLink>
+              <NuxtLink class="link-secondary text-decoration-none" to="/projects/">ReFi Project Database</NuxtLink>
             </li>
             <li class="nav-item py-3 py-lg-0">
               <NuxtLink class="link-secondary text-decoration-none" to="/events/">Events</NuxtLink>

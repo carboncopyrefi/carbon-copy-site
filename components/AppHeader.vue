@@ -39,12 +39,21 @@
               Data
             </a>
             <ul class="dropdown-menu">
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/">Company Database</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/">ReFi Project Database</NuxtLink></li>
               <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/events/">ReFi Events</NuxtLink></li>
             </ul>
           </li>
           <li class="nav-item py-3 py-lg-0">
             <NuxtLink class="link-secondary text-decoration-none" to="/this-week-in-refi/">This Week in ReFi</NuxtLink>
+          </li>
+          <li class="nav-item dropdown py-3 py-lg-0 m-0">
+            <a class="nav-item text-decoration-none dropdown-toggle link-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu">
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://gap.karmahq.xyz/funding-map" target="_blank">On-Chain Grant Directory</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://grantscanvas.gitcoin.co" target="_blank">Gitcoin Grants Canvas</NuxtLink></li>
+            </ul>
           </li>
           <li class="nav-item py-3 py-lg-0">
             <NuxtLink class="link-secondary text-decoration-none" to="/about/">About</NuxtLink>
