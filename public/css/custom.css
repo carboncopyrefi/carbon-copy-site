@@ -20,20 +20,20 @@ body {
   padding-left: 3px;
 }
 
-.article-body ul, .list {
+.article-body ul, .list, .milestone ul {
   list-style-type: square !important;
 }
 
-.article-body ol {
+.article-body ol, .milestone ol {
   list-style-type: decimal !important;
 }
 
-.article-body li {
+.article-body li, .milestone li {
   margin-bottom: 0.8rem;
 
 }
 
-.article-body a {
+.article-body a, .milestone a {
   text-decoration: none;
 }
 

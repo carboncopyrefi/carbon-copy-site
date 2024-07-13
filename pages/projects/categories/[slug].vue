@@ -6,7 +6,7 @@ const img = useImage()
 const { data } = await useFetch(`https://api.carboncopy.news/projects/categories/${route.params.slug}`)
 //const { data } = await useFetch(`http://127.0.0.1:5000/projects/categories/${route.params.slug}`)
 
-const { pending, data: tokens } = await useFetch(`https://api.carboncopy.news/projects/categories/tokens?ids=${data.value.tokens}`, {
+const { status, data: tokens } = await useFetch(`https://api.carboncopy.news/projects/categories/tokens?ids=${data.value.tokens}`, {
   lazy: true,
   server: false
 })
@@ -79,36 +79,36 @@ useHead({
             </div>
             <h2 class="mt-5">Tokens</h2>
             <div class="card mb-3 shadow-sm">
-                <div class="card-body" v-if="tokens?.length">
-                    <div class="row card-text py-2 g-0" v-for="token in tokens">
-                        <div class="col-1">
-                            <NuxtImg :src="token.image" class="img-fluid mx-auto" :alt="token.symbol" />
-                        </div>
-                        <div class="col-3 offset-1">
-                            {{ token.symbol }}
-                        </div>
-                        <div class="col-3">
-                            ${{ token.price_usd }}
-                        </div>
-                        <div class="col-3">
-                            <span v-if="token.percent_change < 0" class="text-danger"><i class="bi bi-arrow-down-square-fill"></i> {{ token.percent_change }}%</span>
-                            <span v-else-if="token.percent_change > 0" class="text-success"><i class="bi bi-arrow-up-square-fill"></i> {{ token.percent_change }}%</span>
-                            <span v-else>{{ token.percent_change }}%</span>
-                        </div>
-                        <div class="col-1">
-                            <NuxtLink :to="token.url" target="_blank"><i class="bi bi-box-arrow-up-right"></i></NuxtLink>
+                <span v-if="status === 'pending'" class="d-flex justify-content-center my-5">
+                    <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading token data...</span>
+                    </div>
+                </span>
+                <div v-else>
+                    <div class="card-body" v-if="tokens?.length">
+                        <div class="row card-text py-2 g-0" v-for="token in tokens">
+                            <div class="col-1">
+                                <NuxtImg :src="token.image" class="img-fluid mx-auto" :alt="token.symbol" />
+                            </div>
+                            <div class="col-3 offset-1">
+                                {{ token.symbol }}
+                            </div>
+                            <div class="col-3">
+                                ${{ token.price_usd }}
+                            </div>
+                            <div class="col-3">
+                                <span v-if="token.percent_change < 0" class="text-danger"><i class="bi bi-arrow-down-square-fill"></i> {{ token.percent_change }}%</span>
+                                <span v-else-if="token.percent_change > 0" class="text-success"><i class="bi bi-arrow-up-square-fill"></i> {{ token.percent_change }}%</span>
+                                <span v-else>{{ token.percent_change }}%</span>
+                            </div>
+                            <div class="col-1">
+                                <NuxtLink :to="token.url" target="_blank"><i class="bi bi-box-arrow-up-right"></i></NuxtLink>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-body" v-else-if="pending">
-                    <div class="d-flex justify-content-center my-3">
-                        <div class="spinner-border text-primary" role="status">
-                        <span class="visually-hidden">Loading token data...</span>
-                        </div>
+                    <div class="card-body" v-else>
+                        <p class="card-text">No token data available</p>
                     </div>
-                </div>
-                <div class="card-body" v-else="pending">
-                    <p class="card-text">No token data available</p>
                 </div>
             </div>
             <h2 class="mt-5">News</h2>

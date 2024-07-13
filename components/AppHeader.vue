@@ -53,6 +53,8 @@
             <ul class="dropdown-menu">
               <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://gap.karmahq.xyz/funding-map" target="_blank">On-Chain Grant Directory</NuxtLink></li>
               <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://grantscanvas.gitcoin.co" target="_blank">Gitcoin Grants Canvas</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://www.regenatlas.xyz/" target="_blank">Regen Atlas</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://climatecoordination.org/climate-solutions-metrics-garden-1" target="_blank">CCN Metrics Garden</NuxtLink></li>
             </ul>
           </li>
           <li class="nav-item py-3 py-lg-0">

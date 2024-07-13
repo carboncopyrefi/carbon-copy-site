@@ -146,6 +146,42 @@ useHead({
         </div>
         <div class="row mb-5">
           <div class="col">
+            <h2>Activity</h2>
+            <span v-if="status === 'pending'" class="d-flex justify-content-center my-5">
+              <div class="spinner-border text-primary" role="status1">
+                <span class="visually-hidden">Loading milestones...</span>
+              </div>
+            </span>
+            <div v-else>
+              <div v-if="content && content.milestones" class="row table-responsive">
+                <table class="table align-middle">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Due Date</th>
+                      <th scope="col">Status</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="m in content.milestones">
+                      <td class="w-50">{{ m.name }}</td>
+                      <td>{{ m.due_date }}</td>
+                      <td><span v-if="m.status === 'Overdue'" class="badge text-bg-danger">{{ m.status }}</span><span v-if="m.status === 'In Progress'" class="badge text-bg-secondary">{{ m.status }}</span><span v-if="m.status === 'Completed'" class="badge text-bg-success">{{ m.status }}</span></td>
+                      <td><Modal :id="m.due_date_unix" :title="m.name" :body="m.description" :status="m.status" :completed="m.completed_msg"></Modal></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="small">Activity data from <NuxtLink external to="https://gap.karma.xyz" target="_blank" class="text-decoration-none">Karma GAP</NuxtLink></p>
+              </div>
+              <div v-else>
+                <p>No Karma GAP milestones added</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col">
             <h2>Achievements</h2>
             <div v-if="!data.response?.length">
               <p>Represent this company? Complete our <a href="/regenerative-assessment/" target="_blank" class="text-decoration-none">regenerative self-assessment</a> to unlock your first achievement!</p>
@@ -160,11 +196,11 @@ useHead({
         <div class="row">
           <div class="col">
             <h2>Content</h2>
-            <div v-if="status === 'pending'" class="d-flex justify-content-center my-5">
+            <span v-if="status === 'pending'" class="d-flex justify-content-center my-5">
               <div class="spinner-border text-primary" role="status">
                 <span class="visually-hidden">Loading content feed...</span>
               </div>
-            </div>
+            </span>
             <div v-else>
               <div v-if="content && content.feed" class="row">
                 <div class="col">
@@ -217,4 +253,5 @@ useHead({
       </div>
     </div>
   </div>
+
 </template>
