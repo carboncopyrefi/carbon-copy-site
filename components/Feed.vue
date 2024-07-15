@@ -22,7 +22,7 @@
     </div>
   </div>
   <div v-if="data">
-    <ArticleCard :data=data :col=4 :margin=3 target="_blank"></ArticleCard>
+    <ArticleCard :data=data :col=4 :margin=3 target="_blank" :external="true"></ArticleCard>
   </div>
 
 </template>

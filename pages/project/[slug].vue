@@ -204,7 +204,7 @@ useHead({
             <div v-else>
               <div v-if="content && content.feed" class="row">
                 <div class="col">
-                  <ArticleCard :data=content.feed :col=4 :margin=3></ArticleCard>
+                  <ArticleCard :data=content.feed :col=4 :margin=3 target="_blank" :external="true"></ArticleCard>
                 </div>
               </div>
               <div v-else>
