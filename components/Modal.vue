@@ -37,7 +37,7 @@ onMounted(() => {
           <p><span v-if="status === 'Overdue'" class="badge text-bg-danger">{{ status }}</span><span v-if="status === 'In Progress'" class="badge text-bg-secondary">{{ status }}</span><span v-if="status === 'Completed'" class="badge text-bg-success">{{ status }}</span></p>
           <div class="mt-4" v-if="status === 'Completed'">
             <p class="lead fw-bold">Completion update</p>
-            <span v-html=completed></span>
+            <span v-html=completed class="text-break"></span>
           </div>
         </div>
         <div class="modal-footer">
