@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const { status, data: content } = await useFetch(`https://api.carboncopy.news/landscape`, {
+const { status, data } = await useFetch(`https://api.carboncopy.news/landscape`, {
   lazy: true,
   server: false
 })
