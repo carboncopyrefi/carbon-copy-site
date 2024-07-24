@@ -121,22 +121,16 @@ useHead({
               <table class="table table-striped">
               <thead>
                 <tr>
-                  <th scope="col">Year</th>
                   <th scope="col">Type</th>
-                  <th scope="col">Round</th>
-                  <!-- <th scope="col">Donors</th> -->
                   <th scope="col">Amount</th>
                   <th scope="col"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="f in data.fundraising">
-                  <td>{{ f.year }}</td>
-                  <td>{{ f?.type }}</td>
-                  <td>{{ f?.round }}</td>
-                  <!-- <td>124</td> -->
+                  <td>{{ f.funding_type }}</td>
                   <td>${{ f.amount }}</td>
-                  <td><NuxtLink v-if="f.url" :to="f?.url" target="_blank" class="text-decoration-none">Details</NuxtLink></td>
+                  <td><Modal :id="f.amount" :title="f.funding_type" :details="f.details"></Modal></td>
                 </tr>
               </tbody>
             </table>
@@ -172,7 +166,7 @@ useHead({
                     </tr>
                   </tbody>
                 </table>
-                <p class="small">Activity data from <NuxtLink external to="https://gap.karma.xyz" target="_blank" class="text-decoration-none">Karma GAP</NuxtLink></p>
+                <p class="small">Activity data from <NuxtLink external to="https://gap.karmahq.xyz" target="_blank" class="text-decoration-none">Karma GAP</NuxtLink></p>
               </div>
               <div v-else>
                 <p>No Karma GAP milestones added</p>

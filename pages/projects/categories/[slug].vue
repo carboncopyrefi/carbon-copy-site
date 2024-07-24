@@ -64,10 +64,10 @@ useHead({
             <div class="card mb-3 shadow-sm">
                 <div class="card-body" v-if="data.fundraising?.length">
                     <div class="row card-text py-2" v-for="item in data.fundraising">
-                        <div class="col-6">
-                            {{ item.round }}
+                        <div class="col-7">
+                            {{ item.funding_type }}
                         </div>
-                        <div class="col-6 text-end">
+                        <div class="col-5 text-end">
                             ${{ item.amount }}
                         </div>
                         

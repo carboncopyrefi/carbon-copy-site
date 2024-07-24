@@ -7,6 +7,7 @@ defineProps<{
   body?: string
   status?: string
   completed?: string
+  details?: Array<string>
 }>()
 
 const linksContainer = ref<HTMLDivElement | null>(null)
@@ -33,7 +34,27 @@ onMounted(() => {
           <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">{{ title }}</h1>
         </div>
         <div class="modal-body milestone" ref="linksContainer">
-          <p v-html=body></p>
+          <p v-if="body" v-html=body></p>
+          <div v-if="details">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Year</th>
+                  <th scope="col">Round</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="item in details">
+                  <td>{{ item.year }}</td>
+                  <td>{{ item.round }}</td>
+                  <td>${{ item.amount }}</td>
+                  <td><NuxtLink external v-if="item.url" :to="item?.url" target="_blank" class="text-decoration-none">Details</NuxtLink></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p><span v-if="status === 'Overdue'" class="badge text-bg-danger">{{ status }}</span><span v-if="status === 'In Progress'" class="badge text-bg-secondary">{{ status }}</span><span v-if="status === 'Completed'" class="badge text-bg-success">{{ status }}</span></p>
           <div class="mt-4" v-if="status === 'Completed'">
             <p class="lead fw-bold">Completion update</p>
