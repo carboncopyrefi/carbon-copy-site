@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-    const { pending, data } = await useFetch('https://api.carboncopy.news/projects')
+    const { status, data } = await useFetch('https://api.carboncopy.news/projects')
     //const {pending, data } = await useFetch('http://127.0.0.1:5000/projects')
 
     useHead({
@@ -20,7 +20,7 @@
 
     <h1 class="mt-lg-5 mb-3">ReFi Projects</h1>
     <p class="lead">Our curated list of active Web3 regenerative finance (ReFi) projects. The basic criteria are: 1) Making ecological and/or social impact and 2) Using Web3 as part of the solution (not just using it for fundraising) and/or providing tools and services to ReFi projects and/or working in Web3 education.</p>
-    <div v-if="pending" class="d-flex justify-content-center my-5">
+    <div v-if="status === 'pending'" class="d-flex justify-content-center my-5">
         <div class="spinner-border text-primary" role="status">
           <span class="visually-hidden">Loading project list...</span>
         </div>

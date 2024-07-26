@@ -34,7 +34,7 @@ title.value = data._value.preview?.title
         <div class="col-md-8">
           <div class="card-body">
             <NuxtLink :to="meta['url']" class="text-decoration-none text-dark" target="_blank"><h5 class="card-title fw-bold article-title" v-html=title></h5></NuxtLink>
-            <p class="article-description card-text">{{ description?.slice(0,140) + "..." }}</p>
+            <p class="article-description card-text">{{ (description?.length > 200) ? description?.slice(0,200) + "..." : description }}</p>
             <p class="card-text"><small class="text-body-secondary preview-link">{{ meta['url'] }}</small></p>
           </div>
         </div>
