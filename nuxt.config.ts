@@ -2,9 +2,11 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
+
   colorMode: {
     preference: 'light'
   },
+
   modules: [
       '@nuxt/content',
       '@nuxt/image',
@@ -13,6 +15,7 @@ export default defineNuxtConfig({
       'nuxt-link-preview',
       '@nuxt/ui',
     ],
+
   app: {
         head: {
             htmlAttrs: {
@@ -20,27 +23,18 @@ export default defineNuxtConfig({
             }
           }
   },
+
   image: {
     domains: ['cdn.pixabay.com']
   },
-  // hooks: {
-  //   async 'nitro:config'(nitroConfig) {
-  //     if (nitroConfig.dev) return
 
-  //     const data = await fetch('https://api.carboncopy.news/projects')
-  //     const projects = await data.json()     
-
-  //     let slugs = projects.map(project => `/project/${project.slug}/`)
-  //     nitroConfig.prerender.routes?.push(...slugs);
-  //     return
-  //   }
-  // },
   gtag: {
     id: 'G-CJBPKLXNE9',
   },
   css: [
       "~/node_modules/bootstrap/dist/css/bootstrap.min.css"
   ],
+
   googleFonts: {
     preconnect: true,
     families: {
@@ -54,4 +48,6 @@ export default defineNuxtConfig({
       }
     }
   },
+
+  compatibilityDate: '2024-07-26',
 })
