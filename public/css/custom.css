@@ -41,7 +41,7 @@ body {
   width: 100%;
 }
 
-.article-body .preview-link {
+.article-body .preview-link, .article-body .landscape {
   font-family: Quicksand !important;
 }
 

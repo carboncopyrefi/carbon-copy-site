@@ -18,6 +18,8 @@ const { status, data: tokens } = await useFetch(`https://api.carboncopy.news/pro
 useHead({
   title: () => data.value?.metadata.name,
   meta: [
+            { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+            { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
             { hid: 'description', name: 'description', content: () => data.value?.metadata.description },
             { hid: 'og:description', property: 'og:description', content: () => data.value?.metadata.description },
             { hid: 'twitter:description', name: 'twitter:description', content: () => data.value?.metadata.description }

@@ -107,10 +107,11 @@ useHead({
               </div>
             </span>
             <div v-else>
-              <div v-if="content && content.milestones" class="row table-responsive">
+              <div v-if="content && content.activity" class="row table-responsive">
                 <table class="table align-middle">
                   <thead>
                     <tr>
+                      <th scope="col">Type</th>
                       <th scope="col">Name</th>
                       <th scope="col">Due Date</th>
                       <th scope="col">Status</th>
@@ -118,7 +119,8 @@ useHead({
                     </tr>
                   </thead>
                   <tbody>
-                    <tr v-for="m in content.milestones">
+                    <tr v-for="m in content.activity">
+                      <td>{{ m.type }}</td>
                       <td class="w-50">{{ m.name }}</td>
                       <td>{{ m.due_date }}</td>
                       <td><span v-if="m.status === 'Overdue'" class="badge text-bg-danger">{{ m.status }}</span><span v-if="m.status === 'In Progress'" class="badge text-bg-secondary">{{ m.status }}</span><span v-if="m.status === 'Completed'" class="badge text-bg-success">{{ m.status }}</span></td>
