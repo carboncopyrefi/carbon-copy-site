@@ -25,7 +25,7 @@ onMounted(() => {
 
 <template>
 
-<a href="" data-bs-toggle="modal" :data-bs-target="'#' + id"><i class="bi bi-info-circle-fill"></i></a>
+<a href="" data-bs-toggle="modal" :data-bs-target="'#' + id" class="fs-5"><i class="bi bi-info-circle-fill"></i></a>
 
 <div class="modal fade" :id="id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -33,7 +33,7 @@ onMounted(() => {
         <div class="modal-header">
           <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">{{ title }}</h1>
         </div>
-        <div class="modal-body milestone" ref="linksContainer">
+        <div class="modal-body milestone fs-6" ref="linksContainer">
           <p v-if="body" v-html=body></p>
           <div v-if="details">
             <table class="table table-striped">

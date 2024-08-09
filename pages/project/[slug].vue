@@ -74,7 +74,7 @@ useHead({
         </div> -->
         <div class="row mb-5">
           <div class="col-lg-8">
-            <h2>Fundraising</h2>
+            <h2>Fundraising <Modal class="fs-5" id="fundraising_list" title="Grant Data" body="Our dataset includes the following grant rounds:<br><br>Climate Round (Gitcoin Grants Beta, 18, 19, 20)<br>Shell Round (Gitcoin Grants 19, 20)<br>Celo QF Round (Gitcoin Grants 20)<br>CeloRPGF0<br>RetroPGF (Round 4)<br>Octant Community Fund<br>Giveth Cumulative (QF matching + donations)"></Modal></h2>
             <div v-if="!data.fundraising?.length">
               <span>No fundraising data available</span>
             </div>
@@ -88,7 +88,7 @@ useHead({
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="f in data.fundraising">
+                  <tr v-for="f in data.fundraising" class="align-middle">
                     <td>{{ f.funding_type }}</td>
                     <td>${{ f.amount }}</td>
                     <td><Modal :id="f.amount" :title="f.funding_type" :details="f.details"></Modal></td>
@@ -119,7 +119,7 @@ useHead({
                     </tr>
                   </thead>
                   <tbody>
-                    <tr v-for="m in content.activity">
+                    <tr v-for="m in content.activity" class="align-middle">
                       <td>{{ m.type }}</td>
                       <td class="w-50">{{ m.name }}</td>
                       <td>{{ m.due_date }}</td>
