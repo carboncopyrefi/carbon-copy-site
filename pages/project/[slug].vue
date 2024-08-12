@@ -74,7 +74,7 @@ useHead({
         </div> -->
         <div class="row mb-5">
           <div class="col-lg-8">
-            <h2>Fundraising <Modal class="fs-5" id="fundraising_list" title="Grant Data" body="Our dataset includes the following grant rounds:<br><br>Climate Round (Gitcoin Grants Beta, 18, 19, 20)<br>Shell Round (Gitcoin Grants 19, 20)<br>Celo QF Round (Gitcoin Grants 20)<br>CeloRPGF0<br>RetroPGF (Round 4)<br>Octant Community Fund<br>Giveth Cumulative (QF matching + donations)"></Modal></h2>
+            <h2>Fundraising <Modal class="fs-5" id="fundraising_list" title="Grant Data" body="Our dataset includes the following grant rounds:<br><br>Climate Round (Gitcoin Grants Beta, 18, 19, 20)<br>Shell Round (Gitcoin Grants 19, 20)<br>Web3 Open Source Software (GG Beta, 18)<br>Web3 Community & Education (GG Beta, 18)<br>Celo QF Round (Gitcoin Grants 20)<br>CeloRPGF0<br>RetroPGF (Round 4)<br>Octant Community Fund<br>Giveth Cumulative (QF matching + donations)"></Modal></h2>
             <div v-if="!data.fundraising?.length">
               <span>No fundraising data available</span>
             </div>
