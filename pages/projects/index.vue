@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
     const { status, data } = await useFetch('https://api.carboncopy.news/projects')
-    //const {pending, data } = await useFetch('http://127.0.0.1:5000/projects')
+    // const {status, data } = await useFetch('http://127.0.0.1:5000/projects')
 
     useHead({
         title: 'ReFi Projects',

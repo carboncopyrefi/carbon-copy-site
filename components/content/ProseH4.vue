@@ -1,5 +1,5 @@
 <template>
-  <h4 :id="id">
+  <h4 class="mt-4" :id="id">
     <slot />
   </h4>
 </template>
