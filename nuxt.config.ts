@@ -3,18 +3,25 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
 
+  site: {
+    url: 'https://carboncopy.news',
+    name: "CARBON Copy",
+    trailingSlash: true
+  },
+
   colorMode: {
     preference: 'light'
   },
 
   modules: [
-      '@nuxt/content',
-      '@nuxt/image',
-      'nuxt-gtag',
-      '@nuxtjs/google-fonts',
-      'nuxt-link-preview',
-      '@nuxt/ui',
-    ],
+    '@nuxt/content',
+    '@nuxt/image',
+    'nuxt-gtag',
+    '@nuxtjs/google-fonts',
+    'nuxt-link-preview',
+    '@nuxt/ui',
+    "@nuxtjs/sitemap"
+  ],
 
   app: {
         head: {
