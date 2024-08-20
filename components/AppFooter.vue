@@ -42,7 +42,6 @@
               <NuxtLink class="link-secondary text-decoration-none" to="/feed.xml" target="_blank"><i class="bi bi-rss-fill fs-5"></i></NuxtLink>
             </li>
           </ul>
-
         </div>
       </div>
     </div>

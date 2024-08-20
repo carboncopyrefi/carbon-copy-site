@@ -27,6 +27,11 @@ Working with experts from across disciplines, we are a building a framework for 
 
 **We want to *prove* demonstrable impact, not just talk about it.** -->
 
+## Newsletter
+
+::NewsletterSignup
+::
+
 ## Contacts
 
 Feel free to reach out anytime. Best place is through our [Discord](https://discord.carboncopy.news), but here are some other ways you can reach us:

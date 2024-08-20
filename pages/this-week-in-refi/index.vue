@@ -16,6 +16,10 @@
 
 <h1 class="mt-lg-5 mb-3">This Week In ReFi</h1>
 
+<NewsletterSignup></NewsletterSignup>
+
+<br>
+
 <ArticleCard :data=data :col=4 :margin=3></ArticleCard>
 
 

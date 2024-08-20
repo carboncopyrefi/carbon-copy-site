@@ -31,4 +31,5 @@
     </div>
   </div>
   <Projects />
+  <NewsletterSignup></NewsletterSignup>
 </template>

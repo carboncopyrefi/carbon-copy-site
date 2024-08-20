@@ -4,3 +4,4 @@ Disallow: /fonts/
 Disallow: /css/
 Disallow: /_nuxt/
 Disallow: /*.xml$
+Allow: /sitemap.xml
