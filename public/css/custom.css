@@ -20,20 +20,20 @@ body {
   padding-left: 3px;
 }
 
-.article-body ul, .list, .milestone ul {
+.article-body ul, .list, .milestone ul, .guide-body ul {
   list-style-type: square !important;
 }
 
-.article-body ol, .milestone ol {
+.article-body ol, .milestone ol, .guide-body ol {
   list-style-type: decimal !important;
 }
 
-.article-body li, .milestone li {
+.article-body li, .milestone li, .guide-body li {
   margin-bottom: 0.8rem;
 
 }
 
-.article-body a, .milestone a {
+.article-body a, .milestone a, .guide-body a {
   text-decoration: none;
 }
 
@@ -74,6 +74,15 @@ body {
       margin: 0 0 0 -3px;
     }
   }
+}
+
+.guide-body ul, .guide-body ol {
+  margin: 1.8rem 0;
+}
+
+.guide-body h2, .guide-body h3 {
+  font-weight:bold;
+  margin-bottom: 1rem;
 }
 
 .about-body {
