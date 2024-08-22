@@ -52,21 +52,22 @@
               Resources
             </a>
             <ul class="dropdown-menu">
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://gap.karmahq.xyz/funding-map" target="_blank">On-Chain Grant Directory</NuxtLink></li>
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://grantscanvas.gitcoin.co" target="_blank">Gitcoin Grants Canvas</NuxtLink></li>
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://www.regenatlas.xyz/" target="_blank">Regen Atlas</NuxtLink></li>
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://climatecoordination.org/climate-solutions-metrics-garden-1" target="_blank">CCN Metrics Garden</NuxtLink></li>
+              <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://gap.karmahq.xyz/funding-map" target="_blank">On-Chain Grant Directory</NuxtLink></li>
+              <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://grantscanvas.gitcoin.co" target="_blank">Gitcoin Grants Canvas</NuxtLink></li>
+              <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://www.regenatlas.xyz/" target="_blank">The Regen Atlas</NuxtLink></li>
+              <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://climatecoordination.org/climate-solutions-metrics-garden-1" target="_blank">CCN Metrics Garden</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/guides/web3-grant-fundraising-guide-ngo/">Web3 Fundraising Guide for Nigerian NGOs</NuxtLink></li>
             </ul>
           </li>
           <li class="nav-item py-3 py-lg-0">
             <NuxtLink class="link-secondary text-decoration-none" to="/about/">About</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
-            <NuxtLink class="link-secondary text-decoration-none" to="https://baserow.io/form/Bvg1VhbZvYjYDyylflMoYvqPA7Gogg1GDeTjzO8ku-o" target="_blank">Submit News</NuxtLink>
+            <NuxtLink external class="link-secondary text-decoration-none" to="https://baserow.io/form/Bvg1VhbZvYjYDyylflMoYvqPA7Gogg1GDeTjzO8ku-o" target="_blank">Submit News</NuxtLink>
           </li>
           <li class="nav-item py-3 py-lg-0">
-            <NuxtLink class="link-secondary text-decoration-none" to="https://warpcast.com/carboncopy-refi" target="_blank"><Icon name="simple-icons:farcaster" class="fs-5" /></NuxtLink>&nbsp;&nbsp;&nbsp;
-            <NuxtLink class="link-secondary text-decoration-none" to="https://discord.gg/53TpqNgPC5" target="_blank"><i class="bi bi-discord fs-5"></i></NuxtLink>&nbsp;&nbsp;&nbsp;
+            <NuxtLink external class="link-secondary text-decoration-none" to="https://warpcast.com/carboncopy-refi" target="_blank"><Icon name="simple-icons:farcaster" class="fs-5" /></NuxtLink>&nbsp;&nbsp;&nbsp;
+            <NuxtLink external class="link-secondary text-decoration-none" to="https://discord.gg/53TpqNgPC5" target="_blank"><i class="bi bi-discord fs-5"></i></NuxtLink>&nbsp;&nbsp;&nbsp;
             <NuxtLink class="link-secondary text-decoration-none" to="/feed.xml" target="_blank"><i class="bi bi-rss-fill fs-5"></i></NuxtLink>
           </li>
         </ul>
