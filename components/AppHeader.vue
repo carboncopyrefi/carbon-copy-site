@@ -45,7 +45,7 @@
             </ul>
           </li>
           <li class="nav-item py-3 py-lg-0">
-            <NuxtLink class="link-secondary text-decoration-none" to="/this-week-in-refi/">This Week in ReFi</NuxtLink>
+            <NuxtLink class="link-secondary text-decoration-none" to="/this-week-in-refi/">The ReFi Recap</NuxtLink>
           </li>
           <li class="nav-item dropdown py-3 py-lg-0 m-0">
             <a class="nav-item text-decoration-none dropdown-toggle link-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

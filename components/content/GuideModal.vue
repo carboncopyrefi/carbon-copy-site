@@ -22,7 +22,7 @@ onMounted(() => {
 
 <template>
 
-<a href="" data-bs-toggle="modal" :data-bs-target="'#' + id" class="fs-4 ms-2"><i class="bi bi-info-circle-fill"></i></a>
+<a data-bs-toggle="modal" :data-bs-target="'#' + id" class="fs-4 ms-2" role="button"><i class="bi bi-info-circle-fill"></i></a>
 
 <div class="modal fade" :id="id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">

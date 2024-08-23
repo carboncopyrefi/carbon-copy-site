@@ -1,15 +1,14 @@
 ---
 title: Web3 Grant Fundraising Guide for NGOs
-description: An overview of the work being done in Web3 to make the world a better place.
+description: A guide aimed at helping Nigerian NGOs explore Web3 funding options.
 category: Guide
-mainImage: "/images/article-sdgs.jpg"
-mainImageCaption: "Image credit: <a href='https://www.un.org/en/teach/SDGs' class='text-decoration-none' target='_blank'>United Nations</a>"
-date: "August 16th, 2024"
+mainImage: "https://cdn.pixabay.com/photo/2020/09/04/12/32/kayak-5543935_1280.jpg"
+date: "August 23rd, 2024"
 author: "Trinity Morphy"
 authorSlug: "trinity-morphy"
 ---
 
-This guide is for non-profits exploring Web3 funding options. It provides instructions for setting up a digital wallet, a cryptocurrency account, and Web3 fundraising platform accounts, along with tips for finding funding opportunities. I've tried to keep it concise to help you quickly find the necessary information.
+This guide is tailored specifically for Nigerian NGOs exploring Web3 funding options as an additional source of funding. It includes instructions for setting up a Web3 wallet, a cryptocurrency exchange account, and Web3 fundraising platform accounts, along with tips for finding funding opportunities. I've tried to keep it concise to help you quickly find the necessary information.
 
 <div class="alert alert-primary" role="alert">
 <p><strong>Note:</strong></p>
@@ -44,7 +43,7 @@ There are some important things you need to know and have before starting your W
 </ul>
 
 <div class="alert alert-primary" role="alert">
-  For a more detailed explanation of cryptocurrencies, I recommend this article by <a href="https://www.coursera.org/articles/how-does-cryptocurrency-work">Coursera</a>.
+  For a more detailed explanation of cryptocurrencies, I recommend this article by <a href="https://www.coursera.org/articles/how-does-cryptocurrency-work" target="_blank">Coursera</a>.
 </div>
 
 ### Potential risks
@@ -113,7 +112,7 @@ A Web3 wallet is your access point to Web3 fundraising for your NGO. We'll be us
 
 <ol>
 
-<li>Download the app on a <a href="https://rnbwapp.com/e/mobile">mobile device</a> or <a href="https://rainbow.me/download">computer</a>.
+<li>Download the app on a <a href="https://rnbwapp.com/e/mobile" target="_blank">mobile device</a> or <a href="https://rainbow.me/download" target="_blank">computer</a>.
 
 <div class="alert alert-warning fs-6" role="alert">
   This guide is optimised for mobile phones, however the steps will still work on your computer. 
@@ -1057,9 +1056,9 @@ Before we look for Web3 grant opportunities, it's important to first get involve
 
 </li>
 
-<li>Peruse CARBON Copy's Web3 impact <a href='/projects'>project database</a> to find potential partners.
+<li>Peruse CARBON Copy's Web3 impact <a href='/projects/' target='_blank'>project database</a> to find potential partners.
 
-::GuideModal{id="interact-4" title="We have curated <a href='/projects'>a database</a> of over 250 Web3 projects making ecological and social impact. Each project has its own profile page where you can find additional details and contact information."}
+::GuideModal{id="interact-4" title="Peruse CARBON Copy's Web3 impact project databases to find potential partners" body="We have curated <a href='/projects/'>a database</a> of over 250 Web3 projects making ecological and social impact. Each project has its own profile page where you can find additional details and contact information."}
 
 </li>
 
@@ -1080,7 +1079,7 @@ Before we look for Web3 grant opportunities, it's important to first get involve
 
 </li>
 
-<li>Check the Gitcoin Grant <a href='https://explorer.gitcoin.co/'>explorer</a>.
+<li>Check the Gitcoin Grant <a href='https://explorer.gitcoin.co/' target='_blank'>explorer</a>.
 
 ::GuideModal{id="funding-5" title="Check the Gitcoin Grant explorer" body="Gitcoin Grants is the most popular Web3 grant platform (more on it further down). You can check it periodically to see if any new grant programs become available."}
 
@@ -1116,7 +1115,7 @@ Here are a few things that are helpful to know about Web3 grants:
 
 <li>One of the most effective ways to include Web3 in your NGO work is to educate your community on Web3.
 
-::GuideModal{id="grant-2" title="One of the most effective ways to include Web3 in your NGO work is to educate your community on Web3" body=""}
+::GuideModal{id="grant-2" title="One of the most effective ways to include Web3 in your NGO work is to educate your community on Web3" body="It may sound challenging at first, but once you become comfortable in Web3 you'll be able to help others make the transition as well. This can significantly increase your eligibility for Web3 grant funding."}
 
 </li>
 

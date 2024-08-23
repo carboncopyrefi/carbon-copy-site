@@ -3,7 +3,7 @@
   const { data } = await useAsyncData('recap-list', () => queryContent('/this-week-in-refi').find())
 
   useHead({
-    title: 'This Week in ReFi',
+    title: 'The ReFi Recap',
     meta: [
       { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
       { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
@@ -14,7 +14,7 @@
 
 <template>
 
-<h1 class="mt-lg-5 mb-3">This Week In ReFi</h1>
+<h1 class="mt-lg-5 mb-3">Th ReFi Recap</h1>
 
 <NewsletterSignup></NewsletterSignup>
 
