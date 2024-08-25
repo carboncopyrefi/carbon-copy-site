@@ -37,6 +37,6 @@ const { status, data: content } = await useFetch(`https://api.carboncopy.news/ne
 
 <br><br>
 
-<NuxtLink to="archive" class="text-decoration-none">See Past Editions</NuxtLink>
+<NuxtLink to="/this-week-in-refi/archive/" class="text-decoration-none">See Past Editions</NuxtLink>
 
 </template>

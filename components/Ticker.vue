@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-12">
             <div class="row g-0">
-                <div class="col-lg-3 col-xl-2">
+                <div class="col-lg-3 col-xl-2 text-center">
                     <div class="px-3 pt-3 p-lg-4 bg-light border-end">
                         <strong>Latest ReFi News</strong>
                     </div>
