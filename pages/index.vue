@@ -7,29 +7,26 @@
     ]
   })
 
-  const { data: learn } = await useAsyncData('learn', () => queryContent('/learn').limit(4).find())
+  const { data: learn } = await useAsyncData('learn', () => queryContent('/learn').limit(3).find())
   const { data: features } = await useAsyncData('features', () => queryContent('/features').limit(3).find())
-  const { data: week } = await useAsyncData('week', () => queryContent('/this-week-in-refi').limit(3).find())
 
 </script>
 
 <template>
 
+  <Ticker></Ticker>
+
   <Features :data=features />
 
   <Reports />
 
-  <Week :data=week />
+  <ReFiRecap />
 
   <div class="row mb-5">
-    <div class="col-md-8">
+    <div class="col-12">
       <Learn :data=learn />
       <Feed />
     </div>
-    <div class="col-md-4">
-      <ProjectNews />
-    </div>
   </div>
-  <Projects />
-  <NewsletterSignup></NewsletterSignup>
+  <!-- <Projects /> -->
 </template>

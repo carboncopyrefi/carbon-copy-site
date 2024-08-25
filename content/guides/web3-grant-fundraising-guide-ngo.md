@@ -152,7 +152,7 @@ A Web3 wallet is your access point to Web3 fundraising for your NGO. We'll be us
 
 </li>
 
-<li>Create your password. Once the password shows Excellent, select “Set password”.
+<li>Create your password. Once the password shows Excellent, select "Set password".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 1 - How to set up a Web3 wallet - 5.png"}
 ::
@@ -187,7 +187,7 @@ An exchange account allows you to swap cryptocurrency for fiat and vice versa. W
 
 </li>
 
-<li>Tap “Get Started”.
+<li>Tap "Get Started".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 1 - Setting up a crypto exchange account - 2.png"}
 ::
@@ -212,21 +212,21 @@ An exchange account allows you to swap cryptocurrency for fiat and vice versa. W
 
 </li>
 
-<li>Enter the security verification code sent to your email address and tap “Submit”.
+<li>Enter the security verification code sent to your email address and tap "Submit".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 1 - Setting up a crypto exchange account - 5.png"}
 ::
 
 </li>
 
-<li>The account has been created but you cannot use it until you verify your identity, so tap “Verify now”. 
+<li>The account has been created but you cannot use it until you verify your identity, so tap "Verify now". 
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 1 - Setting up a crypto exchange account - 6.png"}
 ::
 
 </li>
 
-<li>Select your country and ID type, and click “Continue”.
+<li>Select your country and ID type, and click "Continue".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 1 - Setting up a crypto exchange account - 7.png"}
 ::
@@ -298,14 +298,14 @@ Also known as "on-ramping", converting some fiat to crypto is necessary for tran
 
 <ol>
 
-<li>Open the Bitget App and tap the “Add funds” button at the top right corner.
+<li>Open the Bitget App and tap the "Add funds" button at the top right corner.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 2 - Converting from fiat to crypto - 1.png"}
 ::
 
 </li>
 
-<li>Our focus is on the “Buy Crypto with” section. Select the “Third-party payment” option.
+<li>Our focus is on the "Buy Crypto with" section. Select the "Third-party payment" option.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 2 - Converting from fiat to crypto - 2.png"}
 ::
@@ -314,7 +314,7 @@ Also known as "on-ramping", converting some fiat to crypto is necessary for tran
 
 </li>
 
-<li>Enter a small amount in the "Pay" box, say 7,000 NGN. Select "USDT" from the "Receive" dropdown. Make sure "AlchemyPay" is selected under "Choose a third party". Click “Buy USDT.”
+<li>Enter a small amount in the "Pay" box, say 7,000 NGN. Select "USDT" from the "Receive" dropdown. Make sure "AlchemyPay" is selected under "Choose a third party". Click "Buy USDT."
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 2 - Converting from fiat to crypto - 3.png"}
 ::
@@ -349,7 +349,7 @@ Also known as "on-ramping", converting some fiat to crypto is necessary for tran
 
 </li>
 
-<li>Once AlchemyPay confirms the transaction, the transaction status will change from “Processing” to “Completed”. 
+<li>Once AlchemyPay confirms the transaction, the transaction status will change from "Processing" to "Completed". 
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 2 - Converting from fiat to crypto - 8.png"}
 ::
@@ -383,21 +383,21 @@ Gas is what you pay to transact on a blockchain network. It's typically paid in 
 
 <ol>
 
-<li>If not already open, open the Bitget App and tap the “Trade” button at the bottom middle.
+<li>If not already open, open the Bitget App and tap the "Trade" button at the bottom middle.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 2 - Converting between cryptocurrencies - 1.png"}
 ::
 
 </li>
 
-<li>Click “Convert” on the next screen. Select "USDT" in the "From" field and enter a small amount, say 1 USDT. Select "OP" in the "To" field, then tap "Get quote".
+<li>Click "Convert" on the next screen. Select "USDT" in the "From" field and enter a small amount, say 1 USDT. Select "OP" in the "To" field, then tap "Get quote".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 2 - Converting between cryptocurrencies - 2.png"}
 ::
 
 </li>
 
-<li>You'll see the exchange rate for the cryptocurrencies you're swapping and the associated fees. Tap “Confirm”.
+<li>You'll see the exchange rate for the cryptocurrencies you're swapping and the associated fees. Tap "Confirm".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 2 - Converting between cryptocurrencies - 3.png"}
 ::
@@ -423,7 +423,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <ol> 
 
-<li>With the Bitget app open, tap “Assets” at the bottom navigation bar and then "Spot" along the top. You should see your OP tokens there.
+<li>With the Bitget app open, tap "Assets" at the bottom navigation bar and then "Spot" along the top. You should see your OP tokens there.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 2 - Withdrawing to wallet - 1.png"}
 ::
@@ -458,7 +458,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Open your Rainbow wallet, and select “Copy” to copy the wallet address.
+<li>Open your Rainbow wallet, and select "Copy" to copy the wallet address.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 2 - Withdrawing to wallet - 6.png"}
 ::
@@ -469,7 +469,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Back in the Bitget app, paste the address in the “Withdrawal address” field, tap "All" in the "Withdrawal amount" field, then tap "Withdraw".
+<li>Back in the Bitget app, paste the address in the "Withdrawal address" field, tap "All" in the "Withdrawal amount" field, then tap "Withdraw".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 2 - Withdrawing to wallet - 7.png"}
 ::
@@ -551,28 +551,28 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Enter giveth.io in the address bar and tap “Sign in” at the top right. 
+<li>Enter giveth.io in the address bar and tap "Sign in" at the top right. 
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Signing in to Giveth - 2.png"}
 ::
 
 </li>
 
-<li>Tap “Sign in with Ethereum".
+<li>Tap "Sign in with Ethereum".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Signing in to Giveth - 3.png"}
 ::
 
 </li>
 
-<li>Select the “OP Mainnet” network.
+<li>Select the "OP Mainnet" network.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Signing in to Giveth - 4.png"}
 ::
 
 </li>
 
-<li>Tap “Rainbow” in the list.
+<li>Tap "Rainbow" in the list.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Signing in to Giveth - 5.png"}
 ::
@@ -607,7 +607,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Tap “My Account”.
+<li>Tap "My Account".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Creating a profile - 2.png"}
 ::
@@ -621,7 +621,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Tap “Confirm”.
+<li>Tap "Confirm".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Creating a profile - 4.png"}
 ::
@@ -642,35 +642,35 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Fill your name and email in the “What should we call you?” section.
+<li>Fill your name and email in the "What should we call you?" section.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Creating a profile - 8.png"}
 ::
 
 </li>
 
-<li>Fill your location in the “Where are you?” section and enter a URL to your website or social media.
+<li>Fill your location in the "Where are you?" section and enter a URL to your website or social media.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Creating a profile - 9.png"}
 ::
 
 </li>
 
-<li>Tap the “Upload Image” button.
+<li>Tap the "Upload Image" button.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Creating a profile - 11.png"}
 ::
 
 </li>
 
-<li>Tap “upload from device” to upload your preferred profile photo.
+<li>Tap "upload from device" to upload your preferred profile photo.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Creating a profile - 12.png"}
 ::
 
 </li>
 
-<li>If you want to change the picture, tap “Delete” and upload another. Otherwise tap “Save.”
+<li>If you want to change the picture, tap "Delete" and upload another. Otherwise tap "Save."
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Creating a profile - 13.png"}
 ::
@@ -701,7 +701,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Enter your NGO mission statement and goals where you have “Tell us about your project.”
+<li>Enter your NGO mission statement and goals where you have "Tell us about your project."
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - setting up your project - 3.png"}
 ::
@@ -733,14 +733,14 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Upload a brand picture of your NGO by selecting the “Upload cover image” toggle and tapping “Upload from device”. 
+<li>Upload a brand picture of your NGO by selecting the "Upload cover image" toggle and tapping "Upload from device". 
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - setting up your project - 7.png"}
 ::
 
 </li>
 
-<li>In the “Receiving Funds” section, you’ll need to fill in an address for each network listed. 
+<li>In the "Receiving Funds" section, you’ll need to fill in an address for each network listed. 
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - setting up your project - 8.png"}
 ::
@@ -754,14 +754,14 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>You’ll fill in the copied wallet address for all networks <i>except Solana</i>. When you select a particular network, paste the address and tap “Add ADDRESS”.
+<li>You’ll fill in the copied wallet address for all networks <i>except Solana</i>. When you select a particular network, paste the address and tap "Add ADDRESS".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - setting up your project - 10.png"}
 ::
 
 </li>
 
-<li>Toggle the “Enable Recurring Donations” button on.
+<li>Toggle the "Enable Recurring Donations" button on.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - setting up your project - 11.png"}
 ::
@@ -772,7 +772,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Once you’re done, tap “Publish.”
+<li>Once you’re done, tap "Publish."
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - setting up your project - 12.png"}
 ::
@@ -793,7 +793,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li> 
 
-<li>If you click “Yes, Publish my Project,” you should see this congratulatory message.
+<li>If you click "Yes, Publish my Project," you should see this congratulatory message.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - setting up your project - 15.png"}
 ::
@@ -825,28 +825,28 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Tap “My Projects”.
+<li>Tap "My Projects".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Verifying your project - 3.png"}
 ::
 
 </li>
 
-<li>Tap the “Actions” dropdown menu and select “Verify Project”.
+<li>Tap the "Actions" dropdown menu and select "Verify Project".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Verifying your project - 5.png"}
 ::
 
 </li>
 
-<li>This section has important information on the verification process. Once you’re done reading, tap the “Next” at the bottom of the page.
+<li>This section has important information on the verification process. Once you’re done reading, tap the "Next" at the bottom of the page.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Verifying your project - 6.png"}
 ::
 
 </li>
 
-<li>Tap “Verify email address” to verify the email you used in setting up your profile. 
+<li>Tap "Verify email address" to verify the email you used in setting up your profile. 
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Verifying your project - 7.png"}
 ::
@@ -864,7 +864,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>If your NGO is legally registered, select “Yes”. Otherwise, select “No.” Ensure you fill out the information attached to each selection. 
+<li>If your NGO is legally registered, select "Yes". Otherwise, select "No." Ensure you fill out the information attached to each selection. 
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Verifying your project - 9.png"}
 ::
@@ -878,7 +878,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Copy your Giveth project link and post it on any of your NGO's social handles. Then copy the link to the post and submit in the “Project Social Link” box.
+<li>Copy your Giveth project link and post it on any of your NGO's social handles. Then copy the link to the post and submit in the "Project Social Link" box.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Verifying your project - 11.png"}
 ::
@@ -903,7 +903,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 </li>
 
-<li>Accept the Giveth terms and conditions and tap “Finish”.
+<li>Accept the Giveth terms and conditions and tap "Finish".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Verifying your project - 14.png"}
 ::
@@ -938,7 +938,7 @@ Project updates help keep donors aware of your activities. You don't need to add
 
 </li>
 
-<li>Tap “My Projects”.
+<li>Tap "My Projects".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 3 - Updating your project - 2.png"}
 ::
@@ -970,7 +970,7 @@ Project updates help keep donors aware of your activities. You don't need to add
 
 </li>
 
-<li>Tap the “Submit” button to publish your update.</li>
+<li>Tap the "Submit" button to publish your update.</li>
 
 <li>And Voila! There’s an update for our test project on the 21st of August.
 
@@ -1149,35 +1149,35 @@ Here are a few things that are helpful to know about Web3 grants:
 
 <ol> 
 
-<li>Open your Rainbow wallet, tap the browser icon, navigate to builder.gitcoin.co, and tap “Connect Wallet”.
+<li>Open your Rainbow wallet, tap the browser icon, navigate to builder.gitcoin.co, and tap "Connect Wallet".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 5 - Setting your NGO on Gitcoin - 1.png"}
 ::
 
 </li>
 
-<li>Tap “Rainbow” in the list.
+<li>Tap "Rainbow" in the list.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 5 - Setting your NGO on Gitcoin - 2.png"}
 ::
 
 </li>
 
-<li>When the wallet opens, to set the network to “Optimism” and tap the “Connect” button. 
+<li>When the wallet opens, to set the network to "Optimism" and tap the "Connect" button. 
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 5 - Setting your NGO on Gitcoin - 3.png"}
 ::
 
 </li>
 
-<li>Tap “Create a Project”.
+<li>Tap "Create a Project".
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 5 - Setting your NGO on Gitcoin - 4.png"}
 ::
 
 </li>
 
-<li>Select “Optimism “ from the dropdown menu.
+<li>Select "Optimism " from the dropdown menu.
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 5 - Setting your NGO on Gitcoin - 5.png"}
 ::
@@ -1220,7 +1220,7 @@ Here are a few things that are helpful to know about Web3 grants:
 
 </li>
 
-<li>Preview your project for mistakes and errors. If you’re satisfied, tap “Save and Publish”. Otherwise, tap “Go back to Editing”. 
+<li>Preview your project for mistakes and errors. If you’re satisfied, tap "Save and Publish". Otherwise, tap "Go back to Editing". 
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 5 - Setting your NGO on Gitcoin - 10.png"}
 ::
@@ -1234,7 +1234,7 @@ Here are a few things that are helpful to know about Web3 grants:
 
 </li>
 
-<li>Tap “Confirm” to submit the transaction for processing. 
+<li>Tap "Confirm" to submit the transaction for processing. 
 
 ::Slideover{imgUrl="/images/web3-fundraising-guide/Step 5 - Setting your NGO on Gitcoin - 12.png"}
 ::

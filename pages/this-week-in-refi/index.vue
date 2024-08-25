@@ -1,6 +1,14 @@
 <script setup>
 
-  const { data } = await useAsyncData('recap-list', () => queryContent('/this-week-in-refi').find())
+const { status, data: content } = await useFetch(`https://api.carboncopy.news/newsletter`, {
+  lazy: true,
+  server: false,
+})
+
+// const { status, data: content } = await useFetch(`http://127.0.0.1:5000/newsletter`, {
+//   lazy: true,
+//   server: false,
+// })
 
   useHead({
     title: 'The ReFi Recap',
@@ -14,13 +22,21 @@
 
 <template>
 
-<h1 class="mt-lg-5 mb-3">Th ReFi Recap</h1>
+<h1 class="mt-lg-5 mb-3">The ReFi Recap</h1>
+
+  <span v-if="status === 'pending'" class="d-flex justify-content-center my-5">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading impact data...</span>
+    </div>
+  </span>
+  <div v-else>
+    <ArticleCard :data=content :col=4 :margin=3></ArticleCard>
+  </div>
 
 <NewsletterSignup></NewsletterSignup>
 
-<br>
+<br><br>
 
-<ArticleCard :data=data :col=4 :margin=3></ArticleCard>
-
+<NuxtLink to="archive" class="text-decoration-none">See Past Editions</NuxtLink>
 
 </template>

@@ -12,6 +12,6 @@ defineProps<{
   Learn
 </h2>
 
-<ArticleCard :data=data :col=6 :margin=3 target="_self"></ArticleCard>
+<ArticleCard :data=data :col=4 :margin=3 target="_self"></ArticleCard>
 
 </template>

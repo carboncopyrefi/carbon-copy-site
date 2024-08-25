@@ -27,7 +27,7 @@
                 padded
                 @click="isOpen = false"></UButton>
 
-            <NuxtImg :src="imgUrl" class="w-100 mt-4 mt-lg-0" alt="" />
+            <img :src="imgUrl" class="w-100 mt-4 mt-lg-0" alt="" />
 
         </UCard>
         </USlideover>
