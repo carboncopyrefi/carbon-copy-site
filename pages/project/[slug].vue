@@ -75,26 +75,33 @@ useHead({
         <div class="row mb-5">
           <div class="col-lg-8">
             <h2>Fundraising <Modal class="fs-5" id="fundraising_list" title="Grant Data" body="Our dataset includes the following grant rounds:<br><br>Climate Round (Gitcoin Grants Beta, 18, 19, 20)<br>Shell Round (Gitcoin Grants 19, 20)<br>Web3 Open Source Software (GG Beta, 18, 19, 20)<br>Web3 Community & Education (GG Beta, 18, 19)<br>Celo QF Round (Gitcoin Grants 20)<br>CeloRPGF0<br>RetroPGF (Round 4)<br>Octant Community Fund<br>Giveth Cumulative (QF matching + donations)"></Modal></h2>
-            <div v-if="!data.fundraising?.length">
-              <span>No fundraising data available</span>
-            </div>
-            <div v-if="data.fundraising?.length">
-              <table class="table table-striped mb-0">
-                <thead>
-                  <tr>
-                    <th scope="col">Type</th>
-                    <th scope="col">Amount</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr v-for="f in data.fundraising" class="align-middle">
-                    <td>{{ f.funding_type }}</td>
-                    <td>${{ f.amount }}</td>
-                    <td><Modal :id="f.amount" :title="f.funding_type" :details="f.details"></Modal></td>
-                  </tr>
-                </tbody>
-              </table>
+            <span v-if="status === 'pending'" class="d-flex justify-content-center my-5">
+              <div class="spinner-border text-primary" role="status1">
+                <span class="visually-hidden">Loading fundraising data...</span>
+              </div>
+            </span>
+            <div v-else>
+              <div v-if="content && content.fundraising">
+                <table class="table table-striped mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">Type</th>
+                      <th scope="col">Amount</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="f in data.fundraising" class="align-middle">
+                      <td>{{ f.funding_type }}</td>
+                      <td>${{ f.amount }}</td>
+                      <td><Modal :id="f.amount" :title="f.funding_type" :details="f.details"></Modal></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <span v-else>
+                No fundraising data available
+              </span>
             </div>
           </div>
         </div>

@@ -34,7 +34,7 @@ useHead({
             </div>
         </div>
         <div v-for="category in data" class="col-md-4 col-6 text-center mb-5">
-            <h3 class="mb-5">{{ category.category }}</h3>
+            <NuxtLink class="text-black text-decoration-none" :to="'/projects/categories/' + category.category.toLowerCase().replace(/\s+/g, '-') + '/'"><h3 class="mb-5">{{ category.category }}</h3></NuxtLink>
             <div class="row justify-content-center">
                 <div v-for="project in category.projects" class="col-lg-2 col-4 mb-4 me-2 align-self-center">
                     <NuxtLink :to="'/project/' + project.slug + '/'"><NuxtImg :src="project.logo" :alt="project.name" loading="lazy"  width="100%" height="100%" /></NuxtLink>

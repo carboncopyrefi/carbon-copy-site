@@ -122,14 +122,14 @@ A Web3 wallet is your access point to Web3 fundraising for your NGO. We'll be us
 
  <li>Open the app and click "Create a new wallet."
     
-::Slideover{imgUrl="/images/Step 1 - How to set up a Web3 wallet - 1.jpg"}
+::Slideover{imgUrl="/images/step-1-how-to-set-up-a-web3-wallet-1.jpg"}
 ::
 
 </li>
 
 <li>Click "Reveal your recovery phrase".
 
-::Slideover{imgUrl="/images/Step 1 - How to set up a Web3 wallet - 2.jpg"}
+::Slideover{imgUrl="/images/step-1-how-to-set-up-a-web3-wallet-2.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -140,21 +140,21 @@ A Web3 wallet is your access point to Web3 fundraising for your NGO. We'll be us
 
 <li>Write down on paper in the order and numbering displayed, and store it in a safe place. Select "I’ve saved these words".    
 
-::Slideover{imgUrl="/images/Step 1 - How to set up a Web3 wallet - 3.jpg"}
+::Slideover{imgUrl="/images/step-1-how-to-set-up-a-web3-wallet-3.jpg"}
 ::
 
 </li>
 
 <li>Verify the phrase you wrote down.
 
-::Slideover{imgUrl="/images/Step 1 - How to set up a Web3 wallet - 4.jpg"}
+::Slideover{imgUrl="/images/step-1-how-to-set-up-a-web3-wallet-4.jpg"}
 ::
 
 </li>
 
 <li>Create your password. Once the password shows Excellent, select "Set password".
 
-::Slideover{imgUrl="/images/Step 1 - How to set up a Web3 wallet - 5.jpg"}
+::Slideover{imgUrl="/images/step-1-how-to-set-up-a-web3-wallet-5.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -165,7 +165,7 @@ A Web3 wallet is your access point to Web3 fundraising for your NGO. We'll be us
 
 <li>And voila! You have successfully created your Web3 wallet. 🎉
 
-::Slideover{imgUrl="/images/Step 1 - How to set up a Web3 wallet - 6.jpg"}
+::Slideover{imgUrl="/images/step-1-how-to-set-up-a-web3-wallet-6.jpg"}
 ::
 
 </li>
@@ -182,21 +182,21 @@ An exchange account allows you to swap cryptocurrency for fiat and vice versa. W
 
 <li>Open the app and tap "Continue".
 
-::Slideover{imgUrl="/images/Step 1 - Setting up a crypto exchange account - 1.jpg"}
+::Slideover{imgUrl="/images/step-1-setting-up-a-crypto-exchange-account-1.jpg"}
 ::
 
 </li>
 
 <li>Tap "Get Started".
 
-::Slideover{imgUrl="/images/Step 1 - Setting up a crypto exchange account - 2.jpg"}
+::Slideover{imgUrl="/images/step-1-setting-up-a-crypto-exchange-account-2.jpg"}
 ::
 
 </li>
 
 <li>Sign up with your email or mobile number and create a password.
 
-::Slideover{imgUrl="/images/Step 1 - Setting up a crypto exchange account - 3.jpg"}
+::Slideover{imgUrl="/images/step-1-setting-up-a-crypto-exchange-account-3.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -207,28 +207,28 @@ An exchange account allows you to swap cryptocurrency for fiat and vice versa. W
 
 <li>Ensure your password meets all the conditions in the pop-up, then tap "Create Account".
 
-::Slideover{imgUrl="/images/Step 1 - Setting up a crypto exchange account - 4.jpg"}
+::Slideover{imgUrl="/images/step-1-setting-up-a-crypto-exchange-account-4.jpg"}
 ::
 
 </li>
 
 <li>Enter the security verification code sent to your email address and tap "Submit".
 
-::Slideover{imgUrl="/images/Step 1 - Setting up a crypto exchange account - 5.jpg"}
+::Slideover{imgUrl="/images/step-1-setting-up-a-crypto-exchange-account-5.jpg"}
 ::
 
 </li>
 
 <li>The account has been created but you cannot use it until you verify your identity, so tap "Verify now". 
 
-::Slideover{imgUrl="/images/Step 1 - Setting up a crypto exchange account - 6.jpg"}
+::Slideover{imgUrl="/images/step-1-setting-up-a-crypto-exchange-account-6.jpg"}
 ::
 
 </li>
 
 <li>Select your country and ID type, and click "Continue".
 
-::Slideover{imgUrl="/images/Step 1 - Setting up a crypto exchange account - 7.jpg"}
+::Slideover{imgUrl="/images/step-1-setting-up-a-crypto-exchange-account-7.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -239,7 +239,7 @@ An exchange account allows you to swap cryptocurrency for fiat and vice versa. W
 
 <li>You can now freely use your crypto exchange account. 🎉
 
-::Slideover{imgUrl="/images/Step 1 - Setting up a crypto exchange account - 7.jpg"}
+::Slideover{imgUrl="/images/step-1-setting-up-a-crypto-exchange-account-7.jpg"}
 ::
 
 </li>
@@ -300,14 +300,14 @@ Also known as "on-ramping", converting some fiat to crypto is necessary for tran
 
 <li>Open the Bitget App and tap the "Add funds" button at the top right corner.
 
-::Slideover{imgUrl="/images/Step 2 - Converting from fiat to crypto - 1.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-from-fiat-to-crypto-1.jpg"}
 ::
 
 </li>
 
 <li>Our focus is on the "Buy Crypto with" section. Select the "Third-party payment" option.
 
-::Slideover{imgUrl="/images/Step 2 - Converting from fiat to crypto - 2.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-from-fiat-to-crypto-2.jpg"}
 ::
 
 </li>
@@ -316,42 +316,42 @@ Also known as "on-ramping", converting some fiat to crypto is necessary for tran
 
 <li>Enter a small amount in the "Pay" box, say 7,000 NGN. Select "USDT" from the "Receive" dropdown. Make sure "AlchemyPay" is selected under "Choose a third party". Click "Buy USDT."
 
-::Slideover{imgUrl="/images/Step 2 - Converting from fiat to crypto - 3.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-from-fiat-to-crypto-3.jpg"}
 ::
 
 </li>
 
 <li>Check the "I have read and agreed to the above terms" box and tap "Confirm". You will be redirected to AlchemyPay to complete the transaction.
 
-::Slideover{imgUrl="/images/Step 2 - Converting from fiat to crypto - 4.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-from-fiat-to-crypto-4.jpg"}
 ::
 
 </li>
 
 <li>Fill in the required information and tap "Confirm payment".
 
-::Slideover{imgUrl="/images/Step 2 - Converting from fiat to crypto - 5.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-from-fiat-to-crypto-5.jpg"}
 ::
 
 </li>
 
 <li>A local bank account will be provided tha you can transfer to. Make the transfer and then click "I have completed the payment". 
 
-::Slideover{imgUrl="/images/Step 2 - Converting from fiat to crypto - 6.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-from-fiat-to-crypto-6.jpg"}
 ::
 
 </li>
 
 <li>Wait for the transaction to be processed by AlchemyPay. 
 
-::Slideover{imgUrl="/images/Step 2 - Converting from fiat to crypto - 7.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-from-fiat-to-crypto-7.jpg"}
 ::
 
 </li>
 
 <li>Once AlchemyPay confirms the transaction, the transaction status will change from "Processing" to "Completed". 
 
-::Slideover{imgUrl="/images/Step 2 - Converting from fiat to crypto - 8.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-from-fiat-to-crypto-8.jpg"}
 ::
 
 </li>
@@ -359,7 +359,7 @@ Also known as "on-ramping", converting some fiat to crypto is necessary for tran
 <li>You should receive an email confirmation from AlchemyPay.
 
 
-::Slideover{imgUrl="/images/Step 2 - Converting from fiat to crypto - 9.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-from-fiat-to-crypto-9.jpg"}
 ::
 
 </li>
@@ -367,7 +367,7 @@ Also known as "on-ramping", converting some fiat to crypto is necessary for tran
 <li>You’ll also receive a deposit confirmation mail from Bitget.
 
 
-::Slideover{imgUrl="/images/Step 2 - Converting from fiat to crypto - 10.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-from-fiat-to-crypto-10.jpg"}
 ::
 
 </li>
@@ -385,21 +385,21 @@ Gas is what you pay to transact on a blockchain network. It's typically paid in 
 
 <li>If not already open, open the Bitget App and tap the "Trade" button at the bottom middle.
 
-::Slideover{imgUrl="/images/Step 2 - Converting between cryptocurrencies - 1.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-between-cryptocurrencies-1.jpg"}
 ::
 
 </li>
 
 <li>Click "Convert" on the next screen. Select "USDT" in the "From" field and enter a small amount, say 1 USDT. Select "OP" in the "To" field, then tap "Get quote".
 
-::Slideover{imgUrl="/images/Step 2 - Converting between cryptocurrencies - 2.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-between-cryptocurrencies-2.jpg"}
 ::
 
 </li>
 
 <li>You'll see the exchange rate for the cryptocurrencies you're swapping and the associated fees. Tap "Confirm".
 
-::Slideover{imgUrl="/images/Step 2 - Converting between cryptocurrencies - 3.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-between-cryptocurrencies-3.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -410,7 +410,7 @@ Gas is what you pay to transact on a blockchain network. It's typically paid in 
 
 <li>Voila! You have swapped USDT for OP, the gas token for the Optimism blockchain.
 
-::Slideover{imgUrl="/images/Step 2 - Converting between cryptocurrencies - 4.jpg"}
+::Slideover{imgUrl="/images/step-2-converting-between-cryptocurrencies-4.jpg"}
 ::
 
 </li>
@@ -425,42 +425,42 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>With the Bitget app open, tap "Assets" at the bottom navigation bar and then "Spot" along the top. You should see your OP tokens there.
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 1.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-1.jpg"}
 ::
 
 </li>
 
 <li>Tap on the dotted menu icon at the bottom left.
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 2.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-2.jpg"}
 ::
 
 </li>
 
 <li>From the menu, select "Withdraw".
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 3.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-3.jpg"}
 ::
 
 </li>
 
 <li>Choose "On-chain withdrawal".
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 4.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-4.jpg"}
 ::
 
 </li>
 
 <li>Select "Optimism(Optimism)" as the "Withdrawal network"
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 5.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-5.jpg"}
 ::
 
 </li>
 
 <li>Open your Rainbow wallet, and select "Copy" to copy the wallet address.
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 6.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-6.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -471,7 +471,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Back in the Bitget app, paste the address in the "Withdrawal address" field, tap "All" in the "Withdrawal amount" field, then tap "Withdraw".
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 7.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-7.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -482,7 +482,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Review the details of your withdrawal and then tap confirm.
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 8.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-8.jpg"}
 ::
 
 <div class="alert alert-danger fs-6" role="alert">
@@ -493,28 +493,28 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Verification codes will be sent to your email and mobile number. Enter them in the respective boxes.
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 9.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-9.jpg"}
 ::
 
 </li>
 
 <li>Wait for the transaction to be processed.
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 10.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-10.jpg"}
 ::
 
 </li>
 
 <li>You will see a screen indicating the withdrawal was a success.
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 12.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-12.jpg"}
 ::
 
 </li>
 
 <li>Voila! Open your Rainbow wallet to check that your tokens have arrived.
 
-::Slideover{imgUrl="/images/Step 2 - Withdrawing to wallet - 13.jpg"}
+::Slideover{imgUrl="/images/step-2-withdrawing-to-wallet-13.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -546,42 +546,42 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Open Rainbow wallet on your mobile phone and tap the web icon.
 
-::Slideover{imgUrl="/images/Step 3 - Signing in to Giveth - 1.jpg"}
+::Slideover{imgUrl="/images/step-3-signing-in-to-giveth-1.jpg"}
 ::
 
 </li>
 
 <li>Enter giveth.io in the address bar and tap "Sign in" at the top right. 
 
-::Slideover{imgUrl="/images/Step 3 - Signing in to Giveth - 2.jpg"}
+::Slideover{imgUrl="/images/step-3-signing-in-to-giveth-2.jpg"}
 ::
 
 </li>
 
 <li>Tap "Sign in with Ethereum".
 
-::Slideover{imgUrl="/images/Step 3 - Signing in to Giveth - 3.jpg"}
+::Slideover{imgUrl="/images/step-3-signing-in-to-giveth-3.jpg"}
 ::
 
 </li>
 
 <li>Select the "OP Mainnet" network.
 
-::Slideover{imgUrl="/images/Step 3 - Signing in to Giveth - 4.jpg"}
+::Slideover{imgUrl="/images/step-3-signing-in-to-giveth-4.jpg"}
 ::
 
 </li>
 
 <li>Tap "Rainbow" in the list.
 
-::Slideover{imgUrl="/images/Step 3 - Signing in to Giveth - 5.jpg"}
+::Slideover{imgUrl="/images/step-3-signing-in-to-giveth-5.jpg"}
 ::
 
 </li>
 
 <li>Rainbow wallet will pop up to ask your approval to connect to Giveth. Tap "Connect".
 
-::Slideover{imgUrl="/images/Step 3 - Signing in to Giveth - 6.jpg"}
+::Slideover{imgUrl="/images/step-3-signing-in-to-giveth-6.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -598,7 +598,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Tap on the unicorn icon in the header bar.
 
-::Slideover{imgUrl="/images/Step 3 - Creating a profile - 1.jpg"}
+::Slideover{imgUrl="/images/step-3-creating-a-profile-1.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -609,70 +609,70 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Tap "My Account".
 
-::Slideover{imgUrl="/images/Step 3 - Creating a profile - 2.jpg"}
+::Slideover{imgUrl="/images/step-3-creating-a-profile-2.jpg"}
 ::
 
 </li>
 
 <li>Tap "Sign in".
 
-::Slideover{imgUrl="/images/Step 3 - Creating a profile - 3.jpg"}
+::Slideover{imgUrl="/images/step-3-creating-a-profile-3.jpg"}
 ::
 
 </li>
 
 <li>Tap "Confirm".
 
-::Slideover{imgUrl="/images/Step 3 - Creating a profile - 4.jpg"}
+::Slideover{imgUrl="/images/step-3-creating-a-profile-4.jpg"}
 ::
 
 </li>
 
 <li>Tap "Let’s Do It!" to create your Giveth profile.
 
-::Slideover{imgUrl="/images/Step 3 - Creating a profile - 5.jpg"}
+::Slideover{imgUrl="/images/step-3-creating-a-profile-5.jpg"}
 ::
 
 </li>
 
 <li>The next page will prompt you to complete your profile. Scroll to the end and click "Ok".
 
-::Slideover{imgUrl="/images/Step 3 - Creating a profile - 7.jpg"}
+::Slideover{imgUrl="/images/step-3-creating-a-profile-7.jpg"}
 ::
 
 </li>
 
 <li>Fill your name and email in the "What should we call you?" section.
 
-::Slideover{imgUrl="/images/Step 3 - Creating a profile - 8.jpg"}
+::Slideover{imgUrl="/images/step-3-creating-a-profile-8.jpg"}
 ::
 
 </li>
 
 <li>Fill your location in the "Where are you?" section and enter a URL to your website or social media.
 
-::Slideover{imgUrl="/images/Step 3 - Creating a profile - 9.jpg"}
+::Slideover{imgUrl="/images/step-3-creating-a-profile-9.jpg"}
 ::
 
 </li>
 
 <li>Tap the "Upload Image" button.
 
-::Slideover{imgUrl="/images/Step 3 - Creating a profile - 11.jpg"}
+::Slideover{imgUrl="/images/step-3-creating-a-profile-11.jpg"}
 ::
 
 </li>
 
 <li>Tap "upload from device" to upload your preferred profile photo.
 
-::Slideover{imgUrl="/images/Step 3 - Creating a profile - 12.jpg"}
+::Slideover{imgUrl="/images/step-3-creating-a-profile-12.jpg"}
 ::
 
 </li>
 
 <li>If you want to change the picture, tap "Delete" and upload another. Otherwise tap "Save."
 
-::Slideover{imgUrl="/images/Step 3 - Creating a profile - 13.jpg"}
+::Slideover{imgUrl="/images/step-3-creating-a-profile-13.jpg"}
 ::
 
 </li>
@@ -685,7 +685,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Now that we have completed our profile, we can create a project. Tap "New Project".
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 1.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-1.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -696,35 +696,35 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Fill in the name of your NGO where you have "Project Name".
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 2.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-2.jpg"}
 ::
 
 </li>
 
 <li>Enter your NGO mission statement and goals where you have "Tell us about your project."
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 3.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-3.jpg"}
 ::
 
 </li>
 
 <li>Enter the social media links for your NGO on the applicable social networks. 
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 4.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-4.jpg"}
 ::
 
 </li>
 
 <li>In the category section, select up to five categories your NGO can fit in.
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 5.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-5.jpg"}
 ::
 
 </li>
 
 <li>Enter the location where your NGO will be focused.
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 6.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-6.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -735,35 +735,35 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Upload a brand picture of your NGO by selecting the "Upload cover image" toggle and tapping "Upload from device". 
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 7.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-7.jpg"}
 ::
 
 </li>
 
 <li>In the "Receiving Funds" section, you’ll need to fill in an address for each network listed. 
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 8.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-8.jpg"}
 ::
 
 </li>
 
 <li>To get the address, tap the home icon (blue arrow) to return to the wallet screen and copy the wallet address (white arrow). Tap the web icon (green arrow) to return to the Giveth page.
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 9.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-9.jpg"}
 ::
 
 </li>
 
 <li>You’ll fill in the copied wallet address for all networks <i>except Solana</i>. When you select a particular network, paste the address and tap "Add ADDRESS".
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 10.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-10.jpg"}
 ::
 
 </li>
 
 <li>Toggle the "Enable Recurring Donations" button on.
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 11.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-11.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -774,28 +774,28 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Once you’re done, tap "Publish."
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 12.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-12.jpg"}
 ::
 
 </li>
 
 <li>Tap "Confirm".
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 13.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-13.jpg"}
 ::
 
 </li>
 
 <li>You will now process your very first blockchain transaction. Tap "Confirm".
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 14.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-14.jpg"}
 ::
 
 </li> 
 
 <li>If you click "Yes, Publish my Project," you should see this congratulatory message.
 
-::Slideover{imgUrl="/images/Step 3 - setting up your project - 15.jpg"}
+::Slideover{imgUrl="/images/step-3-setting-up-your-project-15.jpg"}
 ::
 
 </li> 
@@ -816,7 +816,7 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Now that your project is listed, tap the profile icon.
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 2.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-2.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -827,35 +827,35 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Tap "My Projects".
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 3.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-3.jpg"}
 ::
 
 </li>
 
 <li>Tap the "Actions" dropdown menu and select "Verify Project".
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 5.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-5.jpg"}
 ::
 
 </li>
 
 <li>This section has important information on the verification process. Once you’re done reading, tap the "Next" at the bottom of the page.
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 6.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-6.jpg"}
 ::
 
 </li>
 
 <li>Tap "Verify email address" to verify the email you used in setting up your profile. 
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 7.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-7.jpg"}
 ::
 
 </li>
 
 <li>Open your email account and tap the verification link in the email sent to your address.
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 8.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-8.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -866,21 +866,21 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>If your NGO is legally registered, select "Yes". Otherwise, select "No." Ensure you fill out the information attached to each selection. 
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 9.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-9.jpg"}
 ::
 
 </li>
 
 <li>Fill in the links to your personal social media accounts. 
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 10.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-10.jpg"}
 ::
 
 </li>
 
 <li>Copy your Giveth project link and post it on any of your NGO's social handles. Then copy the link to the post and submit in the "Project Social Link" box.
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 11.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-11.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -891,28 +891,28 @@ Finally, the begin transacting on the blockchain, you will transfer those OP tok
 
 <li>Provide details about your project’s mission, creation date, and future goals. Additionally, upload impact photos: images captured during previous initiatives.
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 12.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-12.jpg"}
 ::
 
 </li>
 
 <li>Provide details on how your project will use the funds raised through the platform.
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 13.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-13.jpg"}
 ::
 
 </li>
 
 <li>Accept the Giveth terms and conditions and tap "Finish".
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 14.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-14.jpg"}
 ::
 
 </li>
 
 <li>Voila! Your verification application has been submitted. Once the application is approved, you will receive a mail from Giveth.  
 
-::Slideover{imgUrl="/images/Step 3 - Verifying your project - 15.jpg"}
+::Slideover{imgUrl="/images/step-3-verifying-your-project-15.jpg"}
 ::
 
 </li>
@@ -929,7 +929,7 @@ Project updates help keep donors aware of your activities. You don't need to add
 
 <li>Tap the profile icon at the top right.
 
-::Slideover{imgUrl="/images/Step 3 - Updating your project - 1.jpg"}
+::Slideover{imgUrl="/images/step-3-updating-your-project-1.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -940,28 +940,28 @@ Project updates help keep donors aware of your activities. You don't need to add
 
 <li>Tap "My Projects".
 
-::Slideover{imgUrl="/images/Step 3 - Updating your project - 2.jpg"}
+::Slideover{imgUrl="/images/step-3-updating-your-project-2.jpg"}
 ::
 
 </li>
 
 <li>Tap "Actions".
 
-::Slideover{imgUrl="/images/Step 3 - Updating your project - 3.jpg"}
+::Slideover{imgUrl="/images/step-3-updating-your-project-3.jpg"}
 ::
 
 </li>
 
 <li>Tap "Add Update".
 
-::Slideover{imgUrl="/images/Step 3 - Updating your project - 4.jpg"}
+::Slideover{imgUrl="/images/step-3-updating-your-project-4.jpg"}
 ::
 
 </li>
 
 <li>Write your update.
 
-::Slideover{imgUrl="/images/Step 3 - Updating your project - 5.jpg"}
+::Slideover{imgUrl="/images/step-3-updating-your-project-5.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -974,7 +974,7 @@ Project updates help keep donors aware of your activities. You don't need to add
 
 <li>And Voila! There’s an update for our test project on the 21st of August.
 
-::Slideover{imgUrl="/images/Step 3 - Updating your project - 6.jpg"}
+::Slideover{imgUrl="/images/step-3-updating-your-project-6.jpg"}
 ::
 
 </li>
@@ -1151,42 +1151,42 @@ Here are a few things that are helpful to know about Web3 grants:
 
 <li>Open your Rainbow wallet, tap the browser icon, navigate to builder.gitcoin.co, and tap "Connect Wallet".
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 1.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-1.jpg"}
 ::
 
 </li>
 
 <li>Tap "Rainbow" in the list.
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 2.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-2.jpg"}
 ::
 
 </li>
 
 <li>When the wallet opens, to set the network to "Optimism" and tap the "Connect" button. 
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 3.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-3.jpg"}
 ::
 
 </li>
 
 <li>Tap "Create a Project".
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 4.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-4.jpg"}
 ::
 
 </li>
 
 <li>Select "Optimism " from the dropdown menu.
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 5.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-5.jpg"}
 ::
 
 </li>
 
 <li>Enter the name of your NGO and its website.
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 6.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-6.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -1197,7 +1197,7 @@ Here are a few things that are helpful to know about Web3 grants:
 
 <li>Upload the logo and banner images of your NGO. 
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 7.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-7.jpg"}
 ::
 
 <div class="alert alert-warning fs-6" role="alert">
@@ -1208,42 +1208,42 @@ Here are a few things that are helpful to know about Web3 grants:
 
 <li>Enter a comprehensive description of your NGO, its mission, goals, and achievements. 
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 8.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-8.jpg"}
 ::
 
 </li>
 
 <li>Even though it is optional, fill in your social links and proceed. 
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 9.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-9.jpg"}
 ::
 
 </li>
 
 <li>Preview your project for mistakes and errors. If you’re satisfied, tap "Save and Publish". Otherwise, tap "Go back to Editing". 
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 10.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-10.jpg"}
 ::
 
 </li>
 
 <li>A pop-up will appear displaying the status of your project's creation. You will need to process a blockchain transaction to save your project. 
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 11.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-11.jpg"}
 ::
 
 </li>
 
 <li>Tap "Confirm" to submit the transaction for processing. 
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 12.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-12.jpg"}
 ::
 
 </li>
 
 <li>You’ll see a display message encouraging the successful saving of your project. 
 
-::Slideover{imgUrl="/images/Step 5 - Setting your NGO on Gitcoin - 13.jpg"}
+::Slideover{imgUrl="/images/step-5-setting-your-ngo-on-gitcoin-13.jpg"}
 ::
 
 </li>

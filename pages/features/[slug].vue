@@ -7,6 +7,7 @@
   const img = useImage()
 
   const { data } = await useAsyncData(`content-${path}`, () => queryContent().where({_path:path.slice(-1) == '/' ? path.slice(0,-1) : path}).findOne())
+  const { data: articles } = await useAsyncData('articles', () => queryContent('/features').where({authorSlug: data.value?.authorSlug}).limit(2).find())
 
   useHead({
     meta: [
@@ -26,7 +27,6 @@
 </script>
 
 <template>
-  <div>
     <Article :data=data></Article>
-  </div>
+
 </template>

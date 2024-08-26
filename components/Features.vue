@@ -29,7 +29,7 @@ defineProps<{
         <div class="col-md-8">
           <div class="card-body">
             <p class="d-inline-block mb-2 text-primary text-uppercase fw-bold">{{ article.category }}</p>
-            <NuxtLink :to="article._path + '/'" class="text-decoration-none text-dark"><h4 class="card-title article-title">{{ article.title }}</h4></NuxtLink>
+            <NuxtLink :to="article._path + '/'" class="text-decoration-none text-dark stretched-link"><h4 class="card-title article-title">{{ article.title }}</h4></NuxtLink>
             <p class="card-text article-description">{{ article.description }}</p>
             <p class="card-text"><small class="text-body-secondary">{{ article.date }}</small></p>
           </div>

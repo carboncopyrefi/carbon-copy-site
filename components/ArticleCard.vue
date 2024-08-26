@@ -20,10 +20,10 @@ defineProps<{
       </div>
       <div class="card-body">
         <span v-if="external">
-          <NuxtLink external :to="article._path" :target="target" class="text-decoration-none text-dark"><h5 class="card-title article-title">{{ article.title }}</h5></NuxtLink>
+          <NuxtLink external :to="article._path" :target="target" class="text-decoration-none text-dark stretched-link"><h5 class="card-title article-title">{{ article.title }}</h5></NuxtLink>
         </span>
         <span v-else>
-          <NuxtLink :to="article._path + '/'" :target="target" class="text-decoration-none text-dark"><h5 class="card-title article-title">{{ article.title }}</h5></NuxtLink>
+          <NuxtLink :to="article._path + '/'" :target="target" class="text-decoration-none text-dark stretched-link"><h5 class="card-title article-title">{{ article.title }}</h5></NuxtLink>
         </span>
       </div>
       <div v-if="article.publication" class="card-footer">

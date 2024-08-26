@@ -2,13 +2,13 @@
     <div class="row">
         <div class="col-12">
             <div class="row g-0">
-                <div class="col-lg-3 col-xl-2 text-center">
+                <div class="col-lg-3 col-xl-2 text-lg-center">
                     <div class="px-3 pt-3 p-lg-4 bg-light border-end">
                         <strong>Latest ReFi News</strong>
                     </div>
                 </div>
                 <div class="col-lg-9 col-xl-10">
-                    <div class="bg-light px-3 pb-3 p-lg-4">
+                    <div class="bg-light px-3 pb-3 p-lg-4 h-100">
                         <span id="headline-container"></span>
                     </div>
                 </div>
@@ -90,15 +90,6 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 1s;
-}
-
-.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
-  opacity: 0;
-}
 
 
 </style>
