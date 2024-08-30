@@ -1,12 +1,15 @@
 <script setup lang="ts">
 
 const props = defineProps<{
-  data?: array
+  data?: Array<any>
 }>()
 
 const row_items = props.data;
 
 const columns = [{
+    key: 'logo',
+    label: 'Logo'
+}, {
     key: 'name',
     label: 'Name',
     sortable: true,
@@ -65,7 +68,7 @@ const filteredRows = computed(() => {
         </template> -->
 
         <template #name-data="{ row }">
-            <NuxtLink class="text-decoration-none text-dark fw-bold fs-5" :to="'/project/' + row.slug + '/'">{{ row.name }}</NuxtLink>
+            <NuxtLink class="text-decoration-none text-dark fw-bold fs-6" :to="'/project/' + row.slug + '/'">{{ row.name }}</NuxtLink>
         </template>
 
         <template #description-data="{ row }">
@@ -74,6 +77,10 @@ const filteredRows = computed(() => {
 
         <template #location-data="{ row }">
             <span class="text-balance lg:text-wrap fs-6 text-dark">{{ row.location}}</span>
+        </template>
+
+        <template #logo-data="{ row }">
+            <NuxtImg width="50" :src="row.logo" class="img-fluid mx-auto" loading="lazy" :alt="row.project" />
         </template>
     </UTable>
 

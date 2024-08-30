@@ -1260,7 +1260,7 @@ Gitcoin Grants (GG) was designed by Gitcoin to support and sustain public goods.
 
 <ul>
 
-<li>GG rounds are available all the time but the biggest collection of fundraising rounds happen quarterly.
+<li>GG rounds are available all the time but the biggest collection of fundraising rounds happens quarterly.
 
 ::GuideModal{id="gitcoin-1" title="GG rounds are available all the time but the biggest collection of fundraising rounds happen quarterly" body="Because GG is a platform, any operator can create a grant round at any time. Gitcoin itself organises four big events each year with hundreds of thousands of dollars in grant funding available across various rounds. These events are the ones paying closest attention to."}
 

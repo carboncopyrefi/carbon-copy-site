@@ -2,7 +2,7 @@
 <script setup lang="ts">
 
 defineProps<{
-  data?: array
+  data?: any
 }>()
 
 const { path } = useRoute()

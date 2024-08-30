@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 defineProps<{
-  data?: array
+  data?: Array<any>
   col?: number
   margin?: number
   target?: string

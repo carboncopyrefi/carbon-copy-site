@@ -104,7 +104,7 @@ useHead({
                                 <span v-else>{{ token.percent_change }}%</span>
                             </div>
                             <div class="col-1">
-                                <NuxtLink :to="token.url" target="_blank"><i class="bi bi-box-arrow-up-right"></i></NuxtLink>
+                                <NuxtLink :to="token.url" target="_blank" external><i class="bi bi-box-arrow-up-right"></i></NuxtLink>
                             </div>
                         </div>
                     </div>
