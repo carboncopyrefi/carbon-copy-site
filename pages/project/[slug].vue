@@ -91,7 +91,7 @@ useHead({
                     </tr>
                   </thead>
                   <tbody>
-                    <tr v-for="f in data.fundraising" class="align-middle">
+                    <tr v-for="f in content.fundraising" class="align-middle">
                       <td>{{ f.funding_type }}</td>
                       <td>${{ f.amount }}</td>
                       <td><Modal :id="f.amount" :title="f.funding_type" :details="f.details"></Modal></td>
