@@ -4,7 +4,7 @@
         lazy: true,
         server: false
     })
-    // const {status, data } = await useFetch('http://127.0.0.1:5000/tokens', {
+    // const { status, data } = await useFetch('http://127.0.0.1:5000/tokens', {
     //     lazy: true,
     //     server: false
     // })
@@ -24,7 +24,7 @@
 
 <template>
 
-    <h1 class="mt-lg-5 mb-3">ReFi Tokens</h1>
+    <h1 class="mt-lg-5 mb-3">ReFi Tokens <span v-if="data">({{ data.count }})</span></h1>
     <p class="lead">A list of tokens in or adjacent to the ReFi space. Does not currently include NFT collections.</p>
     <div v-if="status === 'pending'" class="d-flex justify-content-center my-5">
         <div class="spinner-border text-primary" role="status">
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div v-if="data">
-        <TokenTable :data=data></TokenTable>
+        <TokenTable :data=data.tokens></TokenTable>
     </div>
     
 

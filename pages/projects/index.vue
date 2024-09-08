@@ -18,7 +18,7 @@
 
 <template>
 
-    <h1 class="mt-lg-5 mb-3">ReFi Projects</h1>
+    <h1 class="mt-lg-5 mb-3">ReFi Projects ({{ data.count }})</h1>
     <p class="lead">Our curated list of active Web3 regenerative finance (ReFi) projects. The basic criteria are: 1) Making ecological and/or social impact and 2) Using Web3 as part of the solution (not just using it for fundraising) and/or providing tools and services to ReFi projects and/or working in Web3 education.</p>
     <div v-if="status === 'pending'" class="d-flex justify-content-center my-5">
         <div class="spinner-border text-primary" role="status">
@@ -26,7 +26,7 @@
         </div>
     </div>
     <div v-if="data">
-        <ProjectsTable :data=data></ProjectsTable>
+        <ProjectsTable :data=data.projects></ProjectsTable>
     </div>
     
 

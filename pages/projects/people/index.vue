@@ -18,7 +18,7 @@
 
 <template>
 
-    <h1 class="mt-lg-5 mb-3">ReFi Builders</h1>
+    <h1 class="mt-lg-5 mb-3">ReFi Builders ({{ data.count }})</h1>
     <p class="lead">A list of people building in the ReFi space.</p>
     <div v-if="status === 'pending'" class="d-flex justify-content-center my-5">
         <div class="spinner-border text-primary" role="status">
@@ -26,7 +26,7 @@
         </div>
     </div>
     <div v-if="data">
-        <PeopleTable :data=data></PeopleTable>
+        <PeopleTable :data=data.people></PeopleTable>
     </div>
     
 

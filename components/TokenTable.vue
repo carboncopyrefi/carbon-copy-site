@@ -72,7 +72,7 @@ const filteredRows = computed(() => {
         <template #percent_change-data="{ row }">
             <span v-if="row.percent_change < 0" class="text-danger fs-6"><i class="bi bi-arrow-down-square-fill"></i> {{ row.percent_change }}%</span>
             <span v-else-if="row.percent_change > 0" class="text-success fs-6"><i class="bi bi-arrow-up-square-fill"></i> {{ row.percent_change }}%</span>
-            <span v-else class="fs-6 text-dark">{{ row.percent_change }}%</span>
+            <span v-else class="fs-6 text-dark">N/A</span>
         </template>
 
     </UTable>
