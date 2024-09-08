@@ -39,9 +39,9 @@ export default defineNuxtConfig({
       if (nitroConfig.dev) return
 
       const data = await fetch('https://api.carboncopy.news/projects')
-      const projects = await data.json()     
+      const projects = await data.json()    
 
-      let slugs = projects.map(project => `/project/${project.slug}/`)
+      let slugs = projects.projects.map(project => `/project/${project.slug}/`)
       nitroConfig.prerender.routes?.push(...slugs);
       return
     }
