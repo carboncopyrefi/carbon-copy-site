@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import { ref } from 'vue'
 
-    const { data } = await useFetch('http://api.carboncopy.news/questions')
+    const { data } = await useFetch('https://api.carboncopy.news/questions')
 
     const formData = ref({
         company: '',
@@ -14,7 +14,7 @@
 
     const submitForm = async () => {
         formStatus.value = "pending"
-        const { data: responseData } = await useFetch('http://api.carboncopy.news/response', {
+        const { data: responseData } = await useFetch('https://api.carboncopy.news/response', {
             method: 'post',
             headers: {'token': 'PS91RoTw8hOvLgK4TyeTsEKv13ZFUhQR'},
             body: { 
