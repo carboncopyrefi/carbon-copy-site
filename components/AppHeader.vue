@@ -58,6 +58,7 @@
               <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://grantscanvas.gitcoin.co" target="_blank">Gitcoin Grants Canvas</NuxtLink></li>
               <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://www.regenatlas.xyz/" target="_blank">The Regen Atlas</NuxtLink></li>
               <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://climatecoordination.org/climate-solutions-metrics-garden-1" target="_blank">CCN Metrics Garden</NuxtLink></li>
+              <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://x.com/i/lists/1818142121741766830" target="_blank">X List of ReFi Projects</NuxtLink></li>
               <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/guides/web3-grant-fundraising-guide-ngo/">Web3 Fundraising Guide for Nigerian NGOs</NuxtLink></li>
             </ul>
           </li>

@@ -66,15 +66,9 @@ useHead({
             <p style="white-space: pre-line" v-html=data.description_long></p>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col mt-4">
-            <h2>Evaluation</h2>
-            <PolarChart />
-          </div>
-        </div> -->
         <div class="row mb-5">
           <div class="col-lg-8">
-            <h2>Fundraising <Modal class="fs-5" id="fundraising_list" title="Grant Data" body="Our dataset includes the following grant rounds:<br><br>Climate Round (Gitcoin Grants Beta, 18, 19, 20, 21)<br>Shell Round (Gitcoin Grants 19, 20, 21)<br>Web3 Open Source Software (GG Beta, 18, 19, 20)<br>Web3 Community & Education (GG Beta, 18, 19)<br>Celo QF Round (Gitcoin Grants 20)<br>CeloRPGF0<br>RetroPGF (Round 4)<br>Octant Community Fund<br>Giveth Cumulative (QF matching + donations)"></Modal></h2>
+            <h2>Fundraising <Modal class="fs-5" id="fundraising_list" title="Grant Data" body="Our dataset includes the following grant rounds:<br><br>Climate Round (Gitcoin Grants Beta, 18, 19, 20, 21)<br>Shell Round (Gitcoin Grants 19, 20, 21)<br>Web3 Open Source Software (GG Beta, 18, 19, 20)<br>Web3 Community & Education (GG Beta, 18, 19)<br>Celo QF Round (GG 20)<br>CeloRPGF0<br>Regen Coordi-Nation (GG21)<br>Real World Builders (GG21)<br>Asia Round (GG21)<br>RetroPGF (Round 4)<br>Octant Community Fund<br>Giveth Cumulative (QF matching + donations)"></Modal></h2>
             <span v-if="status === 'pending'" class="d-flex justify-content-center my-5">
               <div class="spinner-border text-primary" role="status1">
                 <span class="visually-hidden">Loading fundraising data...</span>
@@ -230,10 +224,10 @@ useHead({
             <div v-if="content && content.token">
               <table class="table table-borderless mb-0">
                 <tbody>
-                  <tr>
-                    <td>{{ content.token?.symbol }}</td>
-                    <td>${{ content.token?.price_usd }}</td>
-                    <td><span v-if="content.token?.percent_change < 0" class="text-danger"><i class="bi bi-arrow-down-square-fill"></i> {{ content.token?.percent_change }}%</span><span v-else-if="content.token?.percent_change > 0" class="text-success"><i class="bi bi-arrow-up-square-fill"></i> {{ content.token?.percent_change }}%</span><span v-else>&nbsp;</span></td>
+                  <tr v-for="token in content.token">
+                    <td>{{ token?.symbol }}</td>
+                    <td>${{ token?.price_usd }}</td>
+                    <td><span v-if="token?.percent_change < 0" class="text-danger"><i class="bi bi-arrow-down-square-fill"></i> {{ token?.percent_change }}%</span><span v-else-if="token?.percent_change > 0" class="text-success"><i class="bi bi-arrow-up-square-fill"></i> {{ token?.percent_change }}%</span><span v-else>&nbsp;</span></td>
                   </tr>
                 </tbody>
               </table>
