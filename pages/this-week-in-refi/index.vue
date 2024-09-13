@@ -26,7 +26,7 @@ const { status, data: content } = await useFetch(`https://api.carboncopy.news/ne
 
   <span v-if="status === 'pending'" class="d-flex justify-content-center my-5">
     <div class="spinner-border text-primary" role="status">
-      <span class="visually-hidden">Loading impact data...</span>
+      <span class="visually-hidden">Loading ReFi Recap data...</span>
     </div>
   </span>
   <div v-else>

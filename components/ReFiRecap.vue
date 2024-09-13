@@ -19,7 +19,7 @@ const { status, data: content } = await useFetch(`https://api.carboncopy.news/ne
     The ReFi Recap
     </h2>
 
-    <ArticleCard :data=content :col=4 :margin=3 target="_self"></ArticleCard>
+    <ArticleCard :data=content :col=4 :margin=3 :external="true"></ArticleCard>
     <NewsletterSignup></NewsletterSignup>
 
 </div>

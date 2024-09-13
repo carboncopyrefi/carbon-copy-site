@@ -7,7 +7,7 @@
 
       </div>
       <div class="col-lg-2 col-4 text-center">
-        <NuxtLink to="/"><NuxtImg src="/logo.png" style="width:100%" alt="CARBON Copy Logo" /></NuxtLink>
+        <NuxtLink to="/"><NuxtImg src="/logo.png" style="width:100%" alt="CARBON Copy Logo" format="webp"/></NuxtLink>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
         <!--<a class="btn btn-outline-secondary" href="#">Subscribe</a>-->
@@ -43,7 +43,7 @@
               <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/people/">ReFi Builders</NuxtLink></li>
               <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/tokens/">ReFi Tokens</NuxtLink></li>
               <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/landscape/">ReFi Landscape</NuxtLink></li>
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/events/">ReFi Events</NuxtLink></li>
+              <!-- <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/events/">ReFi Events</NuxtLink></li> -->
             </ul>
           </li>
           <li class="nav-item py-3 py-lg-0">

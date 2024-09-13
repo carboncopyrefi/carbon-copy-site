@@ -5,3 +5,5 @@ Disallow: /css/
 Disallow: /_nuxt/
 Disallow: /*.xml$
 Allow: /sitemap.xml
+
+Sitemap: https://carboncopy.news/sitemap.xml

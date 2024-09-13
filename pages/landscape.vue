@@ -25,9 +25,11 @@ useHead({
 
 <template>
 
-    <h1 class="mt-lg-5 mb-5">ReFi Landscape</h1>
+    <h1 class="mt-lg-5 mb-3">ReFi Landscape</h1>
 
-    <div class="row">
+    <p class="lead">Our taxonomy of the Web3 regenerative finance space. Note that some projects may appear in two or more categories.</p>
+
+    <div class="row mt-5">
         <div v-if="status === 'pending'" class="d-flex justify-content-center my-5">
             <div class="spinner-border text-primary" role="status1">
             <span class="visually-hidden">Loading landscape...</span>
@@ -37,7 +39,7 @@ useHead({
             <NuxtLink class="text-black text-decoration-none" :to="'/projects/categories/' + category.category.toLowerCase().replace(/\s+/g, '-') + '/'"><h3 class="mb-5">{{ category.category }}</h3></NuxtLink>
             <div class="row justify-content-center">
                 <div v-for="project in category.projects" class="col-lg-2 col-4 mb-4 me-2 align-self-center">
-                    <NuxtLink :to="'/project/' + project.slug + '/'"><NuxtImg :src="project.logo" :alt="project.name" loading="lazy"  width="100%" height="100%" /></NuxtLink>
+                    <NuxtLink :to="'/project/' + project.slug + '/'"><NuxtImg :src="project.logo" :alt="project.name" loading="lazy"  width="100%" height="100%" format="webp" /></NuxtLink>
                 </div>
             </div>
         </div>
