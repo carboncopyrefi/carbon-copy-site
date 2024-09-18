@@ -16,7 +16,7 @@ defineProps<{
   <div v-for="article in data" v-bind:class="'col-lg-' + col + ' col-12 mb-3 mb-lg-' + margin">
     <div class="card shadow-sm h-100">
       <div class="ratio ratio-4x3 d-none d-lg-block">
-        <NuxtImg :src="article.mainImage" sizes="sm:300px lg:800px" class="card-img-top img-fluid" style="object-fit: cover" loading="lazy" quality="75" alt="" format="webp" />
+        <NuxtImg :src="article.mainImage" sizes="sm:300px lg:800px" class="card-img-top img-fluid" style="object-fit: cover" loading="lazy" quality="75" alt="" />
       </div>
       <div class="card-body">
         <span v-if="external">
