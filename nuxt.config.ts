@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   },
 
   image: {
-    domains: ['cdn.pixabay.com', 'storage.googleapis.com', 'carboncopy.news']
+    domains: ['cdn.pixabay.com']
   },
   hooks: {
     async 'nitro:config'(nitroConfig) {
