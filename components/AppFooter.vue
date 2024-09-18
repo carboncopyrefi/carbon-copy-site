@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-xl-3 col-lg-4 col-sm-6 col-10">
-          <a href="/"><NuxtImg src="/logo.png" style="width:30%" alt="CARBON Copy Logo" /></a>
+          <a href="/"><NuxtImg src="/logo.png" style="width:30%" alt="CARBON Copy Logo" format="webp" loading="lazy" /></a>
           <p class="mt-2"><small>Copyright &copy; {{ currentYear }} CARBON Copy</small></p>
           <p class="mt-2"><small>Token data provided by CoinGecko</small></p>
         </div>

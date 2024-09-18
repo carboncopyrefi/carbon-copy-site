@@ -49,7 +49,7 @@ onMounted(() => {
                 <tr v-for="item in details">
                   <td>{{ item.year }}</td>
                   <td>{{ item.round }}</td>
-                  <td>${{ item.amount }}</td>
+                  <td>{{ item.amount === "0.00" ? "Undisclosed" : "$" + item.amount }}</td>
                   <td><NuxtLink external v-if="item.url" :to="item?.url" target="_blank" class="text-decoration-none">Details</NuxtLink></td>
                 </tr>
               </tbody>

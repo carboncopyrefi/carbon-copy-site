@@ -1,8 +1,25 @@
 <script setup lang="ts">
 
-defineProps<{
-  data?: any
+const props = defineProps<{
+  data?: Array<any>
 }>()
+
+const dateStr = props.data.date;
+const cleanedDateStr = dateStr.replace(/(\d+)(st|nd|rd|th)/, '$1');
+const dateObj = new Date(Date.parse(cleanedDateStr));
+const formattedDate = dateObj.toISOString().split('T')[0];
+
+useJsonld({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    'headline': props.data.title,
+    'author': {
+    '@type': 'Person',
+    'name': props.data.author
+    },
+    'datePublished': formattedDate,
+    'image': props.data.mainImage[0] === 'h' ? props.data.mainImage : 'https://carboncopy.news' + props.data.mainImage
+});
 
 </script>
 

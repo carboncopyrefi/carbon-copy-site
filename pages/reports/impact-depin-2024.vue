@@ -33,18 +33,18 @@ useHead({
         <p class="mt-4 mt-lg-5 small">Produced in coordination with:</p>
         <div class="row">
           <div class="col-2">
-            <NuxtImg src="https://pbs.twimg.com/profile_images/1574248519157678081/GUXP2Zv-_400x400.jpg"></NuxtImg>
+            <NuxtImg src="https://pbs.twimg.com/profile_images/1574248519157678081/GUXP2Zv-_400x400.jpg" format="webp"></NuxtImg>
           </div>
           <div class="col-2 offset-lg-1">
-            <NuxtImg src="https://pbs.twimg.com/profile_images/1546497208576610304/vfP2pW18_400x400.jpg"></NuxtImg>
+            <NuxtImg src="https://pbs.twimg.com/profile_images/1546497208576610304/vfP2pW18_400x400.jpg" format="webp"></NuxtImg>
           </div>
           <div class="col-2 offset-lg-1">
-            <NuxtImg src="https://pbs.twimg.com/profile_images/1690689777279074304/FKNvjAM5_400x400.jpg"></NuxtImg>
+            <NuxtImg src="https://pbs.twimg.com/profile_images/1690689777279074304/FKNvjAM5_400x400.jpg" format="webp"></NuxtImg>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-10 mt-lg-5 mt-3 offset-lg-1">
-          <NuxtImg src="/images/impact-depin-report-cover.jpg" style="width:100%" alt="The Impact DePIN Report Cover" />
+          <NuxtImg src="/images/impact-depin-report-cover.jpg" style="width:100%" alt="The Impact DePIN Report Cover" format="webp" quality="75"  />
           <NuxtLink to="/reports/The Impact DePIN Report 2024.pdf" target="_blank" class="btn btn-primary btn-lg mt-4 w-100">Download Report</NuxtLink>
       </div>
   </div>

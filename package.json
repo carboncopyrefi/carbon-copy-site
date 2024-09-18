@@ -13,7 +13,7 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/sitemap": "^6.0.0-beta.2",
     "@types/node": "^18.19.34",
-    "nuxt": "^3.13.0",
+    "nuxt": "^3.13.1",
     "nuxt-gtag": "^0.5.9"
   },
   "dependencies": {
@@ -31,6 +31,7 @@
     "lru-cache": "^10.2.2",
     "micromark": "^4.0.0",
     "nitropack": "^2.9.6",
+    "nuxt-jsonld": "^2.0.8",
     "nuxt-link-preview": "^0.1.5",
     "parse5": "^7.1.2",
     "postcss": "^8.4.38",

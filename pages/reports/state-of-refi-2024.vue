@@ -29,10 +29,10 @@ useHead({
             <p>We conclude by posing four big questions for the ReFi space to answer in 2024, along with a few suggestions of our own.</p>
             <p>A big thank you to everyone who made this report possible!</p>
             <p class="mt-4 mt-lg-5 small">Produced in coordination with:</p>
-            <NuxtImg src="https://images.crunchbase.com/image/upload/c_pad,w_400,f_auto,b_white,q_auto:eco,dpr_1/lkpus3lsvqmnzbxsfvdl"></NuxtImg>
+            <NuxtImg src="https://images.crunchbase.com/image/upload/c_pad,w_400,f_auto,b_white,q_auto:eco,dpr_1/lkpus3lsvqmnzbxsfvdl" format="webp"></NuxtImg>
         </div>
         <div class="col-lg-4 col-10 mt-lg-5 mt-3 offset-lg-1">
-            <NuxtImg src="/images/state-of-refi-report-cover.jpg" style="width:100%" alt="The State of ReFi Report Cover" />
+            <NuxtImg src="/images/state-of-refi-report-cover.jpg" style="width:100%" alt="The State of ReFi Report Cover" format="webp" quality="75" />
             <NuxtLink to="/reports/The State of ReFi Report 2024.pdf" target="_blank" class="btn btn-primary btn-lg mt-4 w-100">Download Report</NuxtLink>
         </div>
     </div>

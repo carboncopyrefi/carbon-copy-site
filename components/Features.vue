@@ -10,7 +10,7 @@ const backgroundStyles = computed(() => {
     quality: 75,
     fit: 'cover',
     format: 'webp',
-    sizes: '100vw'
+    sizes: 'lg:800px'
   })
   return { 'background-image': `url('${imgUrl}')` }
 })

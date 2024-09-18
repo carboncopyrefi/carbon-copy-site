@@ -20,7 +20,7 @@ const { status, data: content } = await useFetch(`https://api.carboncopy.news/ne
     </h2>
 
     <ArticleCard :data=content :col=4 :margin=3 :external="true"></ArticleCard>
-    <NewsletterSignup></NewsletterSignup>
+    <div class="d-none d-md-block"><NewsletterSignup></NewsletterSignup></div>
 
 </div>
 

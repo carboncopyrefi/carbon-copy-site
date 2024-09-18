@@ -7,7 +7,7 @@
             <div class="card mb-3 bg-light border border-0 rounded-0">
                 <div class="row g-0">
                     <div class="col-lg-4">
-                        <NuxtImg src="/images/impact-depin-report-cover.jpg" class="d-none d-md-block"  style="object-fit: cover;height:100%; width:100%;" alt="The Impact DePIN Report Cover" format="webp" />
+                        <NuxtImg src="/images/impact-depin-report-cover.jpg" class="d-none d-md-block"  style="object-fit: cover;height:100%; width:100%;" alt="The Impact DePIN Report Cover" format="webp" loading="lazy" />
                     </div>
                     <div class="col-lg-8 ">
                         <div class="card-body">
@@ -25,7 +25,7 @@
             <div class="card mb-3 bg-light border border-0 rounded-0">
                 <div class="row g-0 h-100">
                     <div class="col-lg-4">
-                        <NuxtImg src="/images/state-of-refi-report-cover.jpg" class="d-none d-md-block" style="object-fit: cover;height:100%; width:100%;" alt="The State of ReFi Report Cover" format="webp" />
+                        <NuxtImg src="/images/state-of-refi-report-cover.jpg" class="d-none d-md-block" style="object-fit: cover;height:100%; width:100%;" alt="The State of ReFi Report Cover" format="webp" loading="lazy" />
                     </div>
                     <div class="col-lg-8">
                         <div class="card-body">

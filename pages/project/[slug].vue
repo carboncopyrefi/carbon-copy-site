@@ -87,7 +87,7 @@ useHead({
                   <tbody>
                     <tr v-for="f in content.fundraising" class="align-middle">
                       <td>{{ f.funding_type }}</td>
-                      <td>${{ f.amount }}</td>
+                      <td>{{ f.amount === "0.00" ? "Undisclosed" : "$" + f.amount }}</td>
                       <td><Modal :id="f.amount" :title="f.funding_type" :details="f.details"></Modal></td>
                     </tr>
                   </tbody>
