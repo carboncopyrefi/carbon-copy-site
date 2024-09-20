@@ -150,7 +150,7 @@ useHead({
                 <div v-for="impact in content.impact" class="col-xl-4 col-md-6 mb-3">
                   <div v-if="impact.type === 'numeric'" class="card shadow-sm h-100">
                     <div class="card-header">
-                      {{ impact.name }}
+                      {{ impact.name }}&nbsp;&nbsp;<span v-if="impact.details"><Modal :id="impact.id" title="Note" :body="impact.details"></Modal></span>
                     </div>
                     <div class="card-body">
                       <span class="fs-2">{{ impact.metric }}</span><span>&nbsp;{{ impact.unit }}</span>
@@ -221,7 +221,7 @@ useHead({
             </div>
           </span>
           <div v-else>
-            <div v-if="content && content.token">
+            <div v-if="content && content.token?.length">
               <table class="table table-borderless mb-0">
                 <tbody>
                   <tr v-for="token in content.token">

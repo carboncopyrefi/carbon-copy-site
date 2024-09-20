@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 const props = defineProps<{
-  data?: Array<any>
+  data?: any
 }>()
 
 const dateStr = props.data.date;

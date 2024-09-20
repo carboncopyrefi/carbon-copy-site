@@ -11,7 +11,6 @@ const backgroundStyles = computed(() => {
     fit: 'cover',
     sizes: '100vw'
   })
-  console.log(imgUrl)
   return { 'background-image': `url('${imgUrl}')` }
 })
 
