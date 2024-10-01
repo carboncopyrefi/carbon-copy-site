@@ -3,6 +3,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
 
+  runtimeConfig: {
+    surveyAccessToken: ''
+  },
+
   site: {
     url: 'https://carboncopy.news',
     name: "CARBON Copy",

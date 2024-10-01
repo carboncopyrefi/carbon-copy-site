@@ -1,6 +1,8 @@
 <script setup lang="ts">
     import { ref } from 'vue'
 
+    const config = useRuntimeConfig()
+
     const { data } = await useFetch('https://api.carboncopy.news/questions')
 
     const formData = ref({
@@ -14,17 +16,17 @@
 
     const submitForm = async () => {
         formStatus.value = "pending"
-        const { data: responseData } = await useFetch('https://api.carboncopy.news/response', {
-            method: 'post',
-            headers: {'token': 'PS91RoTw8hOvLgK4TyeTsEKv13ZFUhQR'},
-            body: { 
+        
+    const { data: responseData } = await useFetch("/api/assessment", {
+        method: 'POST',
+        body: {
             name: formData.value.company,
             company: formData.value.company,
             email: formData.value.email,
             questions: data.value.questions,
             picked: formData.value.picked
-            }
-        })
+        }
+    });
 
         if (responseData.value) {
             formStatus.value = 'success'
