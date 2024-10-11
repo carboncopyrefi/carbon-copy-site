@@ -1,6 +1,10 @@
-# Nuxt 3 Minimal Starter
+# CARBON Copy Front-End
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+The front-end is written in Nuxt 3 and serves content from the API. 
+
+It has one environment variable: NUXT_SURVEY_ACCESS_TOKEN. It is used to authenticate with the CARBON Copy API for POSTing a request to save the regenerative self-assessment survey response.
+
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more about setting up and running a Nuxt site.
 
 ## Setup
 
