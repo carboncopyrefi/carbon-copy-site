@@ -16,7 +16,7 @@ const metricItem = computed(() => {
 )
 
 const modal_body = computed (() => {
-    return "<p>" + props.metric_note + "</p>" + "<p><strong>Projects Integrated</strong><br />" + metricItem.value.projects.join('<br>') + "</p>"
+    return "<p>" + props.metric_note + "</p>" + "<p><strong>Data Sources</strong><br />" + metricItem.value.projects.join('<br>') + "</p>"
     }
 )
 

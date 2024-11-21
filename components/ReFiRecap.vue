@@ -18,8 +18,14 @@ const { status, data: content } = await useFetch(`https://api.carboncopy.news/ne
     <h2 class="pb-4 mb-1">
     The ReFi Recap
     </h2>
-
-    <ArticleCard :data=content :col=4 :margin=3 :external="true"></ArticleCard>
+    <div v-if="status === 'pending'" class="d-flex justify-content-center my-5">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading news feed...</span>
+      </div>
+    </div>
+    <div v-if="content">
+      <ArticleCard :data=content :col=4 :margin=3 :external="true"></ArticleCard>
+    </div>
     <!-- <div class="d-none d-md-block"><NewsletterSignup></NewsletterSignup></div> -->
 
 </div>
