@@ -7,7 +7,7 @@ const props = defineProps<{
 const img = useImage()
 const backgroundStyles = computed(() => {
   const imgUrl = img(props.data[0].mainImage, {
-    quality: 75,
+    // quality: 75,
     fit: 'cover',
     sizes: '100vw'
   })
@@ -30,7 +30,7 @@ const backgroundStyles = computed(() => {
 </div>
 
 <div class="card mb-3 d-xs-block d-md-none">
-  <NuxtImg :src="data[0].mainImage" class="img-fluid" sizes="xs:300px lg:600px" style="object-fit: cover;height:100%; width:100%;" quality="75" alt=""></NuxtImg>
+  <NuxtImg :src="data[0].mainImage" class="img-fluid" sizes="xs:300px lg:600px" style="object-fit: cover;height:100%; width:100%;" alt=""></NuxtImg>
   <div class="card-body">
     <p class="d-inline-block mb-2 text-primary text-uppercase fw-bold">{{ data[0].category }}</p>
     <NuxtLink :to="data[0]._path + '/'" class="text-decoration-none text-dark stretched-link"><h4 class="card-title article-title">{{ data[0].title }}</h4></NuxtLink>
@@ -46,7 +46,7 @@ const backgroundStyles = computed(() => {
     <div class="card shadow-sm h-100">
       <div class="row g-0 h-100">
         <div class="col-md-4">
-          <NuxtImg :src="article.mainImage" class="rounded-start d-none d-md-block" sizes="xs:200px lg:600px" style="object-fit: cover;height:100%; width:100%;" quality="75" alt="" format="webp" />
+          <NuxtImg :src="article.mainImage" class="rounded-start d-none d-md-block" sizes="xs:200px lg:600px" style="object-fit: cover;height:100%; width:100%;" alt="" />
         </div>
         <div class="col-md-8">
           <div class="card-body">

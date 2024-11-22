@@ -226,7 +226,7 @@ useHead({
 
     <div class="row mt-5">
       <ClientOnly>
-        <p class="small">** Data current as of {{ data.aggregate[0].date }} **</p>
+        <p class="small">** Data current as of November 18th, 2024. **</p>
       </ClientOnly>
     </div>
 </template>
