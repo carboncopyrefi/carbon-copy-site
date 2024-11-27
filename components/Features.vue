@@ -9,7 +9,7 @@ const backgroundStyles = computed(() => {
   const imgUrl = img(props.data[0].mainImage, {
     // quality: 75,
     fit: 'cover',
-    sizes: '100vw'
+    // sizes: '100vw'
   })
   return { 'background-image': `url('${imgUrl}')` }
 })
