@@ -16,7 +16,7 @@ const { status, data: content } = await useFetch(`https://api.carboncopy.news/ne
 
 <div class="mb-5">
     <h2 class="pb-4 mb-1">
-    The ReFi Recap
+    The CARBON Copy Newsletter
     </h2>
     <div v-if="status === 'pending'" class="d-flex justify-content-center my-5">
       <div class="spinner-border text-primary" role="status">
