@@ -1284,7 +1284,7 @@ Gitcoin Grants (GG) was designed by Gitcoin to support and sustain public goods.
 
 ## Next Steps
 
-As I mentioned, this is not an exhaustive guide on web3 for non-profits. Let’s look at other things you could leverage to stand out:
+As I mentioned, this is not an exhaustive guide on Web3 for non-profits. Let’s look at other things you could leverage to stand out:
 
 <ul>
 
@@ -1324,9 +1324,9 @@ As I mentioned, this is not an exhaustive guide on web3 for non-profits. Let’s
 
 </li>
 
-<li>Join the 9ja Web3 Grant Initiative on Telegram!
+<li>Join the ReFi Club on WhatsApp.
 
-::GuideModal{id="nextsteps-6" title="Join the 9ja Web3 Grant Initiative on Telegram" body="I've started a community specifically for Nigeria NGOs looking for Web3 funding opportunities. We're starting on Telegram. You can join through this link and introduce yourself."}
+::GuideModal{id="nextsteps-6" title="Join the ReFi Club on WhatsApp" body="I've started a community specifically for African grassroots initiatives looking for Web3 funding opportunities. We're starting on WhatsApp. You can join through this link and introduce yourself."}
 
 </li>
 
