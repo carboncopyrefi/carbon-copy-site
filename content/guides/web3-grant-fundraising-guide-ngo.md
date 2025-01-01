@@ -1,6 +1,6 @@
 ---
-title: Web3 Grant Fundraising Guide for NGOs
-description: A guide aimed at helping Nigerian NGOs explore Web3 funding options.
+title: Web3 Grant Fundraising Guide for Grassroots Initiatives
+description: A guide aimed at helping African grassroots initiatives explore Web3 funding options.
 category: Guide
 mainImage: "https://cdn.pixabay.com/photo/2020/09/04/12/32/kayak-5543935_1280.jpg"
 date: "August 23rd, 2024"
@@ -8,7 +8,7 @@ author: "Trinity Morphy"
 authorSlug: "trinity-morphy"
 ---
 
-This guide is tailored specifically for Nigerian NGOs exploring Web3 funding options as an additional source of funding. It includes instructions for setting up a Web3 wallet, a cryptocurrency exchange account, and Web3 fundraising platform accounts, along with tips for finding funding opportunities. I've tried to keep it concise to help you quickly find the necessary information.
+This guide is tailored specifically for African grassroots initiatives exploring Web3 funding options as an additional source of funding. It includes instructions for setting up a Web3 wallet, a cryptocurrency exchange account, and Web3 fundraising platform accounts, along with tips for finding funding opportunities. I've tried to keep it concise to help you quickly find the necessary information.
 
 <div class="alert alert-primary" role="alert">
 <p><strong>Note:</strong></p>
