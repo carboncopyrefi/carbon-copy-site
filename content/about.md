@@ -44,6 +44,6 @@ Feel free to reach out anytime. Best place is through our [Discord](https://disc
 
 **General inquiries** - If you have questions or just want to say hi, send us an email at hello@carboncopy.news.
 
-**Socials** - Our X account was recently suspended for no apparent reason. We're now [on Farcaster](https://warpcast.com/carboncopy-refi). Follow us to get ReFi news and other great content directly to your feed.
+**Socials** - Our X account was recently suspended for no apparent reason. We're on [Farcaster](https://warpcast.com/carboncopy-refi), [LinkedIn](https://www.linkedin.com/company/carbon-copy-news/), and [Telegram](https://t.me/carboncopyrefi). Follow us to get ReFi news and other great content directly to your feed.
 
 **ReFi News Feed** - Get the latest updates from ReFi by plugging into our [RSS feed](https://api.carboncopy.news/feed).
