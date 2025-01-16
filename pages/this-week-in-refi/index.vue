@@ -5,6 +5,11 @@ const { status, data: content } = await useFetch(`https://api.carboncopy.news/ne
   server: false,
 })
 
+const { data: recap } = await useFetch(`https://api.carboncopy.news/refirecap`, {
+  lazy: true,
+  server: false,
+})
+
 // const { status, data: content } = await useFetch(`http://127.0.0.1:5000/newsletter`, {
 //   lazy: true,
 //   server: false,
@@ -33,9 +38,22 @@ const { status, data: content } = await useFetch(`https://api.carboncopy.news/ne
     <ArticleCard :data=content :col=4 :margin=3></ArticleCard>
   </div>
 
-<NewsletterSignup></NewsletterSignup>
+  <NewsletterSignup></NewsletterSignup>
 
 <br><br>
+
+<h1 class="mt-lg-5 mb-3">ReFi Recap</h1>
+
+<span v-if="status === 'pending'" class="d-flex justify-content-center my-5">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading newsletter editions...</span>
+  </div>
+</span>
+<div v-else>
+  <ArticleCard :data=recap :col=4 :margin=3></ArticleCard>
+</div>
+
+<br /><br />
 
 <NuxtLink to="/this-week-in-refi/archive/" class="text-decoration-none">See Past ReFi Recap Editions</NuxtLink>
 
