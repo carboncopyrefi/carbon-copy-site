@@ -36,14 +36,15 @@
           </li>
           <li class="nav-item dropdown py-3 py-lg-0 m-0">
             <a class="nav-item text-decoration-none dropdown-toggle link-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Data
+              ReFi Data
             </a>
             <ul class="dropdown-menu">
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/">ReFi Projects</NuxtLink></li>
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/people/">ReFi Builders</NuxtLink></li>
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/tokens/">ReFi Tokens</NuxtLink></li>
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/landscape/">ReFi Landscape</NuxtLink></li>
-              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/dashboard/">ReFi Impact Dashboard</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/">Projects</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/people/">Builders</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/tokens/">Tokens</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/landscape/">Landscape</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/dashboard/">Impact Dashboard</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/opportunities/">Opportunities</NuxtLink></li>
               <!-- <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/events/">ReFi Events</NuxtLink></li> -->
             </ul>
           </li>

@@ -16,7 +16,7 @@ const { data: recap } = await useFetch(`https://api.carboncopy.news/refirecap`, 
 // })
 
   useHead({
-    title: 'The CARBON Copy Newsletter',
+    title: 'Newsletters',
     meta: [
       { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
       { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
