@@ -37,36 +37,40 @@ useHead({
     </div>
     <div class="row">
       <div class="col-lg-8">
-        <div class="row">
-          <div class="col-lg-3 col-6 align-self-center text-center p-lg-3 mb-5 mb-lg-0 d-flex">
-            <NuxtImg :src="data.logo" :alt="data.name" sizes="400px" class="img-fluid mx-auto" width="100%" height="100%" />
-          </div>
-          <div class="col-lg-9">
+        <div class="card shadow-sm">
+          <div class="card-body">
             <div class="row">
-              <div class="col-12">
-                <h1 class="fw-bold">{{ data.name }}</h1>
+              <div class="col-lg-3 col-6 align-self-center text-center p-lg-3 mb-5 mb-lg-0 d-flex">
+                <NuxtImg :src="data.logo" :alt="data.name" sizes="400px" class="img-fluid mx-auto" width="100%" height="100%" />
               </div>
-              <div class="col-12">
-                <p class="lead">{{ data.description_short }}</p>
-              </div>
-              <div class="col-12">
-              <!--<span class="badge text-bg-secondary rounded-pill me-2" v-for="sector in data.sectors">{{ sector.value }}</span>-->
-                <span v-for="category in data.categories">
-                  <NuxtLink :to="'/projects/categories/' + category.slug + '/'" class="badge text-bg-primary py-2 px-3 rounded-pill me-2 text-decoration-none">{{ category.name }}</NuxtLink>
-                </span>
-              </div>
-              <div class="row mt-4 mt-lg-3 d-inline">           
-                <NuxtLink external v-for="link in data.links" :to="link.url" target="_blank" class="text-decoration-none fs-5 fs-sm-3"><i :class="'bi bi-' + link.icon"></i></NuxtLink>
+              <div class="col-lg-9">
+                <div class="row">
+                  <div class="col-12">
+                    <h1 class="fw-bold">{{ data.name }}</h1>
+                  </div>
+                  <div class="col-12">
+                    <p class="lead">{{ data.description_short }}</p>
+                  </div>
+                  <div class="col-12">
+                  <!--<span class="badge text-bg-secondary rounded-pill me-2" v-for="sector in data.sectors">{{ sector.value }}</span>-->
+                    <span v-for="category in data.categories">
+                      <NuxtLink :to="'/projects/categories/' + category.slug + '/'" class="badge text-bg-primary py-2 px-3 rounded-pill me-2 text-decoration-none">{{ category.name }}</NuxtLink>
+                    </span>
+                  </div>
+                  <div class="row mt-4 mt-lg-3 d-inline">           
+                    <NuxtLink external v-for="link in data.links" :to="link.url" target="_blank" class="text-decoration-none fs-5 fs-sm-3"><i :class="'bi bi-' + link.icon"></i></NuxtLink>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
         </div>
-        <div class="row">
+        </div>
+        <!-- <div class="row">
           <div class="col my-4">
             <p style="white-space: pre-line" v-html=data.description_long></p>
           </div>
-        </div>
-        <div class="row mb-5">
+        </div> -->
+        <div class="row my-5">
           <div class="col-lg-8">
             <h2>Fundraising <Modal class="fs-5" id="fundraising_list" title="Grant Data" body="Our dataset includes the following grant rounds:<br><br>Climate Round (Gitcoin Grants Beta, 18, 19, 20, 21)<br>Shell Round (Gitcoin Grants 19, 20, 21)<br>Web3 Open Source Software (GG Beta, 18, 19, 20)<br>Web3 Community & Education (GG Beta, 18, 19)<br>Celo QF Round (GG 20)<br>CeloRPGF0<br>Regen Coordi-Nation (GG21)<br>Real World Builders (GG21)<br>Asia Round (GG21)<br>RetroPGF (Round 4)<br>Octant Community Fund<br>Giveth Cumulative (QF matching + donations)"></Modal></h2>
             <span v-if="status === 'pending'" class="d-flex justify-content-center my-5">
@@ -211,13 +215,13 @@ useHead({
         </div>
       </div>
       <div class="col-lg-3 offset-lg-1 mt-5 mt-lg-0">
-        <div class="mb-5">
+        <div class="mb-5" v-if="content && content.token?.length">
           <h2>Token</h2>
           <div class="card shadow-sm">
             <div class="card-body">
           <span v-if="status === 'pending'" class="d-flex justify-content-center">
             <div class="spinner-border spinner-border-sm text-primary" role="status">
-              <span class="visually-hidden">Loading content feed...</span>
+              <span class="visually-hidden">Loading token feed...</span>
             </div>
           </span>
           <div v-else>
@@ -244,10 +248,10 @@ useHead({
           </span>
           <p class="card-text">{{ data.location }}</p>
         </div>
-        <div class="mb-5">
+        <div class="mb-5" v-if="data.protocol?.length">
           <h2>Protocols</h2>
           <span v-if="!data.protocol.length" class="m-0 p-0">
-            No protocol added
+            No protocols added
           </span>
           <p class="mb-0" v-for="protocol in data.protocol">{{ protocol.value }}&nbsp;&nbsp;</p>
         </div>
@@ -275,6 +279,13 @@ useHead({
           <div v-for="article in data.news.slice(0,5)">
             <small class="text-body-secondary">{{ article.date }}</small>
             <NuxtLink :to="article.url" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold">{{ article.headline }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
+          </div>
+        </div>
+        <div class="mb-5" v-if="content && content.opportunities?.length">
+          <h2>Opportunities</h2>
+          <div v-for="op in content.opportunities">
+            <small class="text-body-secondary">Deadline - {{ op.deadline }}</small>
+            <NuxtLink :to="op.url" target="_blank" class="text-decoration-none text-dark"><p class="fw-bold">{{ op.name }}&nbsp;&nbsp;<i class="bi bi-box-arrow-up-right"></i></p></NuxtLink>
           </div>
         </div>
         <div class="">
