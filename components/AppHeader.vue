@@ -45,6 +45,7 @@
               <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/landscape/">Landscape</NuxtLink></li>
               <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/dashboard/">Impact Dashboard</NuxtLink></li>
               <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/opportunities/">Opportunities</NuxtLink></li>
+              <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/projects/knowledge/">Knowledge</NuxtLink></li>
               <!-- <li><NuxtLink class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="/events/">ReFi Events</NuxtLink></li> -->
             </ul>
           </li>
