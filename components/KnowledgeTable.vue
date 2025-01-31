@@ -9,7 +9,7 @@ const columns = [
   { key: 'medium', label: '' },
   { key: 'title', label: 'Title', sortable: true },
   { key: 'topic', label: 'Topic' },
-  { key: 'company', label: 'Project', sortable: true },
+  { key: 'company', label: 'Source', sortable: true },
   { key: 'date', label: 'Date', sortable: true }
 ]
 
