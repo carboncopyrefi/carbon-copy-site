@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import KnowledgeTable from '~/components/KnowledgeTable.vue';
-
 
     const { status, data } = await useFetch(`https://api.carboncopy.news/knowledge`, {
         lazy: true,

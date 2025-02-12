@@ -100,3 +100,8 @@ body {
 .collapse {
   visibility: visible !important;
 }
+
+.refi-weekly-summary h5 {
+  font-weight: bold;
+  margin-top: 2rem;
+}
