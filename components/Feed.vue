@@ -9,9 +9,19 @@
   // server: false
   // })
 
+  const { data: carbonAdvisor } = await useFetch('https://api.carboncopy.news/articles/partner')
+  // const { data: carbonAdvisor } = await useFetch('http://127.0.0.1:5000/articles/partner')
+
 </script>
 
 <template>
+
+  <h2 class="pb-4 mb-1 mt-5">
+    Partner Content
+  </h2>
+  <div>
+    <ArticleCard :data=carbonAdvisor :col=3 :margin=3 target="_blank" :external="true"></ArticleCard>
+  </div>
 
   <h2 class="pb-4 mb-1 mt-5">
   Climate News
