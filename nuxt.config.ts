@@ -44,9 +44,18 @@ export default defineNuxtConfig({
       if (nitroConfig.dev) return
 
       const data = await fetch('https://api.carboncopy.news/projects')
-      const projects = await data.json()    
+      const projects = await data.json()
+      
+      const refiWeekly = await fetch('https://api.carboncopy.news/refi-weekly')
+      const episodes = await refiWeekly.json()
 
-      let slugs = projects.projects.map(project => `/project/${project.slug}/`)
+      let projectSlugs = projects.projects.map(project => `/project/${project.slug}/`)
+      let episodeSlugs = episodes.map(episode => `/refi-weekly/${episode.slug}/`)
+
+      let slugs = projectSlugs.concat(episodeSlugs)
+
+      console.log(slugs)
+
       nitroConfig.prerender.routes?.push(...slugs);
       return
     }

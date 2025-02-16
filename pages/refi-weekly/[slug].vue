@@ -19,9 +19,11 @@
   // });
   
   useHead({
-    title: episode.value?.title,
+    title: () => episode.value?.title,
     meta: [
+      { hid: 'description', name: 'description', content: () => episode.value?.subtitle },
       { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/images/refi-weekly-cover.webp' },
+      { hid: 'og:description', property: 'og:description', content: () => episode.value?.subtitle },
       { hid: 'twitter:description', name: 'twitter:description', content: episode.value?.subtitle },
       { hid: 'twitter:image', name: 'twitter:image', content: 'https://carboncopy.news/images/refi-weekly-cover.webp' },
     ],
