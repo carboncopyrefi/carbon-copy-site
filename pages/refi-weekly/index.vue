@@ -1,13 +1,7 @@
 <script setup lang="ts">
 
-    const { status, data } = await useFetch(`https://api.carboncopy.news/refi-weekly`, {
-        lazy: true,
-        server: false,
-    })
-    // const {status, data } = await useFetch(`http://127.0.0.1:5000/refi-weekly`, {
-    //     lazy: true,
-    //     server: false,
-    // })
+    const { status, data } = await useFetch(`https://api.carboncopy.news/refi-weekly`)
+    // const {status, data } = await useFetch(`http://127.0.0.1:5000/refi-weekly`)
 
     useHead({
         title: 'The ReFi Weekly with Trinity Morphy',
@@ -38,10 +32,12 @@
                     </div>
                 </div>
                 <div class="card shadow-sm" v-if="data">
+                    <div class="card-header">
+                        {{ data[0].date }}
+                    </div>
                     <div class="card-body">
                         <h4>{{ data[0].title }}</h4>
                         <p v-html=data[0].subtitle></p>
-                        <p>{{ data[0].date }}</p>
                         <NuxtLink external :href="data[0].link" class="btn btn-primary me-3" target="_blank">Listen on X</NuxtLink>
                         <NuxtLink :to="'/refi-weekly/' + data[0].slug + '/'" class="btn btn-success">Read Summary</NuxtLink>
                     </div>
@@ -60,12 +56,14 @@
                     </div>
                 </div>
                 <div v-if="data" class="row">
-                    <div v-for="episode in data" :key="episode.id" class="col-lg-6 mb-3">
+                    <div v-for="episode in data.slice(1)" :key="episode.id" class="col-lg-6 mb-3">
                         <div class="card shadow-sm h-100">
+                            <div class="card-header">
+                                {{ episode.date }}
+                            </div>
                             <div class="card-body">
                                 <h4>{{ episode.title }}</h4>
                                 <p v-html=episode.subtitle></p>
-                                <p>{{ episode.date }}</p>
                             </div>
                             <div class="card-footer border-0 bg-white pb-3">
                                 <NuxtLink external :href="episode.link" class="btn btn-primary me-3" target="_blank">Listen on X</NuxtLink>

@@ -8,15 +8,9 @@
   const route = useRoute()
   const episodeSlug = route.params.slug;
 
-  const { data: episode, status } = await useFetch(`https://api.carboncopy.news/refi-weekly/${episodeSlug}`, {
-        server: false,
-        lazy: true,
-  });
+  const { data: episode, status } = await useFetch(`https://api.carboncopy.news/refi-weekly/${episodeSlug}`);
 
-  // const { data: episode, status } = await useFetch(`http://127.0.0.1:5000/refi-weekly/${episodeSlug}`, {
-  //       server: false,
-  //       lazy: true,
-  // });
+  // const { data: episode, status } = await useFetch(`http://127.0.0.1:5000/refi-weekly/${episodeSlug}`);
   
   useHead({
     title: () => episode.value?.title,
