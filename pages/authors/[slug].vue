@@ -23,7 +23,7 @@ useHead({
 
     <div class="row mt-lg-5 mt-4">
         <div class="col-lg-3">
-            <NuxtImg :src="data.mainImage" style="width: 100%;" sizes="800px" loading="lazy" quality="80" alt="" />
+            <NuxtImg :src="data.mainImage" style="width: 100%;" sizes="800px" loading="lazy" alt="" />
         </div>
         <div class="col-lg-7">
             <h1 class="mt-lg-0 mt-3">{{ data.title }}</h1>
