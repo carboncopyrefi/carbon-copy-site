@@ -24,7 +24,7 @@ const backgroundStyles = computed(() => {
       <p class="d-inline-block mb-2 text-uppercase fw-bold">{{ data[0].category }}</p>
       <h1 class="article-title">{{ data[0].title }}</h1>
       <p class="lead my-3 article-description">{{ data[0].description }}</p>
-      <p class="lead mb-0"><NuxtLink :to="data[0]._path + '/'" class="btn btn-outline-light">Read</NuxtLink></p>
+      <p class="lead mb-0"><NuxtLink :to="data[0].path + '/'" class="btn btn-outline-light">Read</NuxtLink></p>
     </div>
   </div>
 </div>
@@ -33,11 +33,11 @@ const backgroundStyles = computed(() => {
   <NuxtImg :src="data[0].mainImage" class="img-fluid" sizes="xs:300px lg:600px" style="object-fit: cover;height:100%; width:100%;" alt=""></NuxtImg>
   <div class="card-body">
     <p class="d-inline-block mb-2 text-primary text-uppercase fw-bold">{{ data[0].category }}</p>
-    <NuxtLink :to="data[0]._path + '/'" class="text-decoration-none text-dark stretched-link"><h4 class="card-title article-title">{{ data[0].title }}</h4></NuxtLink>
+    <NuxtLink :to="data[0].path + '/'" class="text-decoration-none text-dark stretched-link"><h4 class="card-title article-title">{{ data[0].title }}</h4></NuxtLink>
     <p class="card-text text-secondary article-description">{{ data[0].description }}</p>
   </div>
   <div class="card-footer">
-    <span class="text-muted text-small">{{ data[0].date }}</span>
+    <span class="text-muted text-small">{{ data[0].meta.date }}</span>
   </div>
 </div>
 
@@ -51,7 +51,7 @@ const backgroundStyles = computed(() => {
         <div class="col-md-8">
           <div class="card-body">
             <p class="d-inline-block mb-2 text-primary text-uppercase fw-bold">{{ article.category }}</p>
-            <NuxtLink :to="article._path + '/'" class="text-decoration-none text-dark stretched-link"><h4 class="card-title article-title">{{ article.title }}</h4></NuxtLink>
+            <NuxtLink :to="article.path + '/'" class="text-decoration-none text-dark stretched-link"><h4 class="card-title article-title">{{ article.title }}</h4></NuxtLink>
             <p class="card-text text-secondary article-description">{{ article.description }}</p>
             <p class="card-text d-none d-md-block"><span class="text-body-secondary">{{ article.date }}</span></p>
           </div>

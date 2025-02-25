@@ -24,7 +24,6 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     'nuxt-link-preview',
     '@nuxt/ui',
-    '@nuxtjs/sitemap',
     'nuxt-jsonld'
   ],
 

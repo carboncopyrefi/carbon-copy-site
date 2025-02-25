@@ -1,11 +1,12 @@
 <script setup lang="ts">
+import { metaSchema } from '@nuxt/content';
+
 
 const route = useRoute()
-const { path } = route
 const img = useImage()
 
-const { data } = await useAsyncData(`content-${path}`, () => queryContent().where({_path:path.slice(-1) == '/' ? path.slice(0,-1) : path}).findOne())
-const { data: articles } = await useAsyncData('articles', () => queryContent('/features').where({authorSlug: route.params.slug}).find())
+const { data } = await useAsyncData(route.path, () => { return queryCollection('author').path(route.path).first()});
+const { data: articles } = await useAsyncData('articles', () => queryCollection('feature').where('authorSlug', '=', route.params.slug).all())
 
 useHead({
   title: () => data.value?.title,
@@ -13,7 +14,7 @@ useHead({
     { hid: 'description', name: 'description', content: () => data.value?.description },
     { hid: 'twitter:description', name: 'twitter:description', content: () => data.value?.description },
     { hid: 'og:description', property: 'og:description', content: () => data.value?.description },
-    { hid: 'og:image', property:'og:image', content: data.value?.mainImage },
+    { hid: 'og:image', property:'og:image', content: data.value?.meta.mainImage },
   ]
 })
 
@@ -23,16 +24,16 @@ useHead({
 
     <div class="row mt-lg-5 mt-4">
         <div class="col-lg-3">
-            <NuxtImg :src="data.mainImage" style="width: 100%;" sizes="800px" loading="lazy" alt="" />
+            <NuxtImg :src="data.meta.mainImage" style="width: 100%;" sizes="800px" loading="lazy" alt="" />
         </div>
         <div class="col-lg-7">
             <h1 class="mt-lg-0 mt-3">{{ data.title }}</h1>
             <p class="lead">{{ data.description }}</p>
-            <span v-if="data.twitter"><NuxtLink :to=data.twitter target="_blank"><i class="bi bi-twitter-x fs-4 me-3"></i></NuxtLink></span>
-            <span v-if="data.discord"><NuxtLink :to=data.discord target="_blank"><i class="bi bi-discord fs-4 me-3"></i></NuxtLink></span>
-            <span v-if="data.linkedin"><NuxtLink :to=data.linkedin target="_blank"><i class="bi bi-linkedin fs-4 me-3"></i></NuxtLink></span>
-            <span v-if="data.email"><NuxtLink :to="'mailto:'+ data.email" target="_blank"><i class="bi bi-envelope fs-4 me-3"></i></NuxtLink></span>
-            <p class="pt-4"><ContentDoc /></p>
+            <span v-if="data.meta.twitter"><NuxtLink :to=data.meta.twitter target="_blank"><i class="bi bi-twitter-x fs-4 me-3"></i></NuxtLink></span>
+            <span v-if="data.meta.discord"><NuxtLink :to=data?.meta.discord target="_blank"><i class="bi bi-discord fs-4 me-3"></i></NuxtLink></span>
+            <span v-if="data.meta.linkedin"><NuxtLink :to=data?.meta.linkedin target="_blank"><i class="bi bi-linkedin fs-4 me-3"></i></NuxtLink></span>
+            <span v-if="data?.meta.email"><NuxtLink :to="'mailto:'+ data.meta.email" target="_blank"><i class="bi bi-envelope fs-4 me-3"></i></NuxtLink></span>
+            <p class="pt-4"><ContentRenderer :value="data.body" /></p>
         </div>
     </div>
     <div class="row mt-lg-5 mt-4">

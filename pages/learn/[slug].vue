@@ -3,16 +3,17 @@
     layout: "article",
   });
 
-  const { path } = useRoute()
+  const route = useRoute()
   const img = useImage()
 
-  const { data } = await useAsyncData(`content-${path}`, () => queryContent().where({_path:path.slice(-1) == '/' ? path.slice(0,-1) : path}).findOne())
+  const { data } = await useAsyncData(route.path, () => { return queryCollection('learn').path(route.path).first()});
 
   useHead({
+    title: data.value.title,
     meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800, quality:80 }) },
+      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800 }) },
       { hid: 'twitter:description', name: 'twitter:description', content: data.value?.description },
-      { hid: 'twitter:image', name: 'twitter:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800, quality:80})},
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800 })},
     ]
   })
 

@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.7.0",
-    "@nuxt/vite-builder": "^0.10.0",
+    "@nuxt/vite-builder": "^3.15.4",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/sitemap": "^6.1.5",
     "@types/node": "^18.19.76",

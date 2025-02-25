@@ -23,7 +23,7 @@ defineProps<{
           <NuxtLink external :to="article._path" :target="target" class="text-decoration-none text-dark stretched-link"><h5 class="card-title article-title">{{ article.title }}</h5></NuxtLink>
         </span>
         <span v-else>
-          <NuxtLink :to="article._path + '/'" :target="target" class="text-decoration-none text-dark stretched-link"><h5 class="card-title article-title">{{ article.title }}</h5></NuxtLink>
+          <NuxtLink :to="article.path + '/'" :target="target" class="text-decoration-none text-dark stretched-link"><h5 class="card-title article-title">{{ article.title }}</h5></NuxtLink>
         </span>
         <div class="d-block d-lg-none article-description text-secondary">{{ article?.description }}</div>
       </div>

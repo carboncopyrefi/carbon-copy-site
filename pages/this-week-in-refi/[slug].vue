@@ -1,15 +1,16 @@
 <script setup lang="ts">
 
-  const { path } = useRoute()
+  const route = useRoute()
   const img = useImage()
 
-  const { data } = await useAsyncData(`content-${path}`, () => queryContent().where({_path:path.slice(-1) == '/' ? path.slice(0,-1) : path}).findOne())
+  const { data } = await useAsyncData(route.path, () => { return queryCollection('recap').path(route.path).first()});
 
   definePageMeta({
     layout: "article",
   });
 
   useHead({
+    title: data.value.title,
     meta: [
       { hid: 'og:image', property: 'og:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800, quality:80 }) },
       { hid: 'og:title', property: 'og:title', content: 'The ReFi Recap: ' + data.value?.title },

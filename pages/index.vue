@@ -7,15 +7,14 @@
     ]
   })
 
-  const { data: learn } = await useAsyncData('learn', () => queryContent('/learn').limit(3).find())
-  const { data: features } = await useAsyncData('features', () => queryContent('/features').limit(3).find())
+  const learn = await queryCollection('learn').limit(3).all()
+  const features = await queryCollection('feature').limit(3).order('sortDate', 'DESC').all()
 
 </script>
 
 <template>
 
   <Ticker></Ticker>
-
   <Features :data=features />
 
   <Reports />

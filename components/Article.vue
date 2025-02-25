@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ContentRenderer } from '#components';
+
 
 const props = defineProps<{
   data?: any
@@ -41,7 +43,7 @@ useJsonld({
       <span class="text-center small text-secondary d-block mt-2" v-html="data?.mainImageCaption"></span>
 
       <div class="article-body mt-4">
-        <ContentDoc />
+        <ContentRenderer :value="data.body" />
       </div>
   </div>
 </template>

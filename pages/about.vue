@@ -1,6 +1,9 @@
 <script setup lang="ts">
 
+const route = useRoute()
+
 useHead({
+    title: 'About Us',
     meta: [
       { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
       { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
@@ -11,14 +14,16 @@ useHead({
     layout: "article",
   });
 
-  const { data } = await useAsyncData('about', () => queryContent().findOne())
+  const { data: page } = await useAsyncData(route.path, () => {
+    return queryCollection('content').path(route.path).first()
+  })
 
 </script>
 
 <template>
 
   <div class="about-body">
-    <ContentDoc />
+    <ContentRenderer :value="page" />
   </div>
 
 </template>

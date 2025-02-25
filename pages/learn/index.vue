@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-  const { data } = await useAsyncData('learn-list', () => queryContent('/learn').find())
+const data = await queryCollection('learn').all()
 
   useHead({
     title: 'Learn',

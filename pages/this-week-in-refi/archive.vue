@@ -1,6 +1,6 @@
 <script setup>
 
-  const { data } = await useAsyncData('recap-list', () => queryContent('/this-week-in-refi').find())
+const data = await queryCollection('recap').all()
 
   useHead({
     title: 'The ReFi Recap Archive',

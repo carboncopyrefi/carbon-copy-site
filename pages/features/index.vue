@@ -1,6 +1,6 @@
-<script setup>
+<script setup lang="ts">
 
-  const { data } = await useAsyncData('features-list', () => queryContent('/features').find())
+const data = await queryCollection('feature').order('sortDate', 'DESC').all()
 
   useHead({
     title: 'Features',
