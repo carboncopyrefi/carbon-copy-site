@@ -32,7 +32,7 @@ useHead({
             <NuxtImg src="https://images.crunchbase.com/image/upload/c_pad,w_400,f_auto,b_white,q_auto:eco,dpr_1/lkpus3lsvqmnzbxsfvdl" format="webp"></NuxtImg>
         </div>
         <div class="col-lg-4 col-10 mt-lg-5 mt-3 offset-lg-1">
-            <NuxtImg src="/images/state-of-refi-report-cover.jpg" style="width:100%" alt="The State of ReFi Report Cover" format="webp" quality="75" />
+            <NuxtImg src="/images/state-of-refi-report-cover.jpg" style="width:100%" alt="The State of ReFi Report Cover" quality="75" />
             <NuxtLink to="/reports/The State of ReFi Report 2024.pdf" target="_blank" class="btn btn-primary btn-lg mt-4 w-100">Download Report</NuxtLink>
         </div>
     </div>

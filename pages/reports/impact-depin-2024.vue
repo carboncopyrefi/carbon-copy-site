@@ -44,7 +44,7 @@ useHead({
         </div>
       </div>
       <div class="col-lg-4 col-10 mt-lg-5 mt-3 offset-lg-1">
-          <NuxtImg src="/images/impact-depin-report-cover.jpg" style="width:100%" alt="The Impact DePIN Report Cover" format="webp" quality="75"  />
+          <NuxtImg src="/images/impact-depin-report-cover.jpg" style="width:100%" alt="The Impact DePIN Report Cover" quality="75"  />
           <NuxtLink to="/reports/The Impact DePIN Report 2024.pdf" target="_blank" class="btn btn-primary btn-lg mt-4 w-100">Download Report</NuxtLink>
       </div>
   </div>

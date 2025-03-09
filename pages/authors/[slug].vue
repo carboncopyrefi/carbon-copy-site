@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { metaSchema } from '@nuxt/content';
-
 
 const route = useRoute()
 const img = useImage()
 
 const { data } = await useAsyncData(route.path, () => { return queryCollection('author').path(route.path).first()});
-const { data: articles } = await useAsyncData('articles', () => queryCollection('feature').where('authorSlug', '=', route.params.slug).all())
+const { data: articles } = await useAsyncData('articles', () => queryCollection('feature').where('authorSlug', 'LIKE', '%' + route.params.slug + '%').all())
 
 useHead({
   title: () => data.value?.title,

@@ -33,7 +33,14 @@ useJsonld({
       <p class="fs-5 text-secondary article-description">{{ data.description }}</p>
       <div class="d-md-flex justify-content-md-between mb-3">
         <div class="align-self-center">
-          <span class="fw-bold">By <NuxtLink class="text-decoration-none" :to="'/authors/' + data.authorSlug + '/'">{{ data.author }}</NuxtLink></span> | {{ data.date }}
+          <span class="fw-bold">By
+            <template v-for="(author, index) in data.author.split(',')" :key="index">
+              <NuxtLink class="text-decoration-none" :to="'/authors/' + author.trim().replace(/\s+/g, '-').toLowerCase() + '/'">
+                {{ author.trim() }}
+              </NuxtLink>
+              <span v-if="index < data.author.split(',').length - 1">, </span>
+            </template>
+          </span> | {{ data.date }}
         </div>
         <div class="align-self-center mt-3 mt-md-0">
           <SocialShare :data=data />
