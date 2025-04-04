@@ -60,6 +60,10 @@ onMounted(() => {
             <p class="lead fw-bold">Completion update</p>
             <span v-html=completed class="text-break"></span>
           </div>
+          <div class="mt-4" v-if="status === 'Delivered'">
+            <p class="lead fw-bold">Deliverables</p>
+            <span v-html=completed class="text-break"></span>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
