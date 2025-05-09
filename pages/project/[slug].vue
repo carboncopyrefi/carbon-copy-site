@@ -72,7 +72,7 @@ useHead({
         </div> -->
         <div class="row my-5">
           <div class="col-lg-8">
-            <h2>Fundraising <Modal class="fs-5" id="fundraising_list" title="Grant Data" body="Our dataset includes the following grant rounds:<br><br>Climate Round (Gitcoin Grants Beta, 18, 19, 20, 21)<br>Shell Round (Gitcoin Grants 19, 20, 21)<br>Web3 Open Source Software (GG Beta, 18, 19, 20)<br>Web3 Community & Education (GG Beta, 18, 19)<br>Celo QF Round (GG 20)<br>CeloRPGF0<br>Regen Coordi-Nation (GG21)<br>Real World Builders (GG21)<br>Asia Round (GG21)<br>RetroPGF (Round 4)<br>Octant Community Fund<br>Giveth Cumulative (QF matching + donations)"></Modal></h2>
+            <h2>Fundraising <Modal class="fs-5" id="fundraising_list" title="Grant Data" body="Our dataset includes the following grant rounds:<br><br>Gitcoin Grants Beta, 18, 19, 20, 21, 22, 23<br>Octant (Epoch 6 & 7)<br>RetroPGF (Round 4)<br>Octant Community Fund<br>Giveth Cumulative (QF matching + donations)"></Modal></h2>
             <span v-if="status === 'pending'" class="d-flex justify-content-center my-5">
               <div class="spinner-border text-primary" role="status1">
                 <span class="visually-hidden">Loading fundraising data...</span>
