@@ -1,5 +1,6 @@
 
 <script setup lang="ts">
+import type { RefSymbol } from "@vue/reactivity";
 import { ref } from "vue";
 
 const meta = ref(null);
@@ -16,9 +17,9 @@ const { data } = await useFetch("/api/preview", {
   },
 });
 
-meta.value = data._value?.preview;
-description.value = data._value.preview?.description
-title.value = data._value.preview?.title
+meta.value = data.value?.preview;
+description.value = data.value.preview?.description
+title.value = data.value.preview?.title
 
 </script>
 
