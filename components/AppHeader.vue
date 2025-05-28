@@ -65,6 +65,7 @@
               <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://platform.sightlineclimate.com/public/capital-stack" target="_blank">The Climate Capital Stack</NuxtLink></li>
               <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://climatecoordination.org/climate-solutions-metrics-garden-1" target="_blank">CCN Metrics Garden</NuxtLink></li>
               <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://x.com/i/lists/1818142121741766830" target="_blank">X List of ReFi Projects</NuxtLink></li>
+              <li><NuxtLink external class="link-secondary text-decoration-none dropdown-item py-3 py-lg-2" to="https://ief.wiki/index.php/The_Regenerative_Dictionary" target="_blank">The Regenerative Dictionary</NuxtLink></li>
             </ul>
           </li>
           <li class="nav-item py-3 py-lg-0">

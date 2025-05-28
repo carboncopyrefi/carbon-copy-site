@@ -11,7 +11,9 @@ description: About the leading ReFi information platform.
 
 We fill the information void in Web3 regenerative finance (ReFi) by providing a combination of news, education, expert analysis, industry reports, and project evaluation to help industry stakeholders better understand the space and to get projects more exposure.
 
-We also maintain a comprehensive, curated ReFi company database complete with individual profile pages and are developing a suite of educational tools to help projects expand and promote their regenerative impact.
+A core part of this is our comprehensive, curated ReFi company database. Each company has its own profile page complete with contact info, news, media coverage, content feed, token and fundraising data, and more. Each category in our taxonomy also has its own dedicated page showing aggregated data.
+
+As part of our data efforts, we have launched a beta version of our ReFi Impact Dashboard which aims to aggregate and quantify the impact being made by projects in the space.
 
 <!-- <h2 class="mb-3 mt-4">An Evaluation Framework for ReFi Projects</h2>
 
