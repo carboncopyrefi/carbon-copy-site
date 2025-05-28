@@ -76,7 +76,7 @@
           </li>
           <li class="nav-item py-3 py-lg-0">
             <NuxtLink external class="link-secondary text-decoration-none" to="https://warpcast.com/carboncopy-refi" target="_blank"><Icon name="simple-icons:farcaster" class="fs-5" /></NuxtLink>&nbsp;&nbsp;&nbsp;
-            <NuxtLink external class="link-secondary text-decoration-none" to="https://x.com/cc_refi_news" target="_blank"><Icon name="bi bi-twitter-x fs-5" class="fs-5" /></NuxtLink>&nbsp;&nbsp;&nbsp;
+            <NuxtLink external class="link-secondary text-decoration-none" to="https://x.com/cc_refi_news" target="_blank"><i class="bi bi-twitter-x fs-5" ></i></NuxtLink>&nbsp;&nbsp;&nbsp;
             <NuxtLink external class="link-secondary text-decoration-none" to="https://discord.gg/53TpqNgPC5" target="_blank"><i class="bi bi-discord fs-5"></i></NuxtLink>&nbsp;&nbsp;&nbsp;
             <NuxtLink external class="link-secondary text-decoration-none" to="https://www.linkedin.com/company/carbon-copy-news/" target="_blank"><i class="bi bi-linkedin fs-5"></i></NuxtLink>&nbsp;&nbsp;&nbsp;
             <NuxtLink external class="link-secondary text-decoration-none" to="https://t.me/carboncopyrefi" target="_blank"><i class="bi bi-telegram fs-5"></i></NuxtLink>&nbsp;&nbsp;&nbsp;
