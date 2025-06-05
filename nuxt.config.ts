@@ -18,14 +18,14 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@nuxtjs/sitemap',
     '@nuxt/content',
     '@nuxt/image',
     'nuxt-gtag',
     '@nuxtjs/google-fonts',
     'nuxt-link-preview',
     '@nuxt/ui',
-    'nuxt-jsonld',
-    '@nuxtjs/sitemap'
+    'nuxt-jsonld'
   ],
 
   app: {
@@ -60,9 +60,9 @@ export default defineNuxtConfig({
       return
     }
   },
- gtag: {
-    id: 'G-CJBPKLXNE9',
-  },
+//  gtag: {
+//     id: 'G-CJBPKLXNE9',
+//   },
   css: [
       "~/node_modules/bootstrap/dist/css/bootstrap.min.css"
   ],
