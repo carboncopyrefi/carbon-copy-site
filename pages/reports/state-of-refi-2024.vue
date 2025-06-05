@@ -14,7 +14,7 @@ useHead({
   
   <div class="row">
         <div class="col-lg-7 mb-4 mb-lg-0">
-          <h1 class="mt-lg-5 mb-1">The State of ReFi Report</h1>
+          <h1 class="mt-lg-5 mb-1">The State of ReFi Report 2024</h1>
           <h4 class="text-body-secondary mb-4">An Overview of Web3 Regenerative Finance</h4>
             <p>Our inaugural report on the state of Web3 regenerative finance (ReFi) is the first known industry report on the topic. In it, we aim to give readers both inside and outside the space a better sense of the ReFi space, its ambitions, and the progress it has made to date.</p>
             <p>More specifically, we look at:</p>

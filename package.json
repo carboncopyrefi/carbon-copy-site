@@ -10,12 +10,10 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.7.0",
-    "@nuxt/vite-builder": "^3.17.3",
+    "@nuxt/vite-builder": "^3.17.5",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/sitemap": "^6.1.5",
     "@types/node": "^18.19.84",
-    "nuxt": "^3.17.3",
-    "nuxt-gtag": "^0.5.9"
+    "nuxt": "^3.17.5"
   },
   "dependencies": {
     "@nuxt/content": "^3.4.0",
@@ -23,6 +21,7 @@
     "@nuxt/telemetry": "^2.6.6",
     "@nuxt/ui": "^2.21.1",
     "@nuxtjs/mdc": "^0.13.5",
+    "@nuxtjs/sitemap": "^7.3.1",
     "@unhead/vue": "^1.11.20",
     "apexcharts": "^4.5.0",
     "bootstrap": "^5.3.3",
@@ -31,6 +30,7 @@
     "lru-cache": "^10.4.3",
     "micromark": "^4.0.2",
     "nitropack": "^0.0.0",
+    "nuxt-gtag": "^3.0.3",
     "nuxt-jsonld": "^2.1.0",
     "nuxt-link-preview": "^0.1.5",
     "parse5": "^7.2.1",
