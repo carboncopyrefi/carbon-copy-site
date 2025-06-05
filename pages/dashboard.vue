@@ -5,7 +5,7 @@ const { status, data } = await useFetch(`https://api.carboncopy.news/dashboard`,
   server: false,
 })
 
-const { data: feed } = await useFetch(`http://api.carboncopy.news/impact/feed`, {
+const { data: feed } = await useFetch(`https://api.carboncopy.news/impact/feed`, {
   lazy: true,
   server: false
 })
