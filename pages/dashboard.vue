@@ -226,7 +226,7 @@ useHead({
 
     <div class="row mt-5">
       <ClientOnly>
-        <p class="small">** Data current as of June 9th, 2025. **</p>
+        <p class="small">** Data current as of June 16th, 2025. **</p>
       </ClientOnly>
     </div>
 </template>
