@@ -60,9 +60,9 @@ export default defineNuxtConfig({
       return
     }
   },
-//  gtag: {
-//     id: 'G-CJBPKLXNE9',
-//   },
+ gtag: {
+    id: 'G-CJBPKLXNE9',
+  },
   css: [
       "~/node_modules/bootstrap/dist/css/bootstrap.min.css"
   ],
