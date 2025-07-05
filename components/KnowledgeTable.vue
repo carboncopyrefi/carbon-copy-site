@@ -46,6 +46,11 @@ const filteredRows = computed(() => {
     return (titleMatches || projectMatches) && topicMatches && mediumMatches;
   }).slice((page.value - 1) * pageCount, page.value * pageCount);
 });
+
+watch([q, selectedTopic, selectedMedium], () => {
+  page.value = 1;
+});
+
 </script>
 
 
@@ -75,7 +80,7 @@ const filteredRows = computed(() => {
   
       <template #topic-data="{ row }">
         <span v-if="!row.topic.length"></span>
-        <span v-for="topic in row.topic" :key="topic">{{ topic }} </span>
+        <span v-for="(topic, index) in row.topic" :key="`${row.id || row.title}-${index}`">{{ topic }}</span>
       </template>
   
       <template #date-data="{ row }">
@@ -84,8 +89,9 @@ const filteredRows = computed(() => {
       </template>
   
       <template #medium-data="{ row }">
-        <span v-if="!row.medium.length"></span>
-        <span class="fs-4" v-for="medium in row.medium" :key="medium"><i :class="'text-primary bi bi-' + medium.icon"></i></span>
+        <span class="fs-4" v-for="(medium, i) in row.medium" :key="`${row.title}-${medium.icon}-${i}`">
+          <i :class="'text-primary bi bi-' + medium.icon"></i>
+        </span>
       </template>
   
       <template #title-data="{ row }">
