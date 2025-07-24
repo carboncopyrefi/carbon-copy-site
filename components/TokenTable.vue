@@ -1,84 +1,135 @@
 <script setup lang="ts">
+import { h, ref } from 'vue'
+import type { TableColumn } from '@nuxt/ui'
+import { getPaginationRowModel } from '@tanstack/vue-table'
 
 const props = defineProps<{
   data?: Array<any>
 }>()
 
-const row_items = props.data;
+const table = useTemplateRef('table')
+const globalFilter = ref('')
+const pagination = ref({
+  pageIndex: 0,
+  pageSize: 20
+})
 
-const columns = [{
-    key: 'logo',
-    label: 'Logo'
-}, {
-    key: 'project',
-    label: 'Project',
-    sortable: true,
-}, {
-    key: 'symbol',
-    label: 'Symbol'
-}, {
-    key: 'price_usd',
-    label: 'Price',
-    sortable: true
-}, {
-    key: 'percent_change',
-    label: 'Percent Change',
-    sortable: true
-}]
-
-const q = ref('');
-const page = ref(1)
-const pageCount = 20
-
-const filteredRows = computed(() => {  
-    if (!q.value) {    
-        return row_items.slice((page.value - 1) * pageCount, (page.value) * pageCount)
-    }  
-    if (q.value) {
-        return row_items.filter((token) => {    
-            const projectMatches = token.project.toLowerCase().includes(q.value.toLowerCase());
-            const symbolMatches = token.symbol.toLowerCase().includes(q.value.toLowerCase());
-            return projectMatches || symbolMatches;
-        }).slice((page.value - 1) * pageCount, (page.value) * pageCount);
+const columns: TableColumn[] = [
+  {
+    accessorKey: 'logo',
+    header: 'Logo',
+    cell: ({ row }) =>
+      h('img', {
+        src: row.original.logo,
+        width: 50,
+        class: 'img-fluid',
+        alt: row.original.project
+      })
+  },
+  {
+    accessorKey: 'project',
+    header: 'Project',
+    enableSorting: true,
+    cell: ({ row }) =>
+      h(
+        'a',
+        {
+          href: `/project/${row.original.slug}/`,
+          class: 'text-decoration-none text-black fs-6'
+        },
+        row.original.project
+      )
+  },
+  {
+    accessorKey: 'symbol',
+    header: 'Symbol',
+    cell: ({ row }) =>
+      h(
+        'a',
+        {
+          href: row.original.url,
+          target: '_blank',
+          class: 'me-2 mb-2 text-dark fw-bold fs-5'
+        },
+        [
+          h('span', {}, [
+            h(
+              resolveComponent('UBadge'),
+              { size: 'md', color: 'blue', class: 'fs-6' },
+              () => row.original.symbol
+            )
+          ])
+        ]
+      )
+  },
+  {
+    accessorKey: 'price_usd',
+    header: 'Price',
+    enableSorting: true,
+    cell: ({ row }) =>
+      h('span', { class: 'text-dark fw-bold fs-6' }, `$${row.original.price_usd}`)
+  },
+  {
+    accessorKey: 'percent_change',
+    header: 'Percent Change',
+    enableSorting: true,
+    cell: ({ row }) => {
+      const change = row.original.percent_change
+      if (change < 0) {
+        return h(
+          'span',
+          { class: 'text-danger fs-6' },
+          [h('i', { class: 'bi bi-arrow-down-square-fill' }), ` ${change}%`]
+        )
+      } else if (change > 0) {
+        return h(
+          'span',
+          { class: 'text-success fs-6' },
+          [h('i', { class: 'bi bi-arrow-up-square-fill' }), ` ${change}%`]
+        )
+      } else {
+        return h('span', { class: 'fs-6 text-dark' }, 'N/A')
+      }
     }
-    
+  }
+]
+
+watch(globalFilter, () => {
+  pagination.value.pageIndex = 0
 })
 
 </script>
 
 <template>
-    <div class="py-3">
-        <UInput color="gray" variant="outline" size="xl" v-model="q" icon="i-heroicons-magnifying-glass-20-solid" placeholder="Search project or token symbol" name="input" />
+  <div class="space-y-4 pb-4">
+    <div class="flex flex-col gap-2">
+    <UInput
+      v-model="globalFilter"
+      variant="outline"
+      size="xl"
+      trailing-icon="i-heroicons-magnifying-glass-20-solid"
+      placeholder="Search project or token symbol"
+    />
     </div>
 
-    <UTable :rows="filteredRows" :columns="columns">
+    <UTable
+      ref="table"
+      v-model:pagination="pagination"
+      v-model:global-filter="globalFilter"
+      :data="props.data"
+      :columns="columns"
+      :pagination-options="{ getPaginationRowModel: getPaginationRowModel() }"
+    />
 
-        <template #logo-data="{ row }">
-            <NuxtImg width="50" :src="row.logo" class="img-fluid mx-auto" :alt="row.project" loading="lazy" />
-        </template>
-        
-        <template #project-data="{ row }">
-            <NuxtLink :to="'/project/' + row.slug + '/'" class="text-decoration-none text-black fs-6">{{ row.project }}</NuxtLink>
-        </template>
-
-        <template #symbol-data="{ row }">
-            <span class="text-dark fw-bold fs-5"><NuxtLink external :to="row.url" target="_blank"><UBadge size="md" class="me-2 mb-2 fs-6" :color="'blue'" :label="row.symbol" /></NuxtLink></span>
-        </template>
-
-        <template #price_usd-data="{ row }">
-            <span class="text-dark fw-bold fs-6">${{ row.price_usd }}</span>
-        </template>
-
-        <template #percent_change-data="{ row }">
-            <span v-if="row.percent_change < 0" class="text-danger fs-6"><i class="bi bi-arrow-down-square-fill"></i> {{ row.percent_change }}%</span>
-            <span v-else-if="row.percent_change > 0" class="text-success fs-6"><i class="bi bi-arrow-up-square-fill"></i> {{ row.percent_change }}%</span>
-            <span v-else class="fs-6 text-dark">N/A</span>
-        </template>
-
-    </UTable>
-
-    <div id="pagination" class="mt-4 justify-content-end text-dark">
-        <UPagination v-model="page" :page-count="pageCount" size="lg" :active-button="{ color: 'blue' }" :total="row_items?.length" />
+    <div class="flex justify-center border-t border-default pt-4">
+      <UPagination
+        :default-page="(table?.tableApi?.getState().pagination.pageIndex || 0) + 1"
+        :items-per-page="table?.tableApi?.getState().pagination.pageSize"
+        :total="table?.tableApi?.getFilteredRowModel().rows.length"
+        @update:page="(p) => table?.tableApi?.setPageIndex(p - 1)"
+        size="lg"
+        :active-button="{ color: 'blue' }"
+      />
     </div>
-
+  </div>
 </template>

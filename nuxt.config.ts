@@ -64,7 +64,8 @@ export default defineNuxtConfig({
     id: 'G-CJBPKLXNE9',
   },
   css: [
-      "~/node_modules/bootstrap/dist/css/bootstrap.min.css"
+      "~/node_modules/bootstrap/dist/css/bootstrap.min.css",
+      "~/public/css/main.css"
   ],
 
   googleFonts: {

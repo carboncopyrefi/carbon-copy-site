@@ -1,105 +1,219 @@
 <script setup lang="ts">
+import { ref, h, watch, computed, resolveComponent } from 'vue'
+import type { TableColumn } from '@nuxt/ui'
+import { getPaginationRowModel } from '@tanstack/vue-table'
+
 const props = defineProps<{
   data?: Array<any>
 }>()
 
-const row_items = props.data;
+const globalFilter = ref('')
+const selectedTopic = ref('')
+const selectedMedium = ref('')
+const pagination = ref({ pageIndex: 0, pageSize: 20 })
+const sorting = ref([])
 
-const columns = [
-  { key: 'medium', label: '' },
-  { key: 'title', label: 'Title', sortable: true },
-  { key: 'topic', label: 'Topic' },
-  { key: 'company', label: 'Source', sortable: true },
-  { key: 'date', label: 'Date', sortable: true }
-]
+const table = useTemplateRef('table')
 
-const q = ref('');
-const selectedTopic = ref('');
-const selectedMedium = ref('');
-
+// Reset filters
 const resetFilters = () => {
-  q.value = '';
-  selectedTopic.value = '';
-  selectedMedium.value = '';
-};
+  globalFilter.value = ''
+  selectedTopic.value = ''
+  selectedMedium.value = ''
+}
 
-const page = ref(1);
-const pageCount = 20;
+// Get unique topics and mediums
+const topics = computed(() => {
+  const unique = new Set(props.data?.flatMap((item) => item.topic || []))
+  return [...unique].filter(Boolean).map((topic) => ({
+    label: topic,
+    value: topic
+  }))
+})
 
-// Get unique topics and mediums for filter dropdowns
-const topics = computed(() => [...new Set(row_items?.flatMap(item => item.topic || []))]);
 const mediums = computed(() => {
-  const allMediums = row_items?.flatMap(item => item.medium?.map(m => m.medium) || []);
-  return [...new Set(allMediums)]; // Deduplicate
-});
+  const allMediums = props.data?.flatMap((item) =>
+    item.medium?.map((m) => m.medium) || []
+  )
+  return [...new Set(allMediums)].filter(Boolean).map((medium) => ({
+    label: medium,
+    value: medium
+  }))
+})
 
-const filteredRows = computed(() => {
-  return row_items.filter((item) => {
-    const titleMatches = item.title.toLowerCase().includes(q.value.toLowerCase());
-    const projectMatches = item.company.name.toLowerCase().includes(q.value.toLowerCase());
+// Filtered + paginated rows
+const filteredData = computed(() => {
+  const filterText = globalFilter.value.toLowerCase()
+  return props.data?.filter((item) => {
+    const titleMatches = item.title.toLowerCase().includes(filterText)
+    const companyMatches = item.company?.name?.toLowerCase().includes(filterText) || false
 
-    const topicMatches = selectedTopic.value ? item.topic.includes(selectedTopic.value) : true;
+    const topicMatches = selectedTopic.value
+      ? item.topic.includes(selectedTopic.value)
+      : true
+
     const mediumMatches = selectedMedium.value
-      ? item.medium.some((m) => m.medium.includes(selectedMedium.value))
-      : true;
+      ? item.medium?.some((m) => m.medium.includes(selectedMedium.value))
+      : true
 
-    return (titleMatches || projectMatches) && topicMatches && mediumMatches;
-  }).slice((page.value - 1) * pageCount, page.value * pageCount);
-});
+    return (titleMatches || companyMatches) && topicMatches && mediumMatches
+  }) || []
+})
 
-watch([q, selectedTopic, selectedMedium], () => {
-  page.value = 1;
-});
+// Reset pagination on filter change
+watch([globalFilter, selectedTopic, selectedMedium], () => {
+  pagination.value.pageIndex = 0
+})
 
+const columns: TableColumn[] = [
+  {
+    accessorKey: 'medium',
+    header: '',
+    cell: ({ row }) => {
+      return h('div', {}, (row.original.medium || []).map((medium: any, i: number) =>
+        h('span', {
+          key: `${row.original.title}-${medium.icon}-${i}`,
+          class: 'fs-4 me-2'
+        }, [
+          h('i', { class: `text-primary bi bi-${medium.icon}` })
+        ])
+      ))
+    }
+  },
+  {
+    accessorKey: 'title',
+    header: ({ column }) => {
+      const isSorted = column.getIsSorted()
+      return h(resolveComponent('UButton'), {
+        color: 'neutral',
+        variant: 'ghost',
+        label: 'Title',
+        icon: isSorted
+          ? isSorted === 'asc'
+            ? 'i-lucide-arrow-up-narrow-wide'
+            : 'i-lucide-arrow-down-wide-narrow'
+          : 'i-lucide-arrow-up-down',
+        class: '-mx-2.5',
+        onClick: () => column.toggleSorting(column.getIsSorted() === 'asc')
+      })
+    },
+    enableSorting: true,
+    cell: ({ row }) => h('a', {
+      href: row.original.link,
+      target: '_blank',
+      class: 'text-dark fw-bold text-decoration-none'
+    }, row.original.title)
+  },
+  {
+    accessorKey: 'topic',
+    header: 'Topic',
+    cell: ({ row }) =>
+      (Array.isArray(row.original.topic) ? row.original.topic : [row.original.topic])
+        .filter(Boolean)
+        .map((t: string, i: number) =>
+        h('span', { key: `${row.original.id || row.original.title}-${i}`, class: 'me-2' }, t)
+      )
+  },
+  {
+  accessorKey: 'company',
+  header: ({ column }) => {
+    const isSorted = column.getIsSorted()
+    return h(resolveComponent('UButton'), {
+      color: 'neutral',
+      variant: 'ghost',
+      label: 'Source',
+      icon: isSorted
+        ? isSorted === 'asc'
+          ? 'i-lucide-arrow-up-narrow-wide'
+          : 'i-lucide-arrow-down-wide-narrow'
+        : 'i-lucide-arrow-up-down',
+      class: '-mx-2.5',
+      onClick: () => column.toggleSorting(column.getIsSorted() === 'asc')
+    })
+  },
+  enableSorting: true,
+  sortingFn: (rowA, rowB) => {
+    const nameA = rowA.original.company?.name?.toLowerCase() || ''
+    const nameB = rowB.original.company?.name?.toLowerCase() || ''
+    return nameA.localeCompare(nameB)
+  },
+  cell: ({ row }) =>
+    h('a', {
+      href: `/project/${row.original.company.slug}/`,
+    }, [
+      h(resolveComponent('UBadge'), {
+        size: 'md',
+        variant: 'subtle',
+        color: 'secondary',
+        class: 'text-sm',
+        label: row.original.company.name,
+      })
+    ])
+},
+  {
+    accessorKey: 'date',
+    header: 'Date',
+    enableSorting: true,
+    cell: ({ row }) =>
+      h('span', {}, row.original.date || '')
+  }
+]
 </script>
 
-
 <template>
-    <div class="flex items-center justify-between gap-3 px-4 py-3">
-      <!-- Search Input -->
-      <UInput color="gray" variant="outline" size="xl" v-model="q" class="w-100" icon="i-heroicons-magnifying-glass-20-solid" placeholder="Search title or company" />
+  <div class="space-y-4">
+    <div class="flex flex-wrap justify-between gap-4 py-3">
+      <UInput
+        v-model="globalFilter"
+        variant="outline"
+        size="xl"
+        class="w-full sm:w-1/2"
+        trailing-icon="i-heroicons-magnifying-glass-20-solid"
+        placeholder="Search title or company"
+      />
+      <div class="flex flex-wrap gap-3 items-center">
+        <USelect
+          v-model="selectedTopic"
+          :items="topics"
+          value-key="value"
+          class="w-64"
+          placeholder="Topic"
+          clearable
+        />
 
-    </div>
-    <div class="flex justify-end gap-4 px-4 py-3">
-      <!-- Topic Filter -->
-      <USelect color="gray" v-model="selectedTopic" :options="topics" placeholder="Topic" clearable />
-  
-      <!-- Medium Filter -->
-      <USelect color="gray" class="w-40" v-model="selectedMedium" :options="mediums" placeholder="Medium" clearable />
+        <USelect
+          v-model="selectedMedium"
+          :items="mediums"
+          class="w-48"
+          value-key="value"
+          placeholder="Medium"
+          clearable
+        />
 
-      <!-- Reset Filters Button -->
-      <UButton color="gray" variant="outline" @click="resetFilters">Reset</UButton>
+
+        <UButton color="neutral" variant="outline" @click="resetFilters">Reset</UButton>
+      </div>
     </div>
-  
-    <UTable :rows="filteredRows" :columns="columns">
-      <template #company-data="{ row }">
-        <NuxtLink :to="'/project/' + row.company.slug + '/'">
-          <UBadge size="md" class="me-2 mb-2" color="blue" :label="row.company.name" />
-        </NuxtLink>
-      </template>
-  
-      <template #topic-data="{ row }">
-        <span v-if="!row.topic.length"></span>
-        <span v-for="(topic, index) in row.topic" :key="`${row.id || row.title}-${index}`">{{ topic }}</span>
-      </template>
-  
-      <template #date-data="{ row }">
-        <span v-if="!row.date.length"></span>
-        <span>{{ row.date }}</span>
-      </template>
-  
-      <template #medium-data="{ row }">
-        <span class="fs-4" v-for="(medium, i) in row.medium" :key="`${row.title}-${medium.icon}-${i}`">
-          <i :class="'text-primary bi bi-' + medium.icon"></i>
-        </span>
-      </template>
-  
-      <template #title-data="{ row }">
-        <NuxtLink external :to="row.link" target="_blank" class="text-dark fw-bold text-decoration-none">{{ row.title }}</NuxtLink>
-      </template>
-    </UTable>
-  
-    <div id="pagination" class="mt-4 justify-content-end text-dark">
-      <UPagination v-model="page" :page-count="pageCount" size="lg" :active-button="{ color: 'blue' }" :total="row_items?.length" />
+
+    <UTable
+      ref="table"
+      v-model:sorting="sorting"
+      :data="filteredData"
+      :columns="columns"
+      v-model:global-filter="globalFilter"
+      v-model:pagination="pagination"
+      :pagination-options="{ getPaginationRowModel: getPaginationRowModel() }"
+    />
+
+    <div class="flex justify-center border-t border-default pt-4">
+      <UPagination
+        :default-page="(table?.tableApi?.getState().pagination.pageIndex || 0) + 1"
+        :items-per-page="table?.tableApi?.getState().pagination.pageSize"
+        :total="table?.tableApi?.getFilteredRowModel().rows.length"
+        @update:page="(p) => table?.tableApi?.setPageIndex(p - 1)"
+        size="lg"
+        :active-button="{ color: 'blue' }"
+      />
     </div>
-  </template>
+  </div>
+</template>

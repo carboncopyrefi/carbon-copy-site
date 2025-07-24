@@ -25,8 +25,8 @@
 
 useSeoMeta({
   ogTitle: '%s | CARBON Copy',
-  description: 'The preeminent source of ReFi news, information, and analysis.',
-  ogDescription: 'The preeminent source of ReFi news, information, and analysis.',
+  description: 'The preeminent source of ReFi news, data, and analysis.',
+  ogDescription: 'The preeminent source of ReFi news, data, and analysis.',
   twitterCard: 'summary_large_image',
   ogType: 'website',
   ogUrl: 'https://carboncopy.news',
@@ -44,6 +44,8 @@ function acceptTracking() {
 <template>
 <NuxtLayout>
   <NuxtLoadingIndicator />
-  <NuxtPage />
+  <uApp>
+    <NuxtPage />
+  </uApp>
 </NuxtLayout>
 </template>

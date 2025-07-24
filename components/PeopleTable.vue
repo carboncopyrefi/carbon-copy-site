@@ -1,70 +1,104 @@
 <script setup lang="ts">
+import { ref, h, watch } from 'vue'
+import type { TableColumn } from '@nuxt/ui'
+import { getPaginationRowModel } from '@tanstack/vue-table'
 
 const props = defineProps<{
   data?: Array<any>
 }>()
 
-const row_items = props.data;
-
-const columns = [{
-    key: 'name',
-    label: 'Name',
-    sortable: true,
-}, {
-    key: 'projects',
-    label: 'Project(s)'
-}, {
-    key: 'contacts',
-    label: 'Contacts'
-}]
-
-const q = ref('');
-const page = ref(1)
-const pageCount = 20
-
-const filteredRows = computed(() => {  
-    if (!q.value) {    
-        return row_items.slice((page.value - 1) * pageCount, (page.value) * pageCount)
-    }  
-    if (q.value) {
-        return row_items.filter((person) => {    
-            const nameMatches = person.name.toLowerCase().includes(q.value.toLowerCase());
-            const projectMatches = person.projects.some((project: { company: string }) => 
-                project.company.toLowerCase().includes(q.value.toLowerCase())
-            );
-            return nameMatches || projectMatches;
-        }).slice((page.value - 1) * pageCount, (page.value) * pageCount);
-    }
-    
+const table = useTemplateRef('table')
+const globalFilter = ref('')
+const pagination = ref({
+  pageIndex: 0,
+  pageSize: 20
 })
 
+// Optional: Reset to first page on filter change
+watch(globalFilter, () => {
+  pagination.value.pageIndex = 0
+})
+
+const columns: TableColumn[] = [
+  {
+    accessorKey: 'name',
+    header: 'Name',
+    enableSorting: true,
+    cell: ({ row }) =>
+      h('span', { class: 'text-dark fw-bold fs-6' }, row.original.name)
+  },
+  {
+    accessorKey: 'projects',
+    header: 'Project(s)',
+    cell: ({ row }) => {
+      const projects = row.original.projects || []
+      if (!projects.length) return ''
+      return h('div', {}, projects.map((project: any) =>
+        h('a', {
+          href: `/project/${project.slug}/`,
+          class: 'me-2 mb-2 text-decoration-none inline-block',
+        }, [
+          h(resolveComponent('UBadge'), {
+            size: 'md',
+            color: 'secondary',
+            variant: 'subtle',
+            class: 'fs-6',
+            label: project.company,
+          })
+        ])
+      ))
+    }
+  },
+  {
+    accessorKey: 'contacts',
+    header: 'Contacts',
+    cell: ({ row }) => {
+      const contacts = row.original.contacts || []
+      if (!contacts.length) return ''
+      return h('div', {}, contacts.map((contact: any) =>
+        h('a', {
+          href: contact.link,
+          target: '_blank',
+          class: 'fs-4 me-3',
+        }, [
+          h('i', { class: `bi bi-${contact.icon}` })
+        ])
+      ))
+    }
+  }
+]
 </script>
 
 <template>
-    <div class="py-3">
-        <UInput color="gray" variant="outline" size="xl" v-model="q" icon="i-heroicons-magnifying-glass-20-solid" placeholder="Search name or company" name="input" />
+  <div class="space-y-4 pb-4">
+    <div class="flex flex-col gap-2">
+    <UInput
+      v-model="globalFilter"
+      variant="outline"
+      size="xl"
+      trailing-icon="i-heroicons-magnifying-glass-20-solid"
+      placeholder="Search name or project"
+    />
     </div>
 
-    <UTable :rows="filteredRows" :columns="columns">
+    <UTable
+      ref="table"
+      :data="props.data"
+      :columns="columns"
+      v-model:global-filter="globalFilter"
+      v-model:pagination="pagination"
+      :pagination-options="{ getPaginationRowModel: getPaginationRowModel() }"
+    />
 
-        <template #projects-data="{ row }">
-            <span v-if="!row.projects.length"></span>
-            <NuxtLink v-for="project in row.projects" :to="'/project/' + project.slug + '/'"><UBadge size="md" class="me-2 mb-2 fs-6" :color="'blue'" :label="project.company" /><br/></NuxtLink>
-        </template>
-
-        <template #contacts-data="{ row }">
-            <span v-if="!row.contacts.length"></span>
-            <NuxtLink class="fs-4 me-3" v-for="contact in row.contacts" external target="_blank" :to="contact.link"><i :class="'bi bi-' + contact.icon"></i></NuxtLink>
-        </template>
-
-        <template #name-data="{ row }">
-            <span class="text-dark fw-bold fs-6">{{ row.name }}</span>
-        </template>
-
-    </UTable>
-
-    <div id="pagination" class="mt-4 justify-content-end text-dark">
-        <UPagination v-model="page" :page-count="pageCount" size="lg" :active-button="{ color: 'blue' }" :total="row_items?.length" />
+    <div class="flex justify-center border-t border-default pt-4">
+      <UPagination
+        :default-page="(table?.tableApi?.getState().pagination.pageIndex || 0) + 1"
+        :items-per-page="table?.tableApi?.getState().pagination.pageSize"
+        :total="table?.tableApi?.getFilteredRowModel().rows.length"
+        @update:page="(p) => table?.tableApi?.setPageIndex(p - 1)"
+        size="lg"
+        :active-button="{ color: 'blue' }"
+      />
     </div>
-
+  </div>
 </template>
