@@ -5,8 +5,10 @@ const data = await queryCollection('learn').all()
   useHead({
     title: 'Learn',
     meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
-      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property: 'og:description', content: 'Educational articles about key ReFi concepts and solutions.' },
+      { property: 'og:title', content: 'Learn | CARBON Copy' },
     ]
   })
 

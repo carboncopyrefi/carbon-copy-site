@@ -24,9 +24,10 @@ useHead({
     title: 'ReFi Impact Dashboard',
     meta: [
     { name: 'description', content: 'A tool to understand the ecological and social impact being made by Web3 regenerative finance (ReFi) projects.' },
-    { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
-    { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
-    { hid: 'og:description', property:'og:description', content: 'A tool to understand the ecological and social impact being made by Web3 regenerative finance (ReFi) projects..' }
+    { property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+    { property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+    { property: 'og:title', content: 'ReFi Impact Dashboard' },
+    { property:'og:description', content: 'A tool to understand the ecological and social impact being made by Web3 regenerative finance (ReFi) projects..' }
 ]
 })
 

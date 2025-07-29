@@ -14,9 +14,10 @@ useHead({
     title: 'ReFi Landscape',
     meta: [
     { name: 'description', content: 'Understand how regenerative your impact and organisation are with our educational tool based on a regenerative assessment framework by Kate Bennett.' },
-    { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
-    { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
-    { hid: 'og:description', property:'og:description', content: 'Understand how regenerative your impact and organisation are with our educational tool based on a regenerative assessment framework by Kate Bennett.' }
+    { property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+    { property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+    { property:'og:description', content: 'Understand how regenerative your impact and organisation are with our educational tool based on a regenerative assessment framework by Kate Bennett.' },
+    { property: 'og:title', content: 'ReFi Landscape' },
 ]
 })
 

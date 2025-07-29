@@ -8,9 +8,11 @@
   useHead({
     title: data.value.title,
     meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news' + img(data.value?.meta.mainImage, { width: 800, quality:80 }) },
-      { hid: 'twitter:description', name: 'twitter:description', content: data.value?.description },
-      { hid: 'twitter:image', name: 'twitter:image', content: 'https://carboncopy.news' + img(data.value?.meta.mainImage, { width: 800, quality:80})},
+      { property:'og:image', content: 'https://carboncopy.news' + img(data.value?.meta.mainImage, { width: 800, quality:80 }) },
+      { name: 'twitter:description', content: data.value?.description },
+      { name: 'twitter:image', content: 'https://carboncopy.news' + img(data.value?.meta.mainImage, { width: 800, quality:80})},
+      { property: 'og:description', content: 'A Web3 onboarding guide for Nigerian NGOs.' },
+      { property: 'og:title', content: () => data.value?.title }
     ]
   })
 

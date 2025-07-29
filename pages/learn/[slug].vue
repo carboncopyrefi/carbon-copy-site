@@ -11,9 +11,11 @@
   useHead({
     title: data.value.title,
     meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800 }) },
-      { hid: 'twitter:description', name: 'twitter:description', content: data.value?.description },
-      { hid: 'twitter:image', name: 'twitter:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800 })},
+      { property:'og:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800 }) },
+      { name: 'twitter:description', content: data.value?.description },
+      { name: 'twitter:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800 })},
+      { property: 'og:description', content: () => data.value?.description },
+      { property: 'og:title', content: () => data.value?.title },
     ]
   })
 

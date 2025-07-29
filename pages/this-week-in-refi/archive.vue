@@ -5,8 +5,9 @@ const data = await queryCollection('recap').all()
   useHead({
     title: 'The ReFi Recap Archive',
     meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
-      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property: 'og:title', content: 'The ReFi Recap Archive' },
     ]
   })
 

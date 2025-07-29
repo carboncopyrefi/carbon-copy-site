@@ -1,10 +1,11 @@
 <script setup lang="ts">
 
 useHead({
-        title: 'The State of ReFi Report',
+        title: 'The State of ReFi Report 2024',
         meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/images/state-of-refi-report-cover.jpg' },
-      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/images/state-of-refi-report-cover.jpg' },
+      { property:'og:image', content: 'https://carboncopy.news/images/state-of-refi-report-cover.jpg' },
+      { property:'twitter:image', content: 'https://carboncopy.news/images/state-of-refi-report-cover.jpg' },
+      { property: 'og:title', content: 'The State of ReFi Report 2024' },
     ]
     })
 

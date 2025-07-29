@@ -5,8 +5,9 @@ const data = await queryCollection('feature').order('sortDate', 'DESC').all()
   useHead({
     title: 'Features',
     meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
-      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property:'og:title', content: 'Features | CARBON Copy' },
+      { property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
     ]
   })
 

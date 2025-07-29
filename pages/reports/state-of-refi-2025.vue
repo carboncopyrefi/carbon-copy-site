@@ -3,11 +3,12 @@
 useHead({
         title: 'The State of ReFi Report 2025',
         meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/images/state-of-refi-report-cover-2025.jpg' },
-      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/images/state-of-refi-report-cover-2025.jpg' },
-      { hid: 'description', name: 'description', content: 'The 2025 edition of our flagship industry report for Web3 Regenerative Finance (ReFi).' },
-      { hid: 'og:description', property: 'og:description', content: 'The 2025 edition of our flagship industry report for Web3 Regenerative Finance (ReFi).' },
-      { hid: 'twitter:description', name: 'twitter:description', content: 'The 2025 edition of our flagship industry report for Web3 Regenerative Finance (ReFi).' }
+      { property:'og:image', content: 'https://carboncopy.news/images/state-of-refi-report-cover-2025.jpg' },
+      { property:'twitter:image', content: 'https://carboncopy.news/images/state-of-refi-report-cover-2025.jpg' },
+      { name: 'description', content: 'The 2025 edition of our flagship industry report for Web3 Regenerative Finance (ReFi).' },
+      { property: 'og:description', content: 'The 2025 edition of our flagship industry report for Web3 Regenerative Finance (ReFi).' },
+      { property: 'og:title', content: 'The Impact DePIN Report 2025' },
+      { name: 'twitter:description', content: 'The 2025 edition of our flagship industry report for Web3 Regenerative Finance (ReFi).' }
     ]
     })
 

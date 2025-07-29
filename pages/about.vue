@@ -5,8 +5,9 @@ const route = useRoute()
 useHead({
     title: 'About Us',
     meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
-      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property: 'og:title', content: 'About Us' },
     ]
   })
 

@@ -12,11 +12,11 @@
   useHead({
     title: data.value.title,
     meta: [
-      { hid: 'og:image', property: 'og:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800, quality:80 }) },
-      { hid: 'og:title', property: 'og:title', content: 'The ReFi Recap: ' + data.value?.title },
-      { hid: 'twitter:description', name: 'twitter:description', content: data.value?.description },
-      { hid: 'twitter:title', name: 'twitter:title', content: 'The ReFi Recap: ' + data.value?.title },
-      { hid: 'twitter:image', name: 'twitter:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800, quality:80})},
+      { property: 'og:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800, quality:80 }) },
+      { property: 'og:title', content: 'The ReFi Recap: ' + data.value?.title },
+      { name: 'twitter:description', content: data.value?.description },
+      { name: 'twitter:title', content: 'The ReFi Recap: ' + data.value?.title },
+      { name: 'twitter:image', content: 'https://carboncopy.news' + img(data.value?.mainImage, { width: 800, quality:80})},
     ],
     script: [
         {

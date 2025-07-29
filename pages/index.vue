@@ -1,9 +1,9 @@
 <script setup lang="ts">
   useHead({
-    title: 'Leading ReFi Information Platform',
+    title: 'ReFi Intelligence Platform',
     meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
-      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+      { property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
     ]
   })
 

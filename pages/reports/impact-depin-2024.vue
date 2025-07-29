@@ -3,11 +3,12 @@
 useHead({
         title: 'The Impact DePIN Report 2024',
         meta: [
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/images/impact-depin-report-cover.jpg' },
-      { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/images/impact-depin-report-cover.jpg' },
-      { hid: 'description', name: 'description', content: 'Examining the Intersection Between Decentralised Physical Infrastructure Networks (DePINs) and Web3 Regenerative Finance (ReFi)' },
-      { hid: 'og:description', property: 'og:description', content: 'Examining the Intersection Between Decentralised Physical Infrastructure Networks (DePINs) and Web3 Regenerative Finance (ReFi)' },
-      { hid: 'twitter:description', name: 'twitter:description', content: 'Examining the Intersection Between Decentralised Physical Infrastructure Networks (DePINs) and Web3 Regenerative Finance (ReFi)' }
+      { property:'og:image', content: 'https://carboncopy.news/images/impact-depin-report-cover.jpg' },
+      { property:'twitter:image', content: 'https://carboncopy.news/images/impact-depin-report-cover.jpg' },
+      { name: 'description', content: 'Examining the Intersection Between Decentralised Physical Infrastructure Networks (DePINs) and Web3 Regenerative Finance (ReFi)' },
+      { property: 'og:description', content: 'Examining the Intersection Between Decentralised Physical Infrastructure Networks (DePINs) and Web3 Regenerative Finance (ReFi)' },
+      { property: 'og:title', content: 'The Impact DePIN Report 2024' },
+      { name: 'twitter:description', content: 'Examining the Intersection Between Decentralised Physical Infrastructure Networks (DePINs) and Web3 Regenerative Finance (ReFi)' }
     ]
     })
 

@@ -24,7 +24,7 @@
   }),
 
 useSeoMeta({
-  ogTitle: '%s | CARBON Copy',
+  ogTitle: 'ReFi Intelligence Platform | CARBON Copy',
   description: 'The preeminent source of ReFi news, data, and analysis.',
   ogDescription: 'The preeminent source of ReFi news, data, and analysis.',
   twitterCard: 'summary_large_image',

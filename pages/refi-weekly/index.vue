@@ -6,11 +6,12 @@
     useHead({
         title: 'The ReFi Weekly with Trinity Morphy',
         meta: [
-            { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/images/refi-weekly-cover.webp' },
-            { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/images/refi-weekly-cover.webp' },
-            { hid: 'description', name: 'description', content: "Every Friday on X, Trinity talks ReFi with some of the space's most influential names." },
-            { hid: 'og:description', property: 'og:description', content: "Every Friday on X, Trinity talks ReFi with some of the space's most influential names." },
-            { hid: 'twitter:description', name: 'twitter:description', content: "Every Friday on X, Trinity talks ReFi with some of the space's most influential names." }
+            { property:'og:image', content: 'https://carboncopy.news/images/refi-weekly-cover.webp' },
+            { property:'twitter:image', content: 'https://carboncopy.news/images/refi-weekly-cover.webp' },
+            { name: 'description', content: "Every Friday on X, Trinity talks ReFi with some of the space's most influential names." },
+            { property: 'og:description', content: "Every Friday on X, Trinity talks ReFi with some of the space's most influential names." },
+            { property: 'og:title', content: 'The ReFi Weekly with Trinity Morphy' },
+            { name: 'twitter:description', content: "Every Friday on X, Trinity talks ReFi with some of the space's most influential names." }
         ]
     })
 

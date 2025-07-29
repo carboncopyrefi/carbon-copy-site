@@ -15,11 +15,12 @@
   useHead({
     title: () => episode.value?.title,
     meta: [
-      { hid: 'description', name: 'description', content: () => episode.value?.subtitle },
-      { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/images/refi-weekly-cover.webp' },
-      { hid: 'og:description', property: 'og:description', content: () => episode.value?.subtitle },
-      { hid: 'twitter:description', name: 'twitter:description', content: episode.value?.subtitle },
-      { hid: 'twitter:image', name: 'twitter:image', content: 'https://carboncopy.news/images/refi-weekly-cover.webp' },
+      { name: 'description', content: () => episode.value?.subtitle },
+      { property:'og:image', content: 'https://carboncopy.news/images/refi-weekly-cover.webp' },
+      { property: 'og:description', content: () => episode.value?.subtitle },
+      { property: 'og:title', content: () => episode.value?.title },
+      { name: 'twitter:description', content: episode.value?.subtitle },
+      { name: 'twitter:image', content: 'https://carboncopy.news/images/refi-weekly-cover.webp' },
     ],
     script: [
         {

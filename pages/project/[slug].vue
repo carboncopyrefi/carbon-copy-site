@@ -18,10 +18,11 @@ const { status, data: content } = await useFetch(`https://api.carboncopy.news/pr
 useHead({
   title: () => data.value?.name,
   meta: [
-    { hid: 'description', name: 'description', content: () => data.value?.description_short },
-    { hid: 'twitter:description', name: 'twitter:description', content: () => data.value?.description_short },
-    { hid: 'og:description', property: 'og:description', content: () => data.value?.description_short },
-    { hid: 'og:image', property:'og:image', content: data.value?.logo },
+    { name: 'description', content: () => data.value?.description_short },
+    { name: 'twitter:description', content: () => data.value?.description_short },
+    { property: 'og:description', content: () => data.value?.description_short },
+    { property: 'og:title', content: () => data.value?.name },
+    { property:'og:image', content: data.value?.logo },
   ]
 })
 

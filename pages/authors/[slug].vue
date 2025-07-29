@@ -9,10 +9,11 @@ const { data: articles } = await useAsyncData('articles', () => queryCollection(
 useHead({
   title: () => data.value?.title,
   meta: [
-    { hid: 'description', name: 'description', content: () => data.value?.description },
-    { hid: 'twitter:description', name: 'twitter:description', content: () => data.value?.description },
-    { hid: 'og:description', property: 'og:description', content: () => data.value?.description },
-    { hid: 'og:image', property:'og:image', content: data.value?.meta.mainImage },
+    { name: 'description', content: () => data.value?.description },
+    { name: 'twitter:description', content: () => data.value?.description },
+    { property: 'og:description', content: () => data.value?.description },
+    { property: 'og:title', content: () => data.value?.title },
+    { property:'og:image', content: data.value?.meta.mainImage },
   ]
 })
 

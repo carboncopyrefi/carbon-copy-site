@@ -12,11 +12,12 @@
     useHead({
         title: 'ReFi Tokens',
         meta: [
-            { hid: 'og:image', property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
-            { hid: 'twitter:image', property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
-            { hid: 'description', name: 'description', content: 'A curated list of tokens in and adjacent to the Web3 regenerative finance (ReFi) space.' },
-            { hid: 'og:description', property: 'og:description', content: 'A curated list of tokens in and adjacent to the Web3 regenerative finance (ReFi) space.' },
-            { hid: 'twitter:description', name: 'twitter:description', content: 'A curated list of tokens in and adjacent to the Web3 regenerative finance (ReFi) space.' }
+            { property:'og:image', content: 'https://carboncopy.news/meta.jpg' },
+            { property:'twitter:image', content: 'https://carboncopy.news/meta.jpg' },
+            { name: 'description', content: 'A curated list of tokens in and adjacent to the Web3 regenerative finance (ReFi) space.' },
+            { property: 'og:description', content: 'A curated list of tokens in and adjacent to the Web3 regenerative finance (ReFi) space.' },
+            { property: 'og:title', content: 'ReFi Tokens | CARBON Copy'},
+            { name: 'twitter:description', content: 'A curated list of tokens in and adjacent to the Web3 regenerative finance (ReFi) space.' }
         ]
     })
 
