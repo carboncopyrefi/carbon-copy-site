@@ -3,9 +3,18 @@
 const route = useRoute()
 const img = useImage()
 
-const { data } = await useAsyncData(route.path, () => { return queryCollection('author').path(route.path).first()});
-const { data: articles } = await useAsyncData('articles', () => { return queryCollection('feature').where('authorSlug', 'LIKE', '%' + route.params.slug + '%').all()})
+const { data } = await useAsyncData(
+  () => route.path,
+  () => queryCollection('author').path(route.path).first()
+)
 
+const { data: articles } = await useAsyncData(
+  () => `articles-${route.params.slug}`,
+  () => queryCollection('feature')
+        .where('authorSlug', 'LIKE', `%${route.params.slug}%`)
+        .order('sortDate', 'DESC')
+        .all()
+)
 
 useHead({
   title: () => data.value?.title,
